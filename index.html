@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Jasmine</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/bss-overrides.css">
+    <link rel="stylesheet" href="assets/css/aos.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/stylex.css">
+    <link rel="stylesheet" href="assets/css/Cookie-Banner-CookieBanner.css">
+    <link rel="stylesheet" href="assets/css/Cookie-Banner.css">
+    <link rel="stylesheet" href="assets/css/CookieConsentComponent.css">
+    <link rel="stylesheet" href="assets/css/Footer-with-Pricing.css">
+    <link rel="stylesheet" href="assets/css/Modern-Contact-Form.css">
+    <link rel="stylesheet" href="assets/css/Navbar-With-Button-icons.css">
+    <link rel="stylesheet" href="assets/css/Popup-Modal-with-Cookie.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Timeline.css">
+</head>
+
+<body>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body"><img class="img-fluid" src="certificate.jpg"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="branch1">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body">
+                    <h1>ジャスミンタイテラス　赤坂店</h1><img class="img-fluid" width="1536" height="1536" src="assets/img/Branch/testsizeB.jpg">
+                    <p style="margin-top: 19px;">〒107-0052 東京都港区赤坂１-８-１　赤坂インターシティAIR　1階</p>
+                    <p>Lunch　 11：00～15：00&nbsp; （L.O.&nbsp; 14：30） <br>Dinner　17：00～22：30&nbsp; （L.O.&nbsp; 21：45）</p>
+                </div><a class="btn" role="button" href="tel: +813-6277-7516" target="_blank" style="border-radius: 0px;color: var(--cc-bg);background: var(--bs-black);"><i class="icon ion-ios-telephone" style="margin-right: 4px;"></i>TEL.</a><a class="btn btn-primary" role="button" href="https://maps.app.goo.gl/AaUo3RpfSbo9ngnP7" target="_blank" style="border-radius: 0px;"><i class="icon ion-android-pin" style="margin-right: 4px;"></i>Google map</a>
+                <div class="container" style="text-align: center;background: rgba(7,7,7,0);"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 19px;margin-bottom: 19px;"></button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="branch1x">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body">
+                    <h1>ジャスミンタイテラス　赤坂店</h1>
+                    <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" id="carousel-2">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img class="img-fluid w-100 d-block" width="2048" height="1365" src="assets/img/Branch/BG_test2.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="2048" height="1365" src="assets/img/Branch/BG_test3.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch/testsizeA.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch/testsizeD.jpg" alt="Slide Image"></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-2" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-2" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                    </div>
+                    <p style="margin-top: 19px;">〒107-0052 東京都港区赤坂１-８-１　赤坂インターシティAIR　1階</p>
+                    <p>Lunch　 11：00～15：00&nbsp; （L.O.&nbsp; 14：30） <br>Dinner　17：00～22：30&nbsp; （L.O.&nbsp; 21：45）</p>
+                </div><a class="btn" role="button" href="tel: +813-6277-7516" target="_blank" style="border-radius: 0px;color: var(--cc-bg);background: var(--bs-black);"><i class="icon ion-ios-telephone" style="margin-right: 4px;font-size: 17px;"></i>TEL. 0<strong>3-6277-7516</strong></a><a class="btn btn-danger" role="button" href="https://tabelog.com/tokyo/A1308/A130802/13303474/" target="_blank" style="border-radius: 0px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-calendar-user" style="margin-right: 4px;font-size: 25px;">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 21h-6a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4.5"></path>
+                        <path d="M16 3v4"></path>
+                        <path d="M8 3v4"></path>
+                        <path d="M4 11h16"></path>
+                        <path d="M19 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                        <path d="M22 22a2 2 0 0 0 -2 -2h-2a2 2 0 0 0 -2 2"></path>
+                    </svg>ご予約はこちら</a><a class="btn btn-primary" role="button" href="https://maps.app.goo.gl/AaUo3RpfSbo9ngnP7" target="_blank" style="border-radius: 0px;"><i class="icon ion-android-pin" style="margin-right: 4px;font-size: 20px;"></i>Google map</a>
+                <div class="container" style="text-align: center;background: rgba(7,7,7,0);"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 19px;margin-bottom: 19px;"></button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="menu">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body">
+                    <div class="carousel slide" data-bs-ride="false" id="carousel-4">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img class="img-fluid w-100 d-block" src="Menu/menu1.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" src="Menu/menu2.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" src="Menu/menu2.jpg" alt="Slide Image"></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-4" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-4" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                        <div class="carousel-indicators"><button type="button" data-bs-target="#carousel-4" data-bs-slide-to="0" class="active"></button> <button type="button" data-bs-target="#carousel-4" data-bs-slide-to="1"></button> <button type="button" data-bs-target="#carousel-4" data-bs-slide-to="2"></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-md sticky-top py-3 navbar-light">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="index-Oct.html"><img src="assets/img/Logo9zz.svg" style="margin-top: -313px;width: 254px;margin-bottom: -309px;margin-left: 1%;margin-right: -13px;overflow: clip;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse text-end" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link">BRANCH</a></li>
+                    <li class="nav-item"><a class="nav-link">NEWS</a></li>
+                    <li class="nav-item"><a class="nav-link">contact</a></li>
+                </ul><a class="btn ms-md-2" role="button" data-bss-hover-animate="pulse" style="background: #000000;color: var(--cc-bg);" href="#menuu"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-book" style="font-size: 21px;">
+                        <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"></path>
+                    </svg></a>
+            </div>
+        </div>
+    </nav>
+    <section id="top" style="overflow: clip;margin-bottom: -62px;"><div><!-- 3DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD -->
+    
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="generator" content="Geany 1.37.1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link href="assets/css/stylex.css" rel="stylesheet">
+<!-- The following libraries and polyfills are recommended to maximize browser support -->
+<!-- NOTE: you must adjust the paths as appropriate for your project -->
+
+<!--  REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+ <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script> 
+
+<!--  OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+<!--     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script> -->
+
+<!--  OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+<!--     <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script> -->
+
+<!--  OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+<!--
+<script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+-->
+</div>
+        <div class="d-print-none d-md-none d-lg-none d-xl-none d-xxl-none" data-bss-scroll-zoom="true" data-bss-scroll-zoom-speed="0.3" style="overflow: clip;background: url(&quot;assets/img/heroxPCy.jpg&quot;) center / contain no-repeat;margin-bottom: 10%;background-image: url(&quot;assets/img/gpt2.jpg&quot;);background-position: center;background-size: cover;">
+            <div class="text-center d-flex flex-column justify-content-center align-items-center px-3 py-4 hero-content" style="overflow: clip;background: rgba(243,244,245,0);">
+                <h1 style="margin-top: -35%;z-index: 3;"><img class="img1" src="assets/img/Logo9z3.svg" style="width: 388px;margin-bottom: -339px;overflow: clip;padding-top: 60px;z-index: 1000;margin-top: -116px;"></h1>
+                <p class="fs-5" style="overflow: clip;z-index: 3;"></p>
+                <h1 class="display-1 fw-bold" style="overflow: clip;z-index: 3;"></h1><div><br><br><br><br><br><br><br></div><a class="btn btn-sm" role="button" data-bss-hover-animate="pulse" style="overflow: clip;border-radius: 10;color: var(--cc-bg);background: #000000;z-index: 3;margin-top: 30px;" href="#branchj">ご予約</a>
+            </div>
+        </div>
+        <div class="d-none d-md-block d-lg-block d-xl-block d-xxl-block" data-bss-scroll-zoom="true" data-bss-scroll-zoom-speed="0.3" style="overflow: clip;background: url(&quot;assets/img/heroxPCy.jpg&quot;) center / contain no-repeat;margin-bottom: 0;">
+            <div class="text-center d-flex flex-column justify-content-center align-items-center px-3 py-4 hero-content" style="overflow: clip;">
+                <h1 style="margin-top: -35%;z-index: 3;"><img class="img1" src="assets/img/Logo9z3.svg" style="width: 388px;margin-bottom: -300px;overflow: clip;padding-top: 60px;z-index: 1000;margin-top: 129px;"></h1>
+                <p class="fs-5" style="overflow: clip;z-index: 3;"></p>
+                <h1 class="display-1 fw-bold" style="overflow: clip;z-index: 3;"></h1><div><br><br><br><br><br><br><br></div><a class="btn btn-sm" role="button" data-bss-hover-animate="pulse" style="overflow: clip;border-radius: 10;color: var(--cc-bg);background: #000000;z-index: 3;" href="#branchj">ご予約</a>
+            </div>
+        </div>
+    </section>
+    <section data-bss-parallax-bg="true" style="background: #5c0202;background-image: url(&quot;assets/img/ChatGPT%20Image%20Nov%208,%202025,%2001_58_56%20PM.png&quot;);background-position: center;background-size: cover;"><div><br><br><br><br></div></section>
+    <section data-bss-parallax-bg="true" style="background: #5c0202;background-image: url(&quot;assets/img/ChatGPT%20Image%20Nov%208,%202025,%2001_58_56%20PM.png&quot;);background-position: center;background-size: cover;">
+        <div class="container" style="background: #7b0000;">
+            <div class="row" style="overflow: clip;background: url(&quot;assets/img/heroxPCz.jpg&quot;) center / cover no-repeat, #ffffff;">
+                <div class="col-md-12 text-center py-5" data-aos="fade-up" data-aos-duration="850" style="overflow: clip;margin-top: -50px;"><div><br><br><br></div>
+                    <h3 class="display-6 fw-bold z-3 mb-4" style="overflow: clip;">About us</h3><div><br></div>
+                    <p style="overflow: clip;font-weight: bold;">2004年、六本木に第一号店をオープンして以来、Jasmine Thai（ジャスミン・タイ） は、<br>“本物のタイの味と心” を日本に届けることを使命として歩んできました。<br><br>現在は東京各地に11店舗を展開し、タイの伝統とモダンな感性を融合させた、<br>ワンランク上のプレミアム・タイレストランとして、多くのお客様に愛されています。<br><br>香り高いハーブやスパイス、新鮮な食材を厳選し、シェフたちの熟練した技と情熱で、<br>一皿ごとに本場バンコクの味わいと華やかさを再現。<br>上質で落ち着いた空間の中で、まるで旅をしているような特別なひとときをお楽しみください。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section data-bss-parallax-bg="true" style="background: #5c0202;background-image: url(&quot;assets/img/ChatGPT%20Image%20Nov%208,%202025,%2001_58_56%20PM.png&quot;);background-position: center;background-size: cover;"><div><br><br><br><br></div></section>
+    <section data-bss-parallax-bg="true" style="background-image: url(&quot;assets/img/BG_test5.jpg&quot;);background-position: center;background-size: cover;">
+        <div>
+            <div class="container">
+                <div class="row" data-aos="fade" data-aos-duration="850" data-aos-delay="1000" style="overflow: clip;">
+                    <div class="col-md-12 text-center py-5" style="overflow: clip;margin-top: -50px;"><img class="img-fluid" width="1536" height="1024" src="assets/img/xpng.png"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div data-bss-parallax-bg="true" style="background-image: url(&quot;assets/img/BG_test2.jpg&quot;);background-position: center;background-size: cover;">
+            <div class="container">
+                <div class="row" data-aos="fade" data-aos-duration="850" data-aos-delay="1000" style="overflow: clip;">
+                    <div class="col-md-12 text-center py-5" data-aos="fade-up" data-aos-duration="850" style="overflow: clip;margin-top: -50px;"><img class="img-fluid" width="1536" height="1024" src="assets/img/certificateX.jpg" style="margin-top: 50px;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section data-bss-parallax-bg="true" id="menuu" style="margin-bottom: -24px;background-image: url(&quot;assets/img/ChatGPT%20Image%20Nov%208,%202025,%2001_58_56%20PM.png&quot;);background-position: center;background-size: cover;">
+        <div class="col-md-12 text-center py-5" style="overflow: clip;margin-top: 0px;">
+            <h3 class="display-6 fw-bold text-white mb-4" style="overflow: clip;background: rgba(29,46,56,0);">セットメニュー (set menu)</h3>
+        </div>
+        <div class="container" style="overflow: clip;">
+            <div class="row mb-4" style="overflow: clip;">
+                <div class="col-md-12" data-aos="fade-right" data-aos-duration="750" style="overflow: clip;text-align: center;">
+                    <div class="d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+                        <div class="swiper" id="swiper-3" data-bss-swiper="{&quot;direction&quot;:&quot;horizontal&quot;,&quot;loop&quot;:true,&quot;keyboard&quot;:true,&quot;effect&quot;:&quot;cards&quot;,&quot;pagination&quot;:{&quot;el&quot;:&quot;.swiper-pagination&quot;,&quot;type&quot;:&quot;fraction&quot;},&quot;navigation&quot;:{&quot;nextEl&quot;:&quot;.swiper-button-next&quot;,&quot;prevEl&quot;:&quot;.swiper-button-prev&quot;},&quot;scrollbar&quot;:{&quot;el&quot;:&quot;.swiper-scrollbar&quot;}}">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="3508" height="2480" src="assets/img/Menu/Menu1_PC.jpg" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="3508" height="2480" src="assets/img/Menu/Menu2_PC.jpg" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="3508" height="2480" src="assets/img/Menu/Menu3_PC.jpg" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="3508" height="2480" src="assets/img/Menu/Menu4_PC.jpg" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="3508" height="2480" src="assets/img/Menu/Menu5_PC.jpg" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="3508" height="2480" src="assets/img/Menu/Menu6_PC.jpg" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="3508" height="2480" src="assets/img/Menu/Menu7_PC.jpg" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="3508" height="2480" src="assets/img/Menu/Menu8_PC.jpg" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="3508" height="2480" src="assets/img/Menu/Menu9_PC.jpg" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="3508" height="2480" src="assets/img/Menu/Menu10_PC.jpg" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="3508" height="2480" src="assets/img/Menu/Menu11_PC.jpg" alt="Slide Image"></div>
+                            </div>
+                            <div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                    <div class="d-print-none d-md-none d-lg-none d-xl-none d-xxl-none">
+                        <div class="swiper" id="swiper-4" data-bss-swiper="{&quot;direction&quot;:&quot;horizontal&quot;,&quot;loop&quot;:true,&quot;keyboard&quot;:true,&quot;effect&quot;:&quot;cards&quot;,&quot;pagination&quot;:{&quot;el&quot;:&quot;.swiper-pagination&quot;,&quot;type&quot;:&quot;fraction&quot;},&quot;scrollbar&quot;:{&quot;el&quot;:&quot;.swiper-scrollbar&quot;}}">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1240" height="1754" src="assets/img/Menu/M1.jpg" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="2552" height="3580" src="assets/img/Menu/M2.jpg" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1277" height="1790" src="assets/img/Menu/M3.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1276" height="1790" src="assets/img/Menu/M4.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1277" height="1790" src="assets/img/Menu/M5.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1276" height="1790" src="assets/img/Menu/M6.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1277" height="1790" src="assets/img/Menu/M7.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1277" height="1790" src="assets/img/Menu/M8.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1276" height="1790" src="assets/img/Menu/M9.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1277" height="1790" src="assets/img/Menu/M10.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1277" height="1790" src="assets/img/Menu/M11.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1277" height="1790" src="assets/img/Menu/M12.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1277" height="1790" src="assets/img/Menu/M13.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1276" height="1790" src="assets/img/Menu/M14.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1276" height="1790" src="assets/img/Menu/M15.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1276" height="1790" src="assets/img/Menu/M16.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1276" height="1790" src="assets/img/Menu/M17.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1277" height="1790" src="assets/img/Menu/M18.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1277" height="1790" src="assets/img/Menu/M19.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1276" height="1790" src="assets/img/Menu/M20.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1276" height="1790" src="assets/img/Menu/M21.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1277" height="1790" src="assets/img/Menu/M22.png" alt="Slide Image"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div><button class="btn" data-bss-hover-animate="pulse" type="button" style="background: rgba(0,0,0,0);color: var(--cc-bg);margin-bottom: 40px;margin-top: 38px;"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor" style="font-size: 45px;">
+                            <g>
+                                <rect fill="none" height="24" width="24" x="0"></rect>
+                            </g>
+                            <g>
+                                <g>
+                                    <path d="M18.89,14.75l-4.09-2.04c-0.28-0.14-0.58-0.21-0.89-0.21H13v-6C13,5.67,12.33,5,11.5,5S10,5.67,10,6.5v10.74L6.75,16.5 c-0.33-0.07-0.68,0.03-0.92,0.28L5,17.62l4.54,4.79C9.92,22.79,10.68,23,11.21,23h6.16c1,0,1.84-0.73,1.98-1.72l0.63-4.46 C20.1,15.97,19.66,15.14,18.89,14.75z"></path>
+                                    <path d="M20.13,3.87C18.69,2.17,15.6,1,12,1S5.31,2.17,3.87,3.87L2,2v5h5L4.93,4.93c1-1.29,3.7-2.43,7.07-2.43 s6.07,1.14,7.07,2.43L17,7h5V2L20.13,3.87z"></path>
+                                </g>
+                            </g>
+                        </svg></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section data-bss-parallax-bg="true" style="background-image: url(&quot;assets/img/BG_test6.jpg&quot;);background-position: center;background-size: cover;">
+        <div>
+            <div class="container">
+                <div class="row" data-aos="fade" data-aos-duration="850" data-aos-delay="1000" style="overflow: clip;">
+                    <div class="col-md-12 text-center py-5" style="overflow: clip;margin-top: -50px;"><img class="img-fluid" width="1536" height="1024" src="assets/img/xpng.png"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section data-bss-scroll-zoom="true" data-bss-scroll-zoom-speed="0.3" id="branchj" style="background: url(&quot;assets/img/_Gold2y.jpg&quot;) center / contain, #a4873e;padding: 0px;border-radius: 0px;background-image: url(&quot;assets/img/_Gold2y.jpg&quot;);background-position: center;background-size: cover;">
+        <div class="container" style="overflow: clip;margin-bottom: -20px;">
+            <div class="row" style="overflow: clip;">
+                <div class="col-md-12 text-center py-5" style="overflow: clip;margin-top: 0px;">
+                    <p class="fw-bold text-muted" style="overflow: clip;">&nbsp;</p>
+                    <h3 class="display-6 fw-bold text-white mb-4" style="overflow: clip;">支店 (branch)</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="overflow: clip;margin-bottom: 20px;">
+            <div class="row gy-4" style="overflow: clip;">
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" style="overflow: clip;"><a href="#" data-bs-target="#branch1x" data-bs-toggle="modal">
+                        <div class="card" style="overflow: clip;"><img class="card-img w-100 d-block" style="overflow: clip;" src="assets/img/BranchButton/Branch1.jpg"></div>
+                    </a></div>
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" style="overflow: clip;"><a href="#">
+                        <div class="card" style="overflow: clip;"><img class="card-img w-100 d-block" style="overflow: clip;" src="assets/img/BranchButton/Branch2.jpg"></div>
+                    </a></div>
+            </div>
+        </div>
+        <div class="container" style="overflow: clip;margin-bottom: 20px;">
+            <div class="row gy-4" style="overflow: clip;">
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" style="overflow: clip;"><a href="#">
+                        <div class="card" style="overflow: clip;"><img class="card-img w-100 d-block" style="overflow: clip;" src="assets/img/BranchButton/Branch3.jpg"></div>
+                    </a></div>
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" style="overflow: clip;"><a href="#">
+                        <div class="card" style="overflow: clip;"><img class="card-img w-100 d-block" style="overflow: clip;" src="assets/img/BranchButton/Branch4.jpg"></div>
+                    </a></div>
+            </div>
+        </div>
+        <div class="container" style="overflow: clip;margin-bottom: 20px;">
+            <div class="row gy-4" style="overflow: clip;">
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" style="overflow: clip;"><a href="#">
+                        <div class="card" style="overflow: clip;"><img class="card-img w-100 d-block" style="overflow: clip;" src="assets/img/BranchButton/Branch5.jpg"></div>
+                    </a></div>
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" style="overflow: clip;"><a href="#">
+                        <div class="card" style="overflow: clip;"><img class="card-img w-100 d-block" style="overflow: clip;" src="assets/img/BranchButton/Branch10.jpg"></div>
+                    </a></div>
+            </div>
+        </div>
+        <div class="container" style="overflow: clip;margin-bottom: 20px;">
+            <div class="row gy-4" style="overflow: clip;">
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" style="overflow: clip;"><a href="#">
+                        <div class="card" style="overflow: clip;"><img class="card-img w-100 d-block" style="overflow: clip;" src="assets/img/BranchButton/Branch7.jpg"></div>
+                    </a></div>
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" style="overflow: clip;"><a href="#">
+                        <div class="card" style="overflow: clip;"><img class="card-img w-100 d-block" style="overflow: clip;" src="assets/img/BranchButton/Branch8.jpg"></div>
+                    </a></div>
+            </div>
+        </div>
+        <div class="container" style="overflow: clip;margin-bottom: 20px;">
+            <div class="row gy-4" style="overflow: clip;">
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" style="overflow: clip;"><a href="#">
+                        <div class="card" style="overflow: clip;"><img class="card-img w-100 d-block" style="overflow: clip;" src="assets/img/BranchButton/Branch9.jpg"></div>
+                    </a></div>
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" style="overflow: clip;"><a href="#">
+                        <div class="card" style="overflow: clip;"><img class="card-img w-100 d-block" style="overflow: clip;" src="assets/img/BranchButton/Branch6.jpg"></div>
+                    </a></div>
+            </div>
+        </div>
+        <div class="container" style="overflow: clip;margin-bottom: 20px;">
+            <div class="row gy-4" style="overflow: clip;">
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" style="overflow: clip;"><a href="#">
+                        <div class="card" style="overflow: clip;"><img class="card-img w-100 d-block" style="overflow: clip;" src="assets/img/BranchButton/Branch11.jpg"></div>
+                    </a></div>
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" style="overflow: clip;"><a href="#">
+                        <div class="card" style="overflow: clip;"><img class="card-img w-100 d-block" style="overflow: clip;" src="assets/img/BranchButton/Branch12.jpg"></div>
+                    </a></div>
+            </div>
+        </div><div><br><br><br><br></div>
+    </section>
+    <section data-bss-parallax-bg="true" style="background: #5c0202;background-image: url(&quot;assets/img/ChatGPT%20Image%20Nov%208,%202025,%2001_58_56%20PM.png&quot;);background-position: center;background-size: cover;">
+        <div class="container" style="overflow: clip;margin-bottom: -20px;">
+            <div class="row" style="overflow: clip;">
+                <div class="col-md-12 text-center py-5" style="overflow: clip;margin-top: -50px;">
+                    <p class="fw-bold text-muted" style="overflow: clip;">&nbsp;</p>
+                    <h3 class="display-6 fw-bold mb-4" style="overflow: clip;color: rgb(164,135,62);">プロモーション (Promotion)</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="overflow: clip;">
+            <div class="row mb-4" style="overflow: clip;">
+                <div class="col-md-12" data-aos="fade-right" data-aos-duration="750" style="overflow: clip;">
+                    <div class="card text-white" id="sec-2" style="overflow: clip;"><img class="card-img w-100 d-block" src="assets/img/Promo1.png" style="overflow: clip;">
+                        <div class="card-img-overlay d-flex flex-column align-items-start p-4 p-xl-5 card-content-half" style="overflow: clip;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="overflow: clip;margin-bottom: -20px;">
+            <div class="row" style="overflow: clip;">
+                <div class="col-md-12 text-center py-5" style="overflow: clip;margin-top: -50px;">
+                    <p class="fw-bold text-muted" style="overflow: clip;">&nbsp;</p>
+                    <h3 class="display-6 fw-bold text-white mb-4" style="overflow: clip;">ニュース (NEWS)</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="overflow: clip;">
+            <div class="row mb-4" style="overflow: clip;">
+                <div class="col-md-12" data-aos="fade-right" data-aos-duration="750" style="overflow: clip;">
+                    <div class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000" id="carousel-3">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img class="img-fluid w-100 d-block" width="1007" height="652" src="assets/img/news2.jpg" alt="Slide Image" style="border-radius: 20px;">
+                                <p class="text-white">2024-10-01&nbsp; &nbsp;ウィッチュ・ウェチャーチーワ駐日タイ王国特命全権大使にご来店いただきました！</p>
+                            </div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1007" height="652" src="assets/img/news3.jpg" alt="Slide Image" style="border-radius: 21px;">
+                                <p class="text-white">2024-10-01&nbsp; &nbsp;ウィッチュ・ウェチャーチーワ駐日タイ王国特命全権大使にご来店いただきました！</p>
+                            </div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1007" height="652" src="assets/img/news1x.jpg" alt="Slide Image" style="border-radius: 21px;">
+                                <p class="text-white">2024-10-01&nbsp; &nbsp;ウィッチュ・ウェチャーチーワ駐日タイ王国特命全権大使にご来店いただきました！</p>
+                            </div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-3" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-3" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                        <div class="carousel-indicators"><button type="button" data-bs-target="#carousel-3" data-bs-slide-to="0" class="active"></button> <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="1"></button> <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="2"></button></div>
+                    </div>
+                </div><div><br><br><br></div>
+            </div>
+        </div>
+    </section>
+    <section style="background: url(&quot;assets/img/BGG2.png&quot;);">
+        <div class="container" style="overflow: clip;margin-bottom: 20px;">
+            <div class="row gy-4" style="overflow: clip;">
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" style="overflow: clip;"><img class="img-fluid" width="1080" height="1276" src="assets/img/MAMA1.png"></div>
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" style="overflow: clip;">
+                    <h4 class="text-dark" style="margin-top: 20%;">オーナーからのメッセージ</h4>
+                    <p class="text-dark" style="font-weight: bold;">Message from the Owner</p>
+                    <p class="text-dark" style="margin-top: 2%;font-weight: bold;">「私たちは、タイ料理をさらに高めたいと考えています。厳選された食材、一皿一皿への心配り、そして真心のこもったサービスで、すべての食事を幸せな体験に。」<br><br>“We aim to elevate Thai cuisine to the next level — with quality ingredients, care in every dish, and heartfelt service to make every meal a truly joyful experience.”</p>
+                    <h5 class="text-dark" style="font-weight: bold;">高木 ドウアンルタイ&nbsp;</h5>
+                    <h5 class="text-dark" style="font-weight: bold;margin-bottom: 41px;">(DAUNGRUTHAI TAKAGI)</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section style="background: #5c0202;margin-top: -37px;"></section>
+    <footer class="text-white" data-bss-parallax-bg="true" style="overflow: clip;background: #5c0202;background-image: url(&quot;assets/img/ChatGPT%20Image%20Nov%208,%202025,%2001_58_56%20PM.png&quot;);background-position: center;background-size: cover;"><div><br><br><br><br></div>
+        <div class="container"><a class="btn d-flex d-sm-flex justify-content-center justify-content-sm-center" role="button" data-bss-hover-animate="pulse" style="text-align: center;margin-left: 0;" href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-chevrons-up text-white" style="font-size: 23px;">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M7 11l5 -5l5 5"></path>
+                    <path d="M7 17l5 -5l5 5"></path>
+                </svg></a>
+            <div class="row">
+                <div class="col-1 col-md-4"></div>
+                <div class="col-10 col-md-4">
+                    <div class="btn-group" role="group" style="width: 100%;"><a class="btn d-flex d-sm-flex justify-content-center justify-content-sm-center" role="button" data-bss-hover-animate="pulse" style="text-align: center;margin-left: 0;" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram text-white text-dark text-decoration-none" style="color: var(--bs-black);font-size: 19px;margin-top: -1px;">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                            </svg></a><a class="btn d-flex d-sm-flex justify-content-center justify-content-sm-center" role="button" data-bss-hover-animate="pulse" style="text-align: center;margin-left: 0;" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor" class="text-white text-dark text-decoration-none" style="color: var(--bs-black);font-size: 26px;margin-top: -6px;padding-top: 3px;margin-right: 3px;">
+                                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                                <path d="M311 196.8v81.3c0 2.1-1.6 3.7-3.7 3.7h-13c-1.3 0-2.4-.7-3-1.5l-37.3-50.3v48.2c0 2.1-1.6 3.7-3.7 3.7h-13c-2.1 0-3.7-1.6-3.7-3.7V196.9c0-2.1 1.6-3.7 3.7-3.7h12.9c1.1 0 2.4 .6 3 1.6l37.3 50.3V196.9c0-2.1 1.6-3.7 3.7-3.7h13c2.1-.1 3.8 1.6 3.8 3.5zm-93.7-3.7h-13c-2.1 0-3.7 1.6-3.7 3.7v81.3c0 2.1 1.6 3.7 3.7 3.7h13c2.1 0 3.7-1.6 3.7-3.7V196.8c0-1.9-1.6-3.7-3.7-3.7zm-31.4 68.1H150.3V196.8c0-2.1-1.6-3.7-3.7-3.7h-13c-2.1 0-3.7 1.6-3.7 3.7v81.3c0 1 .3 1.8 1 2.5c.7 .6 1.5 1 2.5 1h52.2c2.1 0 3.7-1.6 3.7-3.7v-13c0-1.9-1.6-3.7-3.5-3.7zm193.7-68.1H327.3c-1.9 0-3.7 1.6-3.7 3.7v81.3c0 1.9 1.6 3.7 3.7 3.7h52.2c2.1 0 3.7-1.6 3.7-3.7V265c0-2.1-1.6-3.7-3.7-3.7H344V247.7h35.5c2.1 0 3.7-1.6 3.7-3.7V230.9c0-2.1-1.6-3.7-3.7-3.7H344V213.5h35.5c2.1 0 3.7-1.6 3.7-3.7v-13c-.1-1.9-1.7-3.7-3.7-3.7zM512 93.4V419.4c-.1 51.2-42.1 92.7-93.4 92.6H92.6C41.4 511.9-.1 469.8 0 418.6V92.6C.1 41.4 42.2-.1 93.4 0H419.4c51.2 .1 92.7 42.1 92.6 93.4zM441.6 233.5c0-83.4-83.7-151.3-186.4-151.3s-186.4 67.9-186.4 151.3c0 74.7 66.3 137.4 155.9 149.3c21.8 4.7 19.3 12.7 14.4 42.1c-.8 4.7-3.8 18.4 16.1 10.1s107.3-63.2 146.5-108.2c27-29.7 39.9-59.8 39.9-93.1z"></path>
+                            </svg></a><a class="btn d-flex d-sm-flex justify-content-center justify-content-sm-center" role="button" data-bss-hover-animate="pulse" style="text-align: center;margin-left: 0;" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-tiktok text-white text-dark text-decoration-none" style="color: var(--bs-black);font-size: 24px;margin-top: -6px;padding-top: 3px;">
+                                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"></path>
+                            </svg></a></div>
+                </div>
+                <div class="col-1 col-md-4"></div>
+            </div>
+        </div>
+        <div class="container py-4 py-lg-5">
+            <div class="row my-5">
+                <div class="col text-center"><a style="border-color: #ffffff;">Terms &amp; Privacy</a></div>
+            </div>
+        </div>
+        <div class="col text-center" style="color: var(--cc-bg);background: rgba(92,2,2,0);"><a style="border-color: #ffffff;color: var(--cc-bg);text-align: center;background: #5c0202;">@ Jasmine Thai 2025</a><div><br></div></div>
+    </footer>
+    <div></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/aos.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/CookieConsentComponent-cookieconsent.js"></script>
+</body>
+
+</html>
