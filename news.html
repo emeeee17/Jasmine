@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Jasmine</title>
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/FavIcon/jasmine180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/FavIcon/Jasmin16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/FavIcon/Jasmin16x16.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/FavIcon/jasmine32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/FavIcon/jasmine32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/FavIcon/jasmine180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/FavIcon/jasmine192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/FavIcon/jasmine512.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/bss-overrides.css">
+    <link rel="stylesheet" href="assets/css/aos.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/stylex.css">
+    <link rel="stylesheet" href="assets/css/Cookie-Banner-CookieBanner.css">
+    <link rel="stylesheet" href="assets/css/Cookie-Banner.css">
+    <link rel="stylesheet" href="assets/css/CookieConsentComponent.css">
+    <link rel="stylesheet" href="assets/css/Footer-with-Pricing.css">
+    <link rel="stylesheet" href="assets/css/Modern-Contact-Form.css">
+    <link rel="stylesheet" href="assets/css/Navbar-With-Button-icons.css">
+    <link rel="stylesheet" href="assets/css/Popup-Modal-with-Cookie.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Timeline.css">
+</head>
+
+<body>
+    <div class="modal fade" role="dialog" tabindex="-1" id="Term">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content"><img class="position-absolute" src="assets/img/JasminLogo-1%20copy.png" width="40" height="43" style="margin-top: 5px;margin-left: 14px;">
+                <div class="modal-header" style="margin-top: -16px;margin-bottom: -11px;"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 10px;"></button></div>
+                <div class="modal-body">
+                    <div class="dropdown" style="margin-bottom: 14px;text-align: center;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button">🇯🇵 利用規約・プライバシー<strong>（Japanese）</strong>&nbsp;</button>
+                        <div class="dropdown-menu">
+                            <p style="margin-top: 19px;font-weight: bold;text-align: center;">🇯🇵 <strong>利用規約（Japanese）</strong><br><strong>最終更新日：2025年</strong><br>本ウェブサイト（以下「当サイト」）は、Jasmine Thai Restaurant（以下「当社」）が運営しています。当サイトをご利用いただく前に、以下の利用規約をよくお読みください。当サイトを利用することで、本規約に同意したものとみなします。<br>1. 当サイトの目的<br>当サイトは、メニュー、サービス内容、東京都内12店舗の情報、およびお問い合わせ窓口など、当社に関する一般情報を提供することを目的としています。<br>2. 知的財産権<br>当サイトに掲載されている文章、画像、ロゴ、デザイン等の著作権は当社に帰属します。無断転載・複製・配布を禁じます。<br>3. 禁止事項<br>ユーザーは以下の行為を行ってはなりません：<br><br><br>不正・違法目的での利用<br><br><br>当サイトの運営を妨害する行為<br><br><br>当社コンテンツの無断使用<br><br><br>4. 外部リンクについて<br>当サイトには第三者のウェブサイトへのリンクが含まれる場合があります。当社はこれらのサイトの内容について責任を負いません。<br>5. 免責事項<br>当社は情報の正確性に努めますが、完全性や最新性を保証するものではありません。掲載内容（価格、営業時間など）は予告なく変更される場合があります。<br>6. 責任制限<br>当サイト利用によって発生した損害について、当社は一切責任を負いません。<br>7. 規約の変更<br>当社は本規約を必要に応じて変更することがあります。変更後の規約は当サイトに掲載した時点で効力を有します。<br>8. お問い合わせ<br>本規約に関するお問い合わせは以下までご連絡ください：<br><br><strong>Jasmine Thai Restaurant 本部（東京都）</strong><br><br>🇯🇵 <strong>プライバシーポリシー（Japanese）</strong><br>1. 基本方針<br>Jasmine Thai Restaurant（以下「当社」）は、お客様の個人情報を適切に保護することを重要な責務と認識しています。<br>2. 取得する情報<br>当社は以下の情報を取得する場合があります：<br><br><br>氏名、メールアドレス、電話番号（お問い合わせ時）<br><br><br>予約に関する情報<br><br><br>フォームに入力された内容<br><br>※当サイトで決済情報を取得することはありません。<br><br><br>3. 利用目的<br>取得した情報は以下の目的で利用します：<br><br><br>お問い合わせへの回答<br><br><br>予約確認等の連絡<br><br><br>サイト運営・サービス改善<br><br><br>本部および東京12店舗での業務管理<br><br><br>4. 個人情報の提供<br>法律で要求される場合を除き、第三者への提供は行いません。<br><br>ただし、お問い合わせ内容に応じて、必要な範囲で当社各店舗に共有する場合があります。<br>5. セキュリティ対策<br>当社は適切な安全管理措置を講じ、個人情報の漏えいや不正アクセスを防止します。<br>6. お客様の権利<br>お客様は以下の請求が可能です：<br><br><br>保有個人情報の開示<br><br><br>訂正・削除<br><br><br>利用停止の請求<br><br><br>7. ポリシーの変更<br>本ポリシーは必要に応じて改定される場合があります。<br>8. お問い合わせ<br>個人情報の取扱いに関するお問い合わせは以下まで：<br><br><strong>Jasmine Thai Restaurant 本部（東京都）</strong></p>
+                        </div>
+                    </div>
+                    <div class="dropdown" style="text-align: center;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button">🌐 Terms &amp; Privacy<strong>（English）</strong>&nbsp;</button>
+                        <div class="dropdown-menu">
+                            <p style="margin-top: 19px;font-weight: bold;text-align: center;">🌐 <strong>Terms of Use（English）</strong><br><strong>Last Updated:</strong> 2025<br>Welcome to the official website of <strong>Jasmine Thai Restaurant</strong> (“we”, “our”, “the Company”). By accessing or using this website, you agree to comply with the following Terms of Use. Please read them carefully.<br>1. Purpose of Website<br>This website provides general information about Jasmine Thai Restaurant, including our menu, services, branch locations in Tokyo, and contact details.<br>2. Intellectual Property<br>All content on this website—including text, images, logos, and design—is the property of Jasmine Thai Restaurant. Unauthorized copying, reproduction, or distribution is prohibited.<br>3. Prohibited Actions<br>Users must not:<br><br><br>Use the website for fraudulent or unlawful purposes<br><br><br>Interfere with website operation<br><br><br>Copy or misuse our content without permission<br><br><br>4. Links to Third-Party Sites<br>This website may include links to external websites. We are not responsible for the content or policies of such third-party sites.<br>5. Disclaimer<br>We strive to ensure all information is accurate, but we do not guarantee completeness or correctness. Information (including prices, menus, and operating hours) may change without notice.<br>6. Limitation of Liability<br>We are not liable for any damages resulting from website use, system errors, or data loss.<br>7. Changes to Terms<br>We may revise these Terms at any time. Continued use of the website means you accept the updated Terms.<br>8. Contact<br>For inquiries regarding these Terms, please contact our head office:<br><br><strong>Jasmine Thai Restaurant – Head Office, Tokyo</strong><br><br>🔒 <strong>Privacy Policy（English）</strong><br><strong>1. Introduction</strong><br><br>Jasmine Thai Restaurant (“we”, “our”) is committed to protecting your personal information.<br><strong>2. Information We Collect</strong><br><br>We may collect:<br><br><br>Name, email, phone number (when you contact us)<br><br><br>Reservation details<br><br><br>Inquiries submitted through forms<br><br><br>We do <strong>not</strong> collect payment information through the website.<br><strong>3. Purpose of Use</strong><br><br>Personal information is used for:<br><br><br>Responding to inquiries<br><br><br>Reservation-related communication<br><br><br>Improving website functionality<br><br><br>Internal administrative purposes<br><br><br><strong>4. Data Sharing</strong><br><br>We do not share personal information with third parties except:<br><br><br>When required by law<br><br><br>When necessary to respond to an inquiry (e.g., directing your message to one of our 12 Tokyo branches)<br><br><br><strong>5. Data Security</strong><br><br>We implement reasonable security measures to protect your data.<br><strong>6. User Rights</strong><br><br>Users may request:<br><br><br>Disclosure of their stored information<br><br><br>Correction or deletion<br><br><br>Suspension of data use<br><br><br><strong>7. Policy Updates</strong><br><br>This Privacy Policy may be updated periodically.<br><strong>8. Contact</strong><br><br>For privacy-related matters, contact:<br><br><strong>Jasmine Thai Restaurant – Head Office, Tokyo</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p style="text-align: center;font-weight: bold;">Jasmine Thai Co., Ltd<br>Dah Chong No.2 Building 5F-Room B<br>5-18-2 Roppongi Minato-ku, Tokyo 1060032</p><a class="btn" role="button" href="tel: +813-6459-1797" target="_blank" style="border-radius: 0px;color: var(--cc-bg);background: var(--bs-black);"><i class="icon ion-ios-telephone" style="margin-right: 4px;font-size: 17px;"></i>TEL. 0<strong>3-6459-1797</strong></a><a class="btn btn-primary" role="button" href="https://maps.app.goo.gl/mHhqXq7DkNMrJpVU9?g_st=ipc" target="_blank" style="border-radius: 0px;"><i class="icon ion-android-pin" style="margin-right: 4px;font-size: 20px;"></i>Google map</a>
+                <div class="container" style="text-align: center;background: rgba(7,7,7,0);"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 19px;margin-bottom: 19px;"></button></div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-md sticky-top py-3 navbar-light">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#top"></a><a href="index.html"><img src="assets/img/Logo9zz.svg" style="margin-top: -313px;width: 254px;margin-bottom: -309px;margin-left: 1%;margin-right: -13px;overflow: clip;" width="254" height="254"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse text-end" id="navcol-2">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">contact</a></li>
+                </ul><a class="btn ms-md-2" role="button" data-bss-hover-animate="pulse" style="background: #000000;color: var(--cc-bg);" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-book" style="font-size: 21px;">
+                        <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"></path>
+                    </svg></a>
+            </div>
+        </div>
+    </nav>
+    <section data-bss-parallax-bg="true" style="background: url(&quot;assets/img/ChatGPT%20Image%20Nov%208,%202025,%2001_58_56%20PM.png&quot;) center / cover, #5c0202;background-image: url(&quot;assets/img/ChatGPT%20Image%20Nov%208,%202025,%2001_58_56%20PM.png&quot;);background-position: center;background-size: cover;">
+        <div class="container" style="overflow: clip;margin-bottom: -20px;">
+            <div class="row" style="overflow: clip;">
+                <div class="col-md-12 text-center py-5" style="overflow: clip;margin-top: -50px;">
+                    <p class="fw-bold text-muted" style="overflow: clip;">&nbsp;</p>
+                </div>
+            </div>
+        </div>
+        <h3 class="display-6 fw-bold text-white mb-4" style="overflow: clip;text-align: center;">ニュース (NEWS)</h3>
+        <div class="container">
+            <h3 class="display-6 fw-bold text-white mb-4" style="overflow: clip;text-align: center;">2025</h3>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2025-12-11&nbsp; 年末年始の営業</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">年末年始営業時間のお知らせ<br><br>平素より「JASMINE THAI」各店をご利用いただき、誠にありがとうございます。<br>「JASMINE THAI」各店における年末年始の営業時間をお知らせいたします。<br>※営業時間は急遽変更となる可能性がございます。詳細は各店舗へお問い合わせください。<br>お客様には、大変ご不便をおかけいたしますが、何卒ご理解のほど、宜しくお願い申し上げます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 29px;"><img class="img-fluid" width="2480" height="1610" src="assets/img/News/News2025-12.jpg" style="border-radius: 20px;"></div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2025-11-11&nbsp; 祝！池袋店 新装開店</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">JASMINE THAI池袋店リニューアルオープンのお知らせ<br><br>平素より「JASMINE THAI」各店をご利用いただき、誠にありがとうございます。<br>このたび、JASMINE THAI池袋店が11月15日（土）リニューアルオープンいたします。<br>JASMINE THAI池袋店では改装記念として限定ディナーメニュー「カオマンガイスペシャル」をご提供いたします。<br>「ジューシーな定番のカオマンガイ」と「カリッと香ばしい揚げ鶏のカオマンガイ」といった味わいが違う2種類のカオマンガイ、ミニトムヤムクンラーメン、生春巻き、デザートのセットメニューにドリンクが付いた贅沢バージョンです。<br>ぜひ、この機会にご利用いただきたく、皆様のご来店をお待ちしております。<br><br>「カオマンガイスペシャル」<br>期間<br>2025年11月15日（土）～2025年12月7日（日）&nbsp;<br>価格　2,630円（税込）</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 29px;"><img class="img-fluid" width="1000" height="1415" src="assets/img/News/Old-2025/news-20251111.jpg" style="border-radius: 20px;"></div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2025-10-06&nbsp; 秋のシンハーがお得</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">シンハービールイベント開催<br>平素より「JASMINE THAI」各店をご利用いただき、誠にありがとうございます。<br>JASMINE THAI各店（池袋店、ソラマチ店、日比谷店を除く）にてシンハービールをお得に飲める「スパイス香る秋、タイ料理とビールで乾杯！キャンペーン」を10月10日（金）から10月24日（金）の期間に開催いたします。<br>この機会に是非ご利用ください。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 29px;"><img class="img-fluid" width="547" height="768" src="assets/img/News/Old-2025/news-20251006.jpg" style="border-radius: 20px;"></div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2025-07-28&nbsp; お盆期間の営業</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">お盆期間中の各店営業について<br>平素より「JASMINE THAI」各店をご利用いただき、誠にありがとうございます。<br>「JASMINE THAI」各店におけるお盆期間中の営業についてお知らせいたします。<br>※営業時間は急遽変更となる可能性がございます。詳細は各店舗へお問い合わせください。<br>お客様には、大変ご不便をおかけいたしますが、何卒ご理解のほど、宜しくお願い申し上げます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 29px;"><img class="img-fluid" width="1100" height="511" src="assets/img/News/Old-2025/news-20250724.png" style="border-radius: 20px;"></div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2025-07-16&nbsp; 蒸し＆揚げのW鶏</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">JASMINE THAIの週替わりメニュー「スペシャルカオマンガイ」販売中！<br><br>このたび、JASMINE THAI各店では、週替わりメニューとしては2025年7月14日（月）から「スペシャルカオマンガイ」を販売しております。<br>「ジューシーな定番のカオマンガイ」と「カリッと香ばしい揚げ鶏のカオマンガイ」といった味わいが違う2種類のカオマンガイを楽しめる贅沢バージョンです。<br>土日は、サラダが生春巻きにバージョンアップした限定メニューでご提供いたします。<br>皆さまのお越しをお待ちしております。<br>※取扱の無い店舗：日比谷店、ソラマチ店&nbsp;<br>※平日のみ取扱の店舗：サンシャインシティ店<br>※土日祝のみ取扱の店舗：田町タワー店、赤坂店<br><br>「スペシャル・カオマンガイ」<br>期間<br>2025年7月14日（月）～2025年7月27日（日）<br><br>価格<br>平日：1680円（税込）　土日祝：1,750円（税込）</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 29px;"><img class="img-fluid" width="1190" height="844" src="assets/img/News/Old-2025/news-20250716-01.jpg" style="border-radius: 20px;"></div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2025-04-18&nbsp; GWの営業案内</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">GW期間営業時間のお知らせ<br>平素より「JASMINE THAI」各店をご利用いただき、誠にありがとうございます。<br>「JASMINE THAI」各店におけるGW期間の営業時間をお知らせいたします。<br>※営業時間は急遽変更となる可能性がございます。詳細は各店舗へお問い合わせください。<br>お客様には、大変ご不便をおかけいたしますが、何卒ご理解のほど、宜しくお願い申し上げます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 29px;"><img class="img-fluid" width="1100" height="555" src="assets/img/News/Old-2025/news-20250418.png" style="border-radius: 20px;"></div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2025-04-11&nbsp; 日比谷店 昼のみ営業</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">日比谷フォートタワー店　営業時間変更のお知らせ<br>平素より「JASMINE THAI」各店をご利用いただき、誠にありがとうございます。<br>以下の期間において、Thai Street by JASMINE THAI 日比谷フォートタワー店がランチタイムのみの営業となります。<br>お客様には、大変ご不便をおかけいたしますが、何卒ご理解のほど、宜しくお願い申し上げます。<br><br>日比谷フォートタワー店<br>期　　間：4月21日（月）から5月9日（金）<br>営業時間：11:00～15:00<br>※ランチタイムのみ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2025-04-11&nbsp; タイフェス2025出店</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">JASMINE THAIが「タイフェスティバル東京２０２５」へ出店します！<br><br>このたび、JASMINE THAIは2025年5月10日（土）から11日（日）までの2日間、代々木公園で開催の第25回タイフェスティバル東京へ出店いたします。<br>JASMINE THAIは「タイ・セレクト　シグネーチャー／プレミアム」の認定を受けている店舗として、タイ人の一流シェフによる本場のタイ料理をご用意しております。<br>皆さまのお越しをお待ちしております。<br><br>日時<br>2025年5月10日（土）　10:00～20:00<br>2025年5月11日（日）　10:00～20:00<br><br>場所<br>代々木公園イベント広場<br><a href="https://thaifes.jp" target="_blank"><strong><span style="font-style: normal !important; color: rgb(85, 89, 92);">「タイフェスティバル東京２０２５」公式サイト</span></strong></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 29px;"><img class="img-fluid" width="1307" height="844" src="assets/img/News/Old-2025/news-2050416-01%20copy.jpg" style="border-radius: 20px;"></div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2025-04-04&nbsp; 年末年始の営業</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">大手町店　ディナータイム営業時間変更のお知らせ<br>平素より「JASMINE THAI」各店をご利用いただき、誠にありがとうございます。<br>４月７日（月）からJASMINE THAI大手町店のディナータイムにおける営業時間を以下の通り変更いたします。<br>皆様にはご不便、ご迷惑をおかけしますが、何卒ご理解とご協力をお願いいたします。<br><br>ディナータイムの営業時間<br>変更前 １７：００～２３：００（L.O.２２：００）<br>変更後 １７：００～２２：００（L.O.２１：００）<br><br>営業時間変更後もご満足いただけるよう準備しておりますので、変わらぬご愛顧を賜りますようお願い申し上げます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2025-02-04&nbsp; 日比谷店 夜も営業</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">日比谷フォートタワー店　ディナータイム営業再開のお知らせ<br>平素より「JASMINE THAI」各店をご利用いただき、誠にありがとうございます。<br>２月３日からThai Street by JASMINE THAI 日比谷フォートタワー店のディナータイム営業を再開いたしました。<br>ディナータイム営業を休業した期間中はご迷惑をおかけいたしましたが、今後もご愛顧のほどよろしくお願いいたします。<br>皆様のご来店をスタッフ一同心よりお待ちしております。<br><br>ディナータイムの営業時間　１７：００～２２：００<br>※ディナータイムのラストオーダー２１：３０</p>
+                    </div>
+                </div>
+            </div>
+            <h3 class="display-6 fw-bold text-white mb-4" style="overflow: clip;text-align: center;">2024</h3>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2024-12-20&nbsp; 年末年始の営業</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">年末年始営業時間のお知らせ<br>平素より「JASMINE THAI」各店をご利用いただき、誠にありがとうございます。<br>「JASMINE THAI」並び「Thai Street byJASMINE THAI」各店における年末年始の営業時間をお知らせいたします。<br>※営業時間は急遽変更となる可能性がございます。詳細は各店舗へお問い合わせください。<br>お客様には、大変ご不便をおかけいたしますが、何卒ご理解のほど、宜しくお願い申し上げます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 29px;"><img class="img-fluid" width="1098" height="283" src="assets/img/News/Old-2025/news-20241220.png" style="border-radius: 20px;"></div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2024-12-06&nbsp; ディナー15%OFF</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">タイ料理レストラン「JASMINE THAI TERRACE 赤坂店」OPEN記念セール実施のお知らせ<br><br>2024年12月10日（火）にオープンする赤坂店では、オープンを記念し12月10日（火）から12月15日（日）の期間、「ディナータイム　全メニュー15％割引　（ドリンク・コース料理全て）」でお召し上がりいただけるオープン記念セールを実施いたします。<br>この機会にぜひ「JASMINE THAI TERRACE 赤坂」をご利用いただき、お得な価格で優雅なお時間をお過ごしくださいませ。<br><a href="https://prtimes.jp/main/html/rd/p/000000007.000151075.html" target="_blank"><strong><span style="font-style: normal !important; color: rgb(85, 89, 92);">プレスリリース</span></strong></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2024-11-20&nbsp; 赤坂に新店誕生</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">タイ料理レストラン「JASMINE THAI TERRACE 赤坂店」がOPENいたします！<br><br>このたび、１２月１０日（火）に東京都港区内では４店舗目となる、タイ料理レストラン「JASMINE THAI TERRACE 赤坂店」が オープンいたします。<br>緑あふれる散策路に面した店舗は天井が高く広々とした空間が居心地の良い店内、緑豊かな自然を感じるテラス席がございます。<br>スタッフ一同、皆さまのご来店を心からお待ちしております！<br><br>【店舗詳細】<br>店 舗 名：JASMINE THAI TERRACE 赤坂店<br>所 在 地：東京都港区赤坂１丁目８番１号<br>赤坂インターシティAIR 1階<br>営業時間：ランチタイム　１１：００～１５：００（L.O１４：３０）<br>ディナータイム１７：００～２２：３０（L.O２１：４５）</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 10px;">
+                <div class="carousel slide" data-bs-ride="false" id="carousel-7">
+                    <div class="carousel-inner" style="border-radius: 20px;">
+                        <div class="carousel-item active"><img class="img-fluid w-100 d-block" width="1000" height="600" src="assets/img/News/Old-2025/news-20241120-01.jpg" alt="Slide Image"></div>
+                        <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1000" height="600" src="assets/img/News/Old-2025/news-20241120-02.jpg" alt="Slide Image"></div>
+                        <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1000" height="600" src="assets/img/News/Old-2025/news-20241120-03.jpg" alt="Slide Image"></div>
+                        <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1000" height="600" src="assets/img/News/Old-2025/news-20241120-04.jpg" alt="Slide Image"></div>
+                    </div>
+                    <div><a class="carousel-control-prev" href="#carousel-7" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-7" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                    <div class="carousel-indicators"><button type="button" data-bs-target="#carousel-7" data-bs-slide-to="0" class="active"></button> <button type="button" data-bs-target="#carousel-7" data-bs-slide-to="1"></button> <button type="button" data-bs-target="#carousel-7" data-bs-slide-to="2"></button> <button type="button" data-bs-target="#carousel-7" data-bs-slide-to="3"></button></div>
+                </div>
+            </div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2024-11-07&nbsp; 祝！創業20周年</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">JASMINE THAI２０周年キャンペーンを開催いたします！<br><br>こ平素より「JASMINE THAI」各店をご利用いただき、誠にありがとうございます。<br>JASMINE THAIは２００４年1１月２９日に六本木でオープンし、皆様のおかげをもちまして今年で20周年を迎えることができました。<br>つきましては、ご利用のお客様に感謝の気持ちを込めて、11月15日から11月29日の期間、人気メニュー4品とドリンクを特別価格にてご提供させていただきます。<br><br>キャンペーン期間：2024年11月15日（金）から11月29日（金）<br>実施店舗：JASMINE THAI各店（ソラマチ店、日比谷店を除く）<br>※キャンペーン実施の一部店舗では取扱いの無い商品もございます。<br>予めご了承ください。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 10px;">
+                <div class="carousel slide" data-bs-ride="false" id="carousel-6">
+                    <div class="carousel-inner" style="border-radius: 20px;">
+                        <div class="carousel-item active"><img class="img-fluid w-100 d-block" width="713" height="1000" src="assets/img/News/Old-2025/news-20241107-02.jpg" alt="Slide Image"></div>
+                        <div class="carousel-item"><img class="img-fluid w-100 d-block" width="713" height="1000" src="assets/img/News/Old-2025/news-20241107-01.jpg" alt="Slide Image"></div>
+                    </div>
+                    <div><a class="carousel-control-prev" href="#carousel-6" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-6" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                    <div class="carousel-indicators"><button type="button" data-bs-target="#carousel-6" data-bs-slide-to="0" class="active"></button> <button type="button" data-bs-target="#carousel-6" data-bs-slide-to="1"></button></div>
+                </div>
+            </div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2024-11-01&nbsp; 『ヒルナンデス！』紹介</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">日本テレビ「ヒルナンデス！」にてJASMINE THAI Expressソラマチ店が紹介されました。<br><br>このたび日本テレビ系列「ヒルナンデス！」の水曜日（2024年10月30日放送分）「フードコートマヂベスト１！」にてスカイツリータウン・ソラマチ施設フードコート内にあるジャスミンタイのソラマチ店が紹介されました。<br>番組内では、スタジオでメインMCの南原清隆さん、ゲストの濱田 龍臣さんが「カオマンガイ」を、また、マジカルラブリー村上さん、浅香唯さん、市井紗耶香さん、今井亮さんが店舗にて「プーパッポンカレー」をお召し上がりいただきました。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 10px;"><a href="https://www.ntv.co.jp/hirunan/" style="color: var(--cc-bg);font-weight: bold;" target="_blank">ヒルナンデス！番組公式HP</a>
+                <div class="carousel slide" data-bs-ride="false" id="carousel-3">
+                    <div class="carousel-inner" style="border-radius: 20px;">
+                        <div class="carousel-item active"><img class="img-fluid w-100 d-block" width="1000" height="561" src="assets/img/News/Old-2025/news-20241101-01.jpg" alt="Slide Image"></div>
+                        <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1000" height="556" src="assets/img/News/Old-2025/news-20241101-02.jpg" alt="Slide Image"></div>
+                        <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1000" height="561" src="assets/img/News/Old-2025/news-20241101-03.jpg" alt="Slide Image"></div>
+                        <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1000" height="559" src="assets/img/News/Old-2025/news-20241101-04.jpg" alt="Slide Image"></div>
+                        <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1000" height="561" src="assets/img/News/Old-2025/news-20241101-05.jpg" alt="Slide Image"></div>
+                        <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1000" height="561" src="assets/img/News/Old-2025/news-20241101-06.jpg" alt="Slide Image"></div>
+                    </div>
+                    <div><a class="carousel-control-prev" href="#carousel-3" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-3" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                    <div class="carousel-indicators"><button type="button" data-bs-target="#carousel-3" data-bs-slide-to="0" class="active"></button> <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="1"></button> <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="2"></button> <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="3"></button> <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="4"></button> <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="5"></button></div>
+                </div>
+            </div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2024-10-24&nbsp; 池袋店 22時閉店へ</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">池袋店　営業時間変更のお知らせ<br>平素より「JASMINE THAI」各店をご利用いただき、誠にありがとうございます。<br>11月1日からヨドバシ池袋施設レストラン街の営業時間変更に伴い、JASMINE THAI池袋店の営業時間も以下のように変更となります。<br>お客様には、大変ご不便をおかけいたしますが、何卒ご理解のほど、宜しくお願い申し上げます。<br><br>[平日]<br>ディナータイムの閉店時間　２３：００ → ２２：００<br>※ディナータイムのラストオーダー２２：００ → ２１：００<br>※平日の開店時間に変更はございません。（１１：００開店）<br><br>[土・日・祝日]<br>開店時間１０：３０ → １１：００<br>ディナータイムの閉店時間　２３：００ → ２２：００<br>※ディナータイムのラストオーダー２２：００ → ２１：００</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2024-10-01&nbsp; タイ大使ご来店</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">ウィッチュ・ウェチャーチーワ駐日タイ王国特命全権大使にご来店いただきました！<br><br>２０２４年９月３０日、ウィッチュ・ウェチャーチーワ駐日タイ王国特命全権大使がプラーンティップ・ガーンジャナハッタキット公使とともにJASMINE THAI六本木本店にご来店いただきました。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 29px;"><img class="img-fluid" width="1007" height="652" src="assets/img/News/Old-2025/news-20241001.jpg" style="border-radius: 20px;"></div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2024-09-04&nbsp; 大手町店 土祝もOPEN</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">JASMINE THAI大手町店営業日について<br>平素より「JASMINE THAI」各店をご利用いただき、誠にありがとうございます。<br>土曜日・祝日を休業しておりましたJASMINE THAI大手町店について、9月から土曜日・祝日の営業を再開いたします。<br>皆さまのご来店を心よりお待ちしております。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2024-08-19&nbsp; シンハーがお得！</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">シンハービールイベント開催<br>平素より「JASMINE THAI」各店をご利用いただき、誠にありがとうございます。<br>JASMINE THAI各店（池袋店、ソラマチ店、立川店、日比谷店を除く）にてシンハービールをお得に飲める「まだまだ暑い!!冷たいビールを飲もう！キャンペーン」を8月26日（月）から9月13日（金）の期間に開催いたします。<br>この機会に是非ご利用ください。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 29px;"><img class="img-fluid" width="1285" height="1802" src="assets/img/News/Old-2025/news-20240819.jpg" style="border-radius: 20px;"></div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2024-07-29&nbsp; お盆期間の営業</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">お盆期間中の各店営業状況のお知らせ<br>平素より「JASMINE THAI」各店をご利用いただき、誠にありがとうございます。<br>「JASMINE THAI」並び「Thai Street byJASMINE THAI」各店におけるお盆期間中の営業状況をお知らせいたします。<br>※営業時間は急遽変更となる可能性がございます。詳細は各店舗へお問い合わせください。<br>お客様には、大変ご不便をおかけいたしますが、何卒ご理解のほど、宜しくお願い申し上げます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 29px;"><img class="img-fluid" width="1100" height="549" src="assets/img/News/Old-2025/news-20240729.png" style="border-radius: 20px;"></div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2024-05-22&nbsp; タイ労働大臣ご来店</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">パット・ラチャキットプラカーン　タイ王国 労働大臣にご来店いただきました！<br><br>２０２４年４月１３日、パット・ラチャキットプラカーン　タイ王国 労働大臣がブンソン・タプチャイユ　タイ王国　労働省社会保障事務局 事務総長、サデュディー・キッティスワン　在東京タイ王国大使館労働担当官事務所 公使参事官など労働省と大使館の関係者様と共にJASMINE THAI六本木本店へご来店いただきました。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 29px;"><img class="img-fluid" width="1504" height="1080" src="assets/img/News/Old-2025/news-20240522.jpg" style="border-radius: 20px;"></div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2024-04-16&nbsp; タイフェス2024出店</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">JASMINE THAIが「タイフェスティバル東京２０２4」へ出店します！<br><br>このたび、JASMINE THAIは2024年5月11日（土）から12日（日）までの2日間、代々木公園で開催の第24回タイフェスティバル東京へ出店いたします。<br>JASMINE THAIは「タイ・セレクト　シグネーチャー／プレミアム」の認定を受けている店舗として、タイ人の一流シェフによる本場のタイ料理をご用意しております。<br>皆さまのお越しをお待ちしております。<br><br>日時<br>2023年5月11日（土）　10:00～20:00<br>2023年5月12日（日）　10:00～20:00<br><br>場所<br>代々木公園イベント広場<br><a href="https://thaifes.jp" target="_blank"><strong><span style="font-style: normal !important; color: rgb(85, 89, 92);">「タイフェスティバル東京２０２4」詳細</span></strong></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 29px;"><img class="img-fluid" width="1500" height="844" src="assets/img/News/Old-2025/news-20240416-01%20copy.jpg" style="border-radius: 20px;"></div>
+            <h3 class="display-6 fw-bold text-white mb-4" style="overflow: clip;text-align: center;">2023</h3>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2023-12-15&nbsp; 年末年始の営業</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">年末年始営業時間のお知らせ<br>平素より「JASMINE THAI」各店をご利用いただき、誠にありがとうございます。<br>「JASMINE THAI」並び「Thai Street byJASMINE THAI」各店における年末年始の営業時間をお知らせいたします。<br>※営業時間は急遽変更となる可能性がございます。詳細は各店舗へお問い合わせください。<br>お客様には、大変ご不便をおかけいたしますが、何卒ご理解のほど、宜しくお願い申し上げます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 29px;"><img class="img-fluid" width="1100" height="349" src="assets/img/News/Old-2025/news-20231215.png" style="border-radius: 20px;"></div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2023-11-09&nbsp; 田町店 開店セール</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">タイ料理レストラン「JASMINE THAI　田町タワー店」がOPENいたします！<br><br>このたび、１１月１５日（水）に都内１１店舗目となる、タイ料理レストラン「JASMINE THAI　田町タワー店」が オープンいたします。<br>皆さまのご来店、心からお待ちしております！&nbsp;<br>※詳細はこちらのPDFファイルを御覧ください。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="overflow: clip;margin-bottom: 20px;">
+            <div class="row gy-4" style="overflow: clip;">
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" style="overflow: clip;">
+                    <p style="color: var(--cc-bg);font-weight: bold;margin-bottom: 3px;">📅 オープン日から5日間 11/15(水)～11/19(日)</p><a data-bs-toggle="modal"><img class="img-fluid" width="1756" height="1242" src="assets/img/News/Old-2025/news-20231109-1.jpg" style="border-radius: 20px;">
+                        <p style="color: var(--cc-bg);font-weight: bold;margin-top: 10px;">✅&nbsp;グリーンカレー　　　1,300円のところ1,000円<br>✅&nbsp;ガパオライスセット　1,400円のところ1,000円<br>✅&nbsp;カオマンガイセット　1,400円のところ1,000円</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" style="overflow: clip;">
+                    <p style="color: var(--cc-bg);font-weight: bold;margin-bottom: 3px;">📅 オープン日から2週間 11/15(水)～11/29(水)</p><a data-bs-toggle="modal"><img class="img-fluid" width="976" height="1380" src="assets/img/News/Old-2025/news-20231109-2.jpg" style="border-radius: 20px;">
+                        <p style="color: var(--cc-bg);font-weight: bold;margin-top: 10px;">✅&nbsp;シンハー樽生　スモールサイズ&nbsp; &nbsp;880円のところ580円<br>✅&nbsp;シンハー樽生　ラージサイズ&nbsp; &nbsp;1,100円のところ800円</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2023-10-13&nbsp; 祝！都内11店舗目</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">タイ料理レストラン「JASMINE THAI　田町タワー店」がOPENいたします！<br><br>このたび、１１月１５日（水）に都内１１店舗目となる、タイ料理レストラン「JASMINE THAI　田町タワー店」が オープンいたします。<br>皆さまのご来店、心からお待ちしております！&nbsp;<br><img class="img-fluid" width="1528" height="1506" src="assets/img/News/Old-2025/news-20231013.png"><br></p>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2023-08-24&nbsp; タイ政府公式FBに！</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">このたび、タイ国政府商務省国際貿易振興局の公式Facebookで弊社の六本木本店が紹介されました。<br>ぜひ、ご覧ください。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 29px;">
+                <p style="color: var(--cc-bg);font-weight: bold;">タイ国政府商務省国際貿易振興局の公式Facebook</p><a href="https://www.facebook.com/familyditp/videos/966674861054755/?_rdr" target="_blank"><img class="img-fluid" width="1378" height="752" src="assets/img/News/Old-2025/news-20250824.png" style="border-radius: 20px;margin-top: -15px;">
+                    <p style="color: var(--cc-bg);font-weight: bold;">タイ国政府商務省国際貿易振興局の公式Facebookで弊社の六本木本店が紹介</p>
+                </a>
+            </div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2023-08-08&nbsp; お盆期間の営業</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">お盆期間中の各店営業状況のお知らせ<br>平素より「JASMINE THAI」各店をご利用いただき、誠にありがとうございます。<br>「JASMINE THAI」並び「Thai Street byJASMINE THAI」各店におけるお盆期間中の営業状況をお知らせいたします。<br>※営業時間は急遽変更となる可能性がございます。詳細は各店舗へお問い合わせください。<br>お客様には、大変ご不便をおかけいたしますが、何卒ご理解のほど、宜しくお願い申し上げます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 29px;"><img class="img-fluid" width="1100" height="442" src="assets/img/News/Old-2025/news-20230808.png" style="border-radius: 20px;"></div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2023-05-18&nbsp; 八重洲・大手町 休業</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">臨時休業のお知らせ<br>平素より「JASMINE THAI」各店をご利用いただき、誠にありがとうございます。<br>JASMINE THAI八重洲店、JASMINE THAI大手町店について、5月20日（土）は臨時休業とさせていただきます。<br>お客様には、大変ご不便をおかけいたしますが、何卒ご理解のほど、宜しくお願い申し上げます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2023-05-16&nbsp; タイフェス出店！</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">JASMINE THAIが「タイフェスティバル東京２０２３」へ出店します！<br><br>このたび、JASMINE THAIは2023年5月20日（土）から21日（日）までの2日間、4年ぶりに開催される第23回タイフェスティバル東京へ出店いたします。<br>JASMINE THAIは、タイ人の一流シェフによる本場のタイ料理をご用意しております。<br>皆さまのお越しをお待ちしております。<br><br>日時<br>2023年5月20日（土）　10:00～20:00<br>2023年5月21日（日）　10:00～20:00<br><br>場所<br>代々木公園イベント広場<br><a href="https://www.gyucreative.com/thaifestivaltokyo/" target="_blank"><strong><span style="font-style: normal !important; color: rgb(85, 89, 92);">「タイフェスティバル東京２０２３」詳細</span></strong></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 29px;"><img class="img-fluid" width="1500" height="844" src="assets/img/News/Old-2025/news-20230516-01%20c.jpg" style="border-radius: 20px;"></div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2023-04-12&nbsp; GWの営業案内</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">GW期間営業時間のお知らせ<br>平素より「JASMINE THAI」各店をご利用いただき、誠にありがとうございます。<br>「JASMINE THAI」並び「Thai Street byJASMINE THAI」各店におけるGW期間の営業時間をお知らせいたします。<br>※営業時間は急遽変更となる可能性がございます。詳細は各店舗へお問い合わせください。<br>お客様には、大変ご不便をおかけいたしますが、何卒ご理解のほど、宜しくお願い申し上げます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 29px;"><img class="img-fluid" width="1099" height="487" src="assets/img/News/Old-2025/news-20230412.png" style="border-radius: 20px;"></div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2023-03-22&nbsp; 祝！プレミアム認定</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">立川店が「タイ･セレクト･プレミアム/シグネチャー」に認定されました！<br><br>このたび、JASMINE THAI TERRACE ららぽーと立川立飛店が「タイ・セレクト」審査により5つ星にあたる「タイ･セレクト･プレミアム/シグネチャー」に認定されました。<br>「タイ･セレクト･プレミアム/シグネチャー」獲得は、JASMINE THAI六本木本店に次ぐ2店舗目となります。<br>2023年3月3日にタイ大使館商務参事官事務所にてチャンタパット・パンジャマーノン公使より授与されました。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 29px;"><img class="img-fluid" width="2589" height="1730" src="assets/img/News/Old-2025/news-20230322.jpg" style="border-radius: 20px;"></div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2023-03-17&nbsp; mitaseru販売開始</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">通販サイト「mitaseru」にてJASMINE THAIの商品が取扱開始しました！<br><br>このたび、三井不動産が手掛ける、厳選お取り寄せグルメサイト「mitaseru（ミタセル）」で、JASMINE THAI商品の取扱いを開始いたしました。<br>あたためるだけでJASMINE THAIレストランの味をご自宅でお楽しみいただけます。<br>↓以下の販売サイトから購入出来ます。ぜひ、ご賞味ください。<br><br><a href="https://www.mitaseru.com/shop/products/MT011" target="_blank"><strong><span style="font-style: normal !important; color: rgb(85, 89, 92);">厳選お取り寄せグルメサイト「ｍｉｔａｓｅｒｕ（ミタセル）」</span></strong></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 29px;"><img class="img-fluid" width="1431" height="1430" src="assets/img/News/Old-2025/news-20230317-01.jpg" style="border-radius: 20px;"></div>
+            <h3 class="display-6 fw-bold text-white mb-4" style="overflow: clip;text-align: center;">2022</h3>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2022-12-20&nbsp; 年末年始の営業</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">お盆期間中の各店営業状況のお知らせ<br>平素より「JASMINE THAI」各店をご利用いただき、誠にありがとうございます。<br>「JASMINE THAI」並び「Thai Street byJASMINE THAI」各店におけるお盆期間中の営業状況をお知らせいたします。<br>※営業時間は急遽変更となる可能性がございます。詳細は各店舗へお問い合わせください。<br>お客様には、大変ご不便をおかけいたしますが、何卒ご理解のほど、宜しくお願い申し上げます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 10px;"><img class="img-fluid" width="1100" height="310" src="assets/img/News/Old-2025/news-20221220.png" style="border-radius: 20px;"></div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2022-08-31&nbsp; 9/5 サンシャイン休業</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">池袋サンシャインシティ店休業日のお知らせ<br>平素より「JASMINE THAI」各店をご利用いただき、誠にありがとうございます。<br>JASMINE THAI池袋サンシャインシティ店は、定期点検による施設休館のため下記の日程を休業日とさせていただきます。<br>当日、池袋エリアへお越しの際は、JASMINE THAI西武池袋店をご利用ください。<br>お客様には、大変ご不便をおかけいたしますが、何卒ご理解のほど、宜しくお願い申し上げます。<br><br>池袋サンシャインシティ店休業日<br>２０２２年９月５日（月）</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2022-08-22&nbsp; 『ABChanZOO』で紹介！</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">このたび、テレビ東京の番組「ABChanZOO」でJASMINE THAI　Expressソラマチ店が紹介されました。&nbsp;<br>番組内で「ミニ生春巻き」「カオマンガイ」をご紹介いただきました。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 10px;">
+                <div class="carousel slide" data-bs-ride="false" id="carousel-2">
+                    <div class="carousel-inner" style="border-radius: 20px;">
+                        <div class="carousel-item active"><img class="img-fluid w-100 d-block" width="1338" height="1200" src="assets/img/News/Old-2025/chicken%20rice_950yen.jpg" alt="Slide Image"></div>
+                        <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1338" height="1200" src="assets/img/News/Old-2025/fresh%20spring%20roll_380yen.jpg" alt="Slide Image"></div>
+                    </div>
+                    <div><a class="carousel-control-prev" href="#carousel-2" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-2" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                    <div class="carousel-indicators"><button type="button" data-bs-target="#carousel-2" data-bs-slide-to="0" class="active"></button> <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="1"></button></div>
+                </div>
+            </div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2022-08-12&nbsp; お盆期間の営業</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">お盆期間中の各店営業状況のお知らせ<br>平素より「JASMINE THAI」各店をご利用いただき、誠にありがとうございます。<br>「JASMINE THAI」並び「Thai Street byJASMINE THAI」各店におけるお盆期間中の営業状況をお知らせいたします。<br>※営業時間は急遽変更となる可能性がございます。詳細は各店舗へお問い合わせください。<br>お客様には、大変ご不便をおかけいたしますが、何卒ご理解のほど、宜しくお願い申し上げます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 10px;"><img class="img-fluid" width="1099" height="529" src="assets/img/News/Old-2025/news-20220812.png" style="border-radius: 20px;"></div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2022-05-04&nbsp; GWの営業案内</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">【NEW OPEN】「ＪＡＳＭＩＮＥ ＴＨＡＩ 池袋サンシャインシティ店」が2022年4月27日(水)グランドオープン！<br><br>2022年4月27日(水)ＪＲ池袋駅東口より徒歩約8分にある商業施設「sunshine city」内3階レストランフロアに、<br>弊社１０店舗目となる「ＪＡＳＭＩＮＥ ＴＨＡＩ池袋サンシャインシティ店」がオープンいたしました！<br>皆様のご来店をお待ちしております。<br><br><br>店舗名：「JASMINE THAI 池袋サンシャインシティ店」<br>住 所：東京都豊島区東池袋三丁目1ー１<br>　　　 サンシャインシティ専門店街アルパ３階<br>ＴＥＬ：03-6914-0163<br>営業時間：[平日] Lunch　11：00～15：00（L.O.14：30） Dinner　17：00～23：00（L.O.22：00）<br>&nbsp; &nbsp; [土・日・祝日] Lunch　11：00～16：00（L.O.16：00） Dinner　16：00～23：00（L.O.22：00）<br>席数：55席<br>※新型コロナウイルス感染拡大などにより営業時間が急遽変更となる可能性がございます。<br>　最新の営業状況は直接店舗までお問い合わせをお願いいたします。<br><a><strong><span style="font-style: normal !important; color: rgb(85, 89, 92);">※店舗詳細はこちらを御覧ください</span></strong></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 10px;">
+                <div class="carousel slide" data-bs-ride="false" id="carousel-5">
+                    <div class="carousel-inner" style="border-radius: 20px;">
+                        <div class="carousel-item active"><img class="img-fluid w-100 d-block" width="900" height="643" src="assets/img/News/Old-2025/news_20220504.jpg" alt="Slide Image"></div>
+                        <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1442" height="1030" src="assets/img/News/Old-2025/news_20220504-02.jpg" alt="Slide Image"></div>
+                        <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1442" height="811" src="assets/img/News/Old-2025/news_20220504-03.jpg" alt="Slide Image"></div>
+                        <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1442" height="811" src="assets/img/News/Old-2025/news_20220504-04.jpg" alt="Slide Image"></div>
+                    </div>
+                    <div><a class="carousel-control-prev" href="#carousel-5" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-5" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                    <div class="carousel-indicators"><button type="button" data-bs-target="#carousel-5" data-bs-slide-to="0" class="active"></button> <button type="button" data-bs-target="#carousel-5" data-bs-slide-to="1"></button> <button type="button" data-bs-target="#carousel-5" data-bs-slide-to="2"></button> <button type="button" data-bs-target="#carousel-5" data-bs-slide-to="3"></button></div>
+                </div>
+                <p style="color: var(--cc-bg);font-weight: bold;text-align: left;">店舗外観</p>
+            </div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2022-04-28&nbsp;&nbsp;<strong><span style="font-style: normal !important;">GWの営業案内</span></strong></button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">GW期間中の各店営業状況のお知らせ<br>平素より「JASMINE THAI」各店をご利用いただき、誠にありがとうございます。<br>「JASMINE THAI」並び「Thai Street byJASMINE THAI」各店におけるGW期間の各店営業状況をお知らせいたします。<br>※営業時間は急遽変更となる可能性がございます。詳細は各店舗へお問い合わせください。<br>お客様には、大変ご不便をおかけいたしますが、何卒ご理解のほど、宜しくお願い申し上げます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 10px;"><img class="img-fluid" width="1100" height="531" src="assets/img/News/Old-2025/news-20220428.png" style="border-radius: 20px;"></div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2022-04-01&nbsp; 4/27 サンシャインOPEN</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">タイレストラン「JASMINE THAI　サンシャインシティ店」がOPENいたします！<br><br>このたび、４月２７日（水）に都内１０店舗目となる、タイレストラン「JASMINE THAI　池袋サンシャインシティ店」が オープンいたします。<br>皆さまのご来店、心からお待ちしております！&nbsp;<br><img class="img-fluid" width="1190" height="1280" src="assets/img/News/Old-2025/news-20220401.jpg"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2022-04-01&nbsp; 営業時間変更</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">平素より「JASMINE THAI」各店をご利用いただき、誠にありがとうございます。<br><br>3月22日（火）より「まん延防止等重点措置」が解除、「リバウンド警戒期間」となりますので「JASMINE THAI」各店（一部店舗を除く）は通常営業を再開いたします。<br>お客様に安心してご来店いただけますよう、引き続き感染対策に取り組むとともに、今まで以上に楽しくお食事をしていただけますよう、従業員一同より一層努めてまいります。<br><br>※立川店は、平日の営業時間を短縮し２１：００閉店となります。土日祝は２２：００閉店となります。<br>※日比谷店は、当面の間、月曜日から木曜日まではランチタイム１１：００～１５：００のみの営業、ディナータイム営業は金曜日のみ１７：００～２１：００の時間帯で営業させいただきます。（3月22日現在）<br>※引き続き、同一グループの同一テーブルへの入店案内を４人様以内、滞在時間を２時間以内とさせていただきます。<br>（陰性証明書、接種証明書等の提示した場合を除きます。）<br><br>今後ともJASMINE THAIを宜しくお願い申し上げます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 10px;"><img class="img-fluid" width="320" height="75" src="assets/img/News/Old-2025/news-20220318.png" style="border-radius: 20px;"></div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2022-03-04&nbsp;&nbsp;営業時間変更</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">営業時間の変更のお知らせ（更新）<br>平素はJASMINE THAI各店が格別のご愛顧を賜り厚く御礼申し上げます。<br>このたび、政府発表の新型コロナウイルス感染拡大による「まん延防止等重点措置」期間の再延長に伴い、東京都から営業時間短縮等の要請を受け、JASMINE THAI各店は別紙の通り営業時間等を変更いたしますのでお知らせいたします。<br>お客様には、大変ご不便をおかけいたしますが、何卒ご理解のほど、宜しくお願い申し上げます。<br><br>※営業時間は急遽変更となる可能性がございます。詳細は各店舗へお問い合わせください。<br>お客様には、大変ご不便をおかけいたしますが、何卒ご理解のほど、宜しくお願い申し上げます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 10px;"><img class="img-fluid" width="1099" height="719" src="assets/img/News/Old-2025/news-20220304.png" style="border-radius: 20px;"></div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2022-01-27&nbsp; 『VOGUE』に掲載！</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">「VOGUE」日本語版webサイト掲載のお知らせ<br>このたび、ファッション・ライフスタイル雑誌「VOGUE」の日本語版webサイトにて、弊社店舗が紹介されました。<br>ぜひ、ご覧ください。<br><br>「VOGUE」の日本語版webサイト<br><a href="https://www.vogue.co.jp/lifestyle/article/curry-trip" target="_blank"><strong><span style="font-style: normal !important; color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));">https://www.vogue.co.jp/lifestyle/article/curry-trip</span></strong></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2022-01-11&nbsp; 原則4名様まで</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">オミクロン株の急速拡大に伴う緊急対応のお知らせ<br>平素はJASMINE THAI各店が格別のご愛顧を賜り厚く御礼申し上げます。<br>このたび、東京都から「オミクロン株の急速拡大に伴う緊急対応」の要請を受け、JASMINE THAI各店は以下の対応とさせていただきます。<br>※期間は1月11日（火）から1月31日（月）まで&nbsp;<br><br>・同一グループの同一テーブルへの入店案内を原則4名様以内とさせていただきます。<br>・5名様以上の場合は、接種証明書などのご提示をお願いいたします。<br><br>お客様には、大変ご不便をおかけいたしますが、何卒ご理解・ご協力のほど、宜しくお願い申し上げます。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h3 class="display-6 fw-bold text-white mb-4" style="overflow: clip;text-align: center;">2021</h3>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2021-12-29&nbsp; 年末年始の営業</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">年末年始営業時間のお知らせ<br>平素より「JASMINE THAI」各店をご利用いただき、誠にありがとうございます。<br>「JASMINE THAI」並び「Thai Street byJASMINE THAI」各店における年末年始の営業時間をお知らせいたします。<br>※営業時間は急遽変更となる可能性がございます。詳細は各店舗へお問い合わせください。<br>お客様には、大変ご不便をおかけいたしますが、何卒ご理解のほど、宜しくお願い申し上げます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;margin-bottom: 10px;"><img class="img-fluid" width="1105" height="290" src="assets/img/News/Old-2025/news-20211229.png" style="border-radius: 20px;"></div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2021-10-25&nbsp; 全店、通常営業再開</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">平素より「JASMINE THAI」各店をご利用いただき、誠にありがとうございます。<br><br>10月25日（月）より、「JASMINE THAI」全店並び「Thai street by JASMINE THAI」が揃って通常営業を再開いたしました。<br>お客様に安心してご来店いただけますよう、引き続き感染対策に取り組むとともに、今まで以上に楽しくお食事をしていただけますよう、従業員一同より一層努めてまいります。<br><br>今後ともJASMINE THAIを宜しくお願い申し上げます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-right" data-aos-duration="750" style="text-align: center;"><img class="img-fluid" width="320" height="75" src="assets/img/News/Old-2025/news-20211025.png" style="border-radius: 20px;"></div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2021-10-05&nbsp; 営業時間変更【更新】</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">営業時間変更のお知らせ（更新）<br>平素はJASMINE THAI各店が格別のご愛顧を賜り厚く御礼申し上げます。<br>このたび、政府発表の新型コロナウイルス感染拡大による緊急事態宣言が解除となりますが、東京都における「リバウンド防止措置」実施に伴い、東京都から営業時間短縮等の要請を受け、JASMINE THAI各店は別紙の通り営業時間等を変更いたしますのでお知らせいたします。<br>お客様には、大変ご不便をおかけいたしますが、何卒ご理解のほど、宜しくお願い申し上げます。<br><br>※営業時間は急遽変更となる可能性がございます。詳細は各店舗へお問い合わせください。<br>お客様には、大変ご不便をおかけいたしますが、何卒ご理解のほど、宜しくお願い申し上げます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2021-09-01&nbsp; セール期間延長！</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">「Thai Street by JASMINE THAI日比谷フォートタワー店」OPEN記念セール期間延長のお知らせ&nbsp;<br>このたび2021年8月30日（月）にオープンいたしました「Thai Street by JASMINE THAI日比谷フォートタワー店」のオープン記念セールについて、ご好評につき、セール期間を「2日間」延長させていただきます。<br>この機会にぜひ、ご利用ください。皆様のご来店お待ちしております。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="overflow: clip;margin-bottom: 20px;">
+            <div class="row gy-4" style="overflow: clip;">
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" style="overflow: clip;">
+                    <p style="color: var(--cc-bg);font-weight: bold;margin-bottom: 3px;">📅 オープン4日目（9月2日木曜日）</p><a data-bs-toggle="modal"><img class="img-fluid" width="900" height="636" src="assets/img/News/Old-2025/news-20210901-1.jpg" style="border-radius: 20px;">
+                        <p style="color: var(--cc-bg);font-weight: bold;margin-top: 10px;">✅ ワンプレート（パッタイ・グリーンカレー）1,300円のところ1,100円<br>✅ カオマンガイ セット　1,000円のところ890円</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" style="overflow: clip;">
+                    <p style="color: var(--cc-bg);font-weight: bold;margin-bottom: 3px;">📅 オープン5日目（9月３日金曜日）</p><a data-bs-toggle="modal"><img class="img-fluid" width="900" height="636" src="assets/img/News/Old-2025/news-20210901-2.jpg" style="border-radius: 20px;">
+                        <p style="color: var(--cc-bg);font-weight: bold;margin-top: 10px;">✅ ワンプレート（マッサマンカレー・グリーンカレー）1,300円のところ1,100円<br>✅ ガパオライスセット　1,100円のところ890円</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2021-08-26&nbsp; 開店セール開催！</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">「Thai Street by JASMINE THAI日比谷フォートタワー店」OPENセールのお知らせ<br>このたび2021年8月30日（月）11:00にオープンする「Thai Street by JASMINE THAI日比谷フォートタワー店」において、オープン記念セールを開催いたします。&nbsp;<br>この機会にぜひ、ご利用ください。皆様のご来店お待ちしております。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="overflow: clip;margin-bottom: 20px;">
+            <div class="row gy-4" style="overflow: clip;">
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" style="overflow: clip;">
+                    <p style="color: var(--cc-bg);font-weight: bold;margin-bottom: 3px;">📅 オープン初日（8月30日 月曜日）</p><a data-bs-toggle="modal"><img class="img-fluid" width="900" height="636" src="assets/img/News/Old-2025/news-20210826-1.jpg" style="border-radius: 20px;">
+                        <p style="color: var(--cc-bg);font-weight: bold;margin-top: 10px;">✅ ワンプレート （マッサマンカレー・グリーンカレー）1,300円のところ1,100円<br>✅ ガパオライスセット　1,100円のところ890円</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" style="overflow: clip;">
+                    <p style="color: var(--cc-bg);font-weight: bold;margin-bottom: 3px;">📅 オープン2日目（8月31日 火曜日）</p><a data-bs-toggle="modal"><img class="img-fluid" width="900" height="636" src="assets/img/News/Old-2025/news-20210826-2.jpg" style="border-radius: 20px;">
+                        <p style="color: var(--cc-bg);font-weight: bold;margin-top: 10px;">✅ ワンプレート （ガパオ・グリーンカレー）1,300円のところ1,100円<br>✅ グリーンカレーセット　1,100円のところ890円</p>
+                    </a>
+                </div>
+            </div>
+            <div class="row gy-4" style="overflow: clip;">
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" style="overflow: clip;">
+                    <p style="color: var(--cc-bg);font-weight: bold;margin-bottom: 3px;">📅 オープン3日目（9月1日水曜日）</p><a data-bs-toggle="modal"><img class="img-fluid" width="900" height="636" src="assets/img/News/Old-2025/news-20210826-3.jpg" style="border-radius: 20px;">
+                        <p style="color: var(--cc-bg);font-weight: bold;margin-top: 10px;">✅ ワンプレート （ガパオ・パッタイ）1,300円のところ1,100円<br>✅ マッサマンカレーセット　1,100円のところ890円</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" style="overflow: clip;"><a data-bs-toggle="modal"></a><div></div></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2021-08-24&nbsp; 日比バル」に出店！</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">新業態「Thai Street by JASMINE THAI」が出店する「日比バル」のプレスリリース をご紹介いたします！<br>「日比谷フォートタワー ショップ&amp;レストラン」が8月30日（月）にオープンに伴い、プレスリリースがございました。<br>同施設の1階にフードホール「日比バル」が同日オープンし、弊社新業態「Thai Street by JASMINE THAI」が出店いたします。<br>ぜひ、ご来店ください。<br><a href="https://prtimes.jp/main/html/rd/p/000000001.000083071.html" target="_blank"><strong><span style="font-style: normal !important; color: rgb(85, 89, 92);">プレスリリースはこちら</span></strong></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2021-08-20&nbsp; タイ政府chに登場！</button>
+                <div class="dropdown-menu" style="background: #f1f1f1;">
+                    <div class="col" style="background: #f1f1f1;">
+                        <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">このたび、タイ国政府商務省のyoutubeサイト「タイセレクト・ジャパン」で弊社店舗が紹介されました。<br>ぜひ、ご覧ください<br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container">
+                <div class="row gy-4" style="overflow: clip;">
+                    <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" style="overflow: clip;">
+                        <p style="color: var(--cc-bg);font-weight: bold;margin-bottom: 3px;"><strong><span style="font-style: normal !important;">#01 タイセレクトのご紹介【タイ政府公認 名店レストラン】</span></strong></p><a data-bs-toggle="modal" href="https://www.youtube.com/watch?v=f7cTZW_GlRs" target="_blank"><img class="img-fluid" width="754" height="426" src="assets/img/News/Old-2025/2021a.png" style="border-radius: 20px;">
+                            <p style="color: var(--cc-bg);font-weight: bold;margin-top: 10px;"><strong><span style="font-style: normal !important;">JASMINE THAI六本木店がタイセレクト・シグネーチャー店舗として紹介</span></strong></p>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" style="overflow: clip;">
+                        <p style="color: var(--cc-bg);font-weight: bold;margin-bottom: 3px;"><strong><span style="font-style: normal !important;">#03 タイ料理のハーブとスパイス【タイ政府公認 名店レストラン】</span></strong></p><a data-bs-toggle="modal" href="https://www.youtube.com/watch?v=d7IRb-Xd9S0" target="_blank"><img class="img-fluid" width="750" height="422" src="assets/img/News/Old-2025/2021b.png" style="border-radius: 20px;">
+                            <p style="color: var(--cc-bg);font-weight: bold;margin-top: 10px;"><strong><span style="font-style: normal !important;">JASMINE THAI六本木店の料理を紹介</span></strong></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="row gy-4" style="overflow: clip;">
+                    <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" style="overflow: clip;">
+                        <p style="color: var(--cc-bg);font-weight: bold;margin-bottom: 3px;"><strong><span style="font-style: normal !important;">#05 タイの麺類【タイ政府公認 名店レストラン】</span></strong></p><a data-bs-toggle="modal" href="https://www.youtube.com/watch?v=-ZO452Kmo3c" target="_blank"><img class="img-fluid" width="752" height="424" src="assets/img/News/Old-2025/2021c.png" style="border-radius: 20px;">
+                            <p style="color: var(--cc-bg);font-weight: bold;margin-top: 10px;"><strong><span style="font-style: normal !important;">JASMINE THAI六本木店の料理を紹介</span></strong></p>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" style="overflow: clip;">
+                        <p style="color: var(--cc-bg);font-weight: bold;margin-bottom: 3px;"><strong><span style="font-style: normal !important;">#06 タイのドリンク【タイ政府公認 名店レストラン】</span></strong></p><a data-bs-toggle="modal" href="https://www.youtube.com/watch?v=36LgJDOoLjM" target="_blank"><img class="img-fluid" width="754" height="426" src="assets/img/News/Old-2025/2021d.png" style="border-radius: 20px;">
+                            <p style="color: var(--cc-bg);font-weight: bold;margin-top: 10px;"><strong><span style="font-style: normal !important;">JASMINE THAI六本木店のドリンクを紹介</span></strong></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="row gy-4" style="overflow: clip;margin-bottom: -20px;">
+                    <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" style="overflow: clip;">
+                        <p style="color: var(--cc-bg);font-weight: bold;margin-bottom: 3px;"><strong><span style="font-style: normal !important;">#10 タイのお米【タイ政府公認 名店レストラン】</span></strong><br><br></p><a data-bs-toggle="modal" href="https://www.youtube.com/watch?v=StsuBiHrlvA" target="_blank"><img class="img-fluid" width="752" height="426" src="assets/img/News/Old-2025/2021e.png" style="border-radius: 20px;">
+                            <p style="color: var(--cc-bg);font-weight: bold;margin-top: 10px;"><strong><span style="font-style: normal !important;">JASMINE THAI六本木店の料理を紹介</span></strong></p>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" style="overflow: clip;">
+                        <p style="color: var(--cc-bg);font-weight: bold;margin-bottom: 3px;"><strong><span style="font-style: normal !important;">#11 タイ料理のテイクアウトメニュー【タイ政府公認 名店レストラン】</span></strong></p><a data-bs-toggle="modal" href="https://www.youtube.com/watch?v=36LgJDOoLjM" target="_blank"><img class="img-fluid" width="754" height="426" src="assets/img/News/Old-2025/2021f.png" style="border-radius: 20px;">
+                            <p style="color: var(--cc-bg);font-weight: bold;margin-top: 10px;"><strong><span style="font-style: normal !important;">JASMINE THAI大手町店の店舗とお弁当を紹介</span></strong></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="overflow: clip;margin-bottom: -20px;">
+            <div class="row" style="overflow: clip;">
+                <div class="col-md-12 text-center py-5" style="overflow: clip;margin-top: -50px;">
+                    <p class="fw-bold text-muted" id="top-1" style="overflow: clip;">&nbsp;</p>
+                    <div></div>
+                    <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2021-08-13&nbsp; 新業態「Thai Street」</button>
+                        <div class="dropdown-menu" style="background: #f1f1f1;">
+                            <div class="col" style="background: #f1f1f1;">
+                                <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">新業態「Thai Street by JASMINE THAI」がOPENいたします！<br>このたび、8月30日（月）にジャスミンタイの新業態「Thai Street by JASMINE THAI」が オープンいたします。<br>皆さまのご来店、お待ちしております！&nbsp;<br><img class="img-fluid" width="1190" height="1455" src="assets/img/News/Old-2025/news-20210813.jpg"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2021-04-19&nbsp; J-WAVEで紹介！</button>
+                        <div class="dropdown-menu" style="background: #f1f1f1;">
+                            <div class="col" style="background: #f1f1f1;">
+                                <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">J-WAVE 81.3FM「JAM THE PLANET」4月14日（水）放送の番組内でJASMINE THAI六本木店が紹介されました。&nbsp;<br><br><a href="https://www.j-wave.co.jp/original/jamtheplanet/entry/210414.html" target="_blank"><strong><span style="font-style: normal !important; color: rgb(85, 89, 92);">J-WAVE 81.3FM「JAM THE PLANET」公式サイト</span></strong></a><div></div><a href="https://www.instagram.com/p/CNpUtOgrJTN/" target="_blank"><strong><span style="font-style: normal !important; color: rgb(85, 89, 92);">J-WAVE 81.3FM「JAM THE PLANET」公式インスタグラム</span></strong></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2021-03-17&nbsp; 大好評！シンハーフェア</button>
+                        <div class="dropdown-menu" style="background: #f1f1f1;">
+                            <div class="col" style="background: #f1f1f1;">
+                                <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">シンハービールイベント開催<br>ご好評につき、4月1日からJASMINE THAI各店（池袋店、ソラマチ店を除く）にてシンハービールをお得に飲めるイベントを開催いたします。<br>この機会に是非ご利用ください。</p>
+                            </div>
+                        </div>
+                    </div><img class="img-fluid" width="700" height="990" data-aos="fade-right" data-aos-duration="750" src="assets/img/News/Old-2025/news-20210401.jpg" style="border-radius: 20px;margin-bottom: 10px;">
+                    <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2021-03-17&nbsp; シンハーフェア開催！</button>
+                        <div class="dropdown-menu" style="background: #f1f1f1;">
+                            <div class="col" style="background: #f1f1f1;">
+                                <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">シンハービールイベント<br>JASMINE THAI各店にてシンハービールをお得に飲めるイベントを開催しております。<br>この機会に是非ご利用ください。</p>
+                            </div>
+                        </div>
+                    </div><img class="img-fluid" width="700" height="1017" data-aos="fade-right" data-aos-duration="750" src="assets/img/News/Old-2025/news-20210317.jpg" style="border-radius: 20px;margin-bottom: 10px;">
+                    <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2021-02-10&nbsp; 佐藤三兄弟ご来店！</button>
+                        <div class="dropdown-menu" style="background: #f1f1f1;">
+                            <div class="col" style="background: #f1f1f1;">
+                                <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">佐藤三兄弟のYouTubeチャンネルでジャスミンタイ　大手町店をご来店頂きました。<br><strong><span style="font-style: normal !important;">是非ご覧下さい！</span></strong><br><br><a href="https://youtu.be/RH44nmBvImM" target="_blank"><strong><span style="font-style: normal !important; color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));">https://youtu.be/RH44nmBvImM</span></strong></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2021-01-24&nbsp; 日本初！フードコート認定 !</button>
+                        <div class="dropdown-menu" style="background: #f1f1f1;">
+                            <div class="col" style="background: #f1f1f1;">
+                                <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">ソラマチ店がタイセレクトに認定<br>この度、JASMINE　THAI　Express ソラマチ店が日本で初めて、フードコートでタイセレクトに認定され、2021年1月22日にキッティワット・パッシムナン商務公使より認定書を授与されました。<br>JASMINE　THAIは全ての店舗でタイセレクト認定されております。</p>
+                            </div>
+                        </div>
+                    </div><img class="img-fluid" width="900" height="600" data-aos="fade-right" data-aos-duration="750" src="assets/img/News/Old-2025/news-20210124-2.jpg" style="border-radius: 20px;margin-bottom: 10px;">
+                    <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2021-01-14&nbsp; タイ観光庁所長おすすめ</button>
+                        <div class="dropdown-menu" style="background: #f1f1f1;">
+                            <div class="col" style="background: #f1f1f1;">
+                                <p class="text-center" style="font-weight: bold;font-size: 20px;background: #f1f1f1;">Webサイト「ガクセイ基地」にタイ国政府観光庁　東京事務所セークサン所長さまのおすすめ店として掲載されました！<br>是非ご一読下さい！<br><br><a href="https://gakusei-kichi.com/?p=51297" target="_blank"><strong><span style="font-style: normal !important; color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));">https://gakusei-kichi.com/?p=51297</span></strong></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="display-6 fw-bold text-white mb-4" style="overflow: clip;">2020</h3>
+                    <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2020-12-18&nbsp; タイ政府公認動画</button>
+                        <div class="dropdown-menu" style="background: #f1f1f1;">
+                            <div class="col" style="background: #f1f1f1;">
+                                <p class="text-center" style="font-weight: bold;font-size: 20px;">タイ国商務省国際貿易振興局 日本事務所公式You Tubeチャンネルの、タイ料理PRのプロモーションビデオを弊社の四谷店で撮影致しました。＃JasmineThaiYotsuya<br>ぜひ、ご覧ください。<br><a href="https://youtu.be/ar5ewjqr0gM" target="_blank"><strong><span style="font-style: normal !important; color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));">https://youtu.be/ar5ewjqr0gM</span></strong></a></p>
+                            </div>
+                        </div>
+                    </div><img class="img-fluid" width="2088" height="1170" data-aos="fade-right" data-aos-duration="750" src="assets/img/News/Old-2025/news-202012-18.png" style="border-radius: 20px;margin-bottom: 10px;">
+                    <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2020-07-28&nbsp; Uber Eats 対応！</button>
+                        <div class="dropdown-menu" style="background: #f1f1f1;">
+                            <div class="col" style="background: #f1f1f1;">
+                                <p class="text-center" style="font-weight: bold;font-size: 20px;">お弁当販売について<br>下記の店舗ではランチとディナーでお弁当を販売しております。<br>お電話でのご予約も承っておりますので、お気軽にお問い合わせください。<br>デリバリーサービスを利用できる店舗もございます。<br><br>【六本木店】 電話：03-5114-5030　<a href="https://www.ubereats.com/jp/store/jasmine-thai-六本木店-jasmine-thai-roppongi/09HSKsakRWGUcxgosTV71g" target="_blank"><strong><span style="font-style: normal !important; color: rgb(85, 89, 92);">ウーバーイーツ</span></strong></a><br>【四谷店】　 電話：03-5368-1091　<a href="https://www.ubereats.com/jp/store/jasmine-thai-四谷店-jasmine-thai-yotsuya/Ak6zVRjiQZCQ1TVjYxy0Ng" target="_blank"><strong><span style="font-style: normal !important; color: rgb(85, 89, 92);">ウーバーイーツ</span></strong></a><br>【八重洲店】 電話：03-3527-9805　<a href="https://www.ubereats.com/jp/store/jasmine-thai-八重洲店-jasmine-thai-yaesu/8lRRh_4jQUSBbmc7OKz2xA" target="_blank"><strong><span style="font-style: normal !important; color: rgb(85, 89, 92);">ウーバーイーツ</span></strong></a><br>【コレド店】 電話：03-6225-2442　<a href="https://www.ubereats.com/jp/store/jasmine-thai-コレト店-jasmine-thai-coredo/6HINEvm_RLaGf8rY2VP8mQ" target="_blank"><strong><span style="font-style: normal !important; color: rgb(85, 89, 92);">ウーバーイーツ</span></strong></a><br>【大手町店】 電話：03-3527-9805　<a href="#"><strong><span style="font-style: normal !important; color: rgb(85, 89, 92);">ウーバーイーツ</span></strong></a><br>【立川立飛店】電話：042-512-5231<br>【ソラマチ店】電話：03-6456-1642　<a href="https://www.ubereats.com/jp/store/jasmine-thai-express-東京ソラマチ店-jasmine-thai-express-tokyo-solamachi/viq2yAh8SE-OJSzX-1PDWg" target="_blank"><strong><span style="font-style: normal !important; color: rgb(85, 89, 92);">ウーバーイーツ</span></strong></a><br><br>皆様のご利用を心よりお待ちしております。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="display-6 fw-bold text-white mb-4" style="overflow: clip;">2019</h3>
+                    <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2019-09-30&nbsp; 大手町店 OPEN !</button>
+                        <div class="dropdown-menu" style="background: #f1f1f1;">
+                            <div class="col" style="background: #f1f1f1;">
+                                <p class="text-center" style="font-weight: bold;font-size: 20px;">JASMINE THAI　大手町店　10月4日オープン<br>8月10日から移転作業を進めております、JASMINE THAI 大手町店が10月4日にオープン致します。<br>タイの装飾品と木のぬくもり溢れる店内で、グループからデートまで幅広くご利用いただけます。<br><br>座席　40席<br>営業時間（平日・土・祝）<br>Lunch 11:00～17:00(L.O.16:00) Dinner 17:00～23:00(L.O.22:00)<br>定休日（日）<br><br>皆さまのご来店、心よりお待ちしております。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2019-09-30&nbsp; 価格改定のお知らせ</button>
+                        <div class="dropdown-menu" style="background: #f1f1f1;">
+                            <div class="col" style="background: #f1f1f1;">
+                                <p class="text-center" style="font-weight: bold;font-size: 20px;">価格改定のご案内<br>拝啓<br>皆様におかれましてはますますのご清祥のこととお詫び申し上げます。<br>平素は、弊社の店舗をご愛顧頂きまして、誠にありがとうございます。<br>この度、10月1日の増税に伴い、原材料費の上昇を受けまして、一部商品に価格の改定をさせて頂く事となりました。<br><br>大変心苦しい決断ではございますが、これからもより一層品質向上に努めてまいりますので、今後ともご愛顧のほどよろしくお願い申し上げます。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2019-03-19&nbsp; ソラマチ店 OPEN！</button>
+                        <div class="dropdown-menu" style="background: #f1f1f1;">
+                            <div class="col" style="background: #f1f1f1;">
+                                <p class="text-center" style="font-weight: bold;font-size: 20px;">ジャスミンタイエクスプレス　東京スカイツリータウン・ソラマチ店　オープンのお知らせ<br>3月19日(火)に、ジャスミンタイの8店舗目「ジャスミンタイエクスプレス　東京スカイツリータウン・ソラマチ店」が無事、オープンできました。<br>営業時間：10:00 - 21:00(L.O 20:45)<br>皆さまのご来店、お待ちしております！<br></p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="display-6 fw-bold text-white mb-4" style="overflow: clip;">2018</h3>
+                    <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2018-07-04&nbsp; フジロック本に登場！</button>
+                        <div class="dropdown-menu" style="background: #f1f1f1;">
+                            <div class="col" style="background: #f1f1f1;">
+                                <p class="text-center" style="font-weight: bold;font-size: 20px;">6月29日発売された「100人が語るフジロック伝説」にジャスミンタイが出店者として掲載されました！<br>フジロックの歴史が詰まったお勧めの一冊です。是非ご一読下さい！<br><a href="#" style="font-size: 20px;font-weight: bold;" target="_blank">https://www.shinko-music.co.jp/item/pid1646304/</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown" style="margin-bottom: 5px;text-align: left;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;">2018-06-30&nbsp; 祝！5つ星認定</button>
+                        <div class="dropdown-menu" style="background: #f1f1f1;">
+                            <div class="col" style="background: #f1f1f1;">
+                                <p class="text-center" style="font-weight: bold;font-size: 20px;">この度、六本木本店が5つ星にあたるタイセレクトプレミアムに認定され、2018年6月8日にタイ大使館商務参事官事務所にてナッティヤー・スチンダ―公使より授与されました！<br>ジャスミンタイは六本木店以外の6店舗もタイセレクト認定を受けております。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000" data-aos="fade-right" data-aos-duration="750" id="carousel-1">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img class="img-fluid w-100 d-block" width="859" height="612" src="assets/img/News/Old-2025/news_20180630.jpg" alt="Slide Image" style="border-radius: 20px;"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="859" height="612" src="assets/img/News/Old-2025/news_20180630-2.jpg" alt="Slide Image" style="border-radius: 21px;"></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                        <div class="carousel-indicators"><button type="button" data-bs-target="#carousel-1" data-bs-slide-to="0" class="active"></button> <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="1"></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section style="background: #5c0202;margin-top: -37px;"></section>
+    <footer class="text-white" data-bss-parallax-bg="true" style="overflow: clip;background: #5c0202;background-image: url(&quot;assets/img/ChatGPT%20Image%20Nov%208,%202025,%2001_58_56%20PM.png&quot;);background-position: center;background-size: cover;"><div><br><br><br><br></div>
+        <div class="container"><a class="btn d-flex d-sm-flex justify-content-center justify-content-sm-center" role="button" data-bss-hover-animate="pulse" style="text-align: center;margin-left: 0;" href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-chevrons-up text-white" style="font-size: 23px;">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M7 11l5 -5l5 5"></path>
+                    <path d="M7 17l5 -5l5 5"></path>
+                </svg></a>
+            <div class="row">
+                <div class="col-1 col-md-4"></div>
+                <div class="col-10 col-md-4">
+                    <div class="btn-group" role="group" style="width: 100%;"><a class="btn d-flex d-sm-flex justify-content-center justify-content-sm-center" role="button" data-bss-hover-animate="pulse" style="text-align: center;margin-left: 0;" target="_blank" href="https://www.facebook.com/roppongi.jasminethai"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor" class="text-white text-dark text-decoration-none" style="color: var(--bs-black);font-size: 26px;margin-top: -6px;padding-top: 3px;margin-right: 3px;">
+                                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                                <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
+                            </svg></a><a class="btn d-flex d-sm-flex justify-content-center justify-content-sm-center" role="button" data-bss-hover-animate="pulse" style="text-align: center;margin-left: 0;" target="_blank" href="https://www.instagram.com/jasmine_thai_official/"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram text-white text-dark text-decoration-none" style="color: var(--bs-black);font-size: 19px;margin-top: -1px;">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                            </svg></a><a class="btn d-flex d-sm-flex justify-content-center justify-content-sm-center" role="button" data-bss-hover-animate="pulse" style="text-align: center;margin-left: 0;" target="_blank" href="https://www.tiktok.com/@jasmine_thai_official"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-tiktok text-white text-dark text-decoration-none" style="color: var(--bs-black);font-size: 24px;margin-top: -6px;padding-top: 3px;">
+                                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"></path>
+                            </svg></a></div>
+                </div>
+                <div class="col-1 col-md-4"></div>
+            </div>
+        </div>
+        <div class="container py-4 py-lg-5">
+            <div class="row my-5">
+                <div class="col text-center"><a style="border-color: #ffffff;" data-bs-target="#Term" data-bs-toggle="modal">Terms &amp; Privacy</a></div>
+            </div>
+        </div>
+        <div class="col text-center" style="color: var(--cc-bg);background: rgba(92,2,2,0);"><a class="text-decoration-none" style="border-color: #ffffff;color: var(--cc-bg);text-align: center;background: rgba(92,2,2,0);" href="index.html">@ Jasmine Thai 2025</a><div><br></div></div>
+    </footer>
+    <div></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/aos.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/CookieConsentComponent-cookieconsent.js"></script>
+</body>
+
+</html>

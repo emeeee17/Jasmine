@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Jasmine</title>
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/FavIcon/jasmine180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/FavIcon/Jasmin16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/FavIcon/Jasmin16x16.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/FavIcon/jasmine32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/FavIcon/jasmine32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/FavIcon/jasmine180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/FavIcon/jasmine192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/FavIcon/jasmine512.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/bss-overrides.css">
+    <link rel="stylesheet" href="assets/css/aos.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/stylex.css">
+    <link rel="stylesheet" href="assets/css/Cookie-Banner-CookieBanner.css">
+    <link rel="stylesheet" href="assets/css/Cookie-Banner.css">
+    <link rel="stylesheet" href="assets/css/CookieConsentComponent.css">
+    <link rel="stylesheet" href="assets/css/Footer-with-Pricing.css">
+    <link rel="stylesheet" href="assets/css/Modern-Contact-Form.css">
+    <link rel="stylesheet" href="assets/css/Navbar-With-Button-icons.css">
+    <link rel="stylesheet" href="assets/css/Popup-Modal-with-Cookie.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Timeline.css">
+</head>
+
+<body>
+    <div class="modal fade" role="dialog" tabindex="-1" id="Term">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content"><img class="position-absolute" src="assets/img/JasminLogo-1%20copy.png" width="40" height="43" style="margin-top: 5px;margin-left: 14px;">
+                <div class="modal-header" style="margin-top: -16px;margin-bottom: -11px;"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 10px;"></button></div>
+                <div class="modal-body">
+                    <div class="dropdown" style="margin-bottom: 14px;text-align: center;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button">🇯🇵 利用規約・プライバシー<strong>（Japanese）</strong>&nbsp;</button>
+                        <div class="dropdown-menu">
+                            <p style="margin-top: 19px;font-weight: bold;text-align: center;">🇯🇵 <strong>利用規約（Japanese）</strong><br><strong>最終更新日：2025年</strong><br>本ウェブサイト（以下「当サイト」）は、Jasmine Thai Restaurant（以下「当社」）が運営しています。当サイトをご利用いただく前に、以下の利用規約をよくお読みください。当サイトを利用することで、本規約に同意したものとみなします。<br>1. 当サイトの目的<br>当サイトは、メニュー、サービス内容、東京都内12店舗の情報、およびお問い合わせ窓口など、当社に関する一般情報を提供することを目的としています。<br>2. 知的財産権<br>当サイトに掲載されている文章、画像、ロゴ、デザイン等の著作権は当社に帰属します。無断転載・複製・配布を禁じます。<br>3. 禁止事項<br>ユーザーは以下の行為を行ってはなりません：<br><br><br>不正・違法目的での利用<br><br><br>当サイトの運営を妨害する行為<br><br><br>当社コンテンツの無断使用<br><br><br>4. 外部リンクについて<br>当サイトには第三者のウェブサイトへのリンクが含まれる場合があります。当社はこれらのサイトの内容について責任を負いません。<br>5. 免責事項<br>当社は情報の正確性に努めますが、完全性や最新性を保証するものではありません。掲載内容（価格、営業時間など）は予告なく変更される場合があります。<br>6. 責任制限<br>当サイト利用によって発生した損害について、当社は一切責任を負いません。<br>7. 規約の変更<br>当社は本規約を必要に応じて変更することがあります。変更後の規約は当サイトに掲載した時点で効力を有します。<br>8. お問い合わせ<br>本規約に関するお問い合わせは以下までご連絡ください：<br><br><strong>Jasmine Thai Restaurant 本部（東京都）</strong><br><br>🇯🇵 <strong>プライバシーポリシー（Japanese）</strong><br>1. 基本方針<br>Jasmine Thai Restaurant（以下「当社」）は、お客様の個人情報を適切に保護することを重要な責務と認識しています。<br>2. 取得する情報<br>当社は以下の情報を取得する場合があります：<br><br><br>氏名、メールアドレス、電話番号（お問い合わせ時）<br><br><br>予約に関する情報<br><br><br>フォームに入力された内容<br><br>※当サイトで決済情報を取得することはありません。<br><br><br>3. 利用目的<br>取得した情報は以下の目的で利用します：<br><br><br>お問い合わせへの回答<br><br><br>予約確認等の連絡<br><br><br>サイト運営・サービス改善<br><br><br>本部および東京12店舗での業務管理<br><br><br>4. 個人情報の提供<br>法律で要求される場合を除き、第三者への提供は行いません。<br><br>ただし、お問い合わせ内容に応じて、必要な範囲で当社各店舗に共有する場合があります。<br>5. セキュリティ対策<br>当社は適切な安全管理措置を講じ、個人情報の漏えいや不正アクセスを防止します。<br>6. お客様の権利<br>お客様は以下の請求が可能です：<br><br><br>保有個人情報の開示<br><br><br>訂正・削除<br><br><br>利用停止の請求<br><br><br>7. ポリシーの変更<br>本ポリシーは必要に応じて改定される場合があります。<br>8. お問い合わせ<br>個人情報の取扱いに関するお問い合わせは以下まで：<br><br><strong>Jasmine Thai Restaurant 本部（東京都）</strong></p>
+                        </div>
+                    </div>
+                    <div class="dropdown" style="text-align: center;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button">🌐 Terms &amp; Privacy<strong>（English）</strong>&nbsp;</button>
+                        <div class="dropdown-menu">
+                            <p style="margin-top: 19px;font-weight: bold;text-align: center;">🌐 <strong>Terms of Use（English）</strong><br><strong>Last Updated:</strong> 2025<br>Welcome to the official website of <strong>Jasmine Thai Restaurant</strong> (“we”, “our”, “the Company”). By accessing or using this website, you agree to comply with the following Terms of Use. Please read them carefully.<br>1. Purpose of Website<br>This website provides general information about Jasmine Thai Restaurant, including our menu, services, branch locations in Tokyo, and contact details.<br>2. Intellectual Property<br>All content on this website—including text, images, logos, and design—is the property of Jasmine Thai Restaurant. Unauthorized copying, reproduction, or distribution is prohibited.<br>3. Prohibited Actions<br>Users must not:<br><br><br>Use the website for fraudulent or unlawful purposes<br><br><br>Interfere with website operation<br><br><br>Copy or misuse our content without permission<br><br><br>4. Links to Third-Party Sites<br>This website may include links to external websites. We are not responsible for the content or policies of such third-party sites.<br>5. Disclaimer<br>We strive to ensure all information is accurate, but we do not guarantee completeness or correctness. Information (including prices, menus, and operating hours) may change without notice.<br>6. Limitation of Liability<br>We are not liable for any damages resulting from website use, system errors, or data loss.<br>7. Changes to Terms<br>We may revise these Terms at any time. Continued use of the website means you accept the updated Terms.<br>8. Contact<br>For inquiries regarding these Terms, please contact our head office:<br><br><strong>Jasmine Thai Restaurant – Head Office, Tokyo</strong><br><br>🔒 <strong>Privacy Policy（English）</strong><br><strong>1. Introduction</strong><br><br>Jasmine Thai Restaurant (“we”, “our”) is committed to protecting your personal information.<br><strong>2. Information We Collect</strong><br><br>We may collect:<br><br><br>Name, email, phone number (when you contact us)<br><br><br>Reservation details<br><br><br>Inquiries submitted through forms<br><br><br>We do <strong>not</strong> collect payment information through the website.<br><strong>3. Purpose of Use</strong><br><br>Personal information is used for:<br><br><br>Responding to inquiries<br><br><br>Reservation-related communication<br><br><br>Improving website functionality<br><br><br>Internal administrative purposes<br><br><br><strong>4. Data Sharing</strong><br><br>We do not share personal information with third parties except:<br><br><br>When required by law<br><br><br>When necessary to respond to an inquiry (e.g., directing your message to one of our 12 Tokyo branches)<br><br><br><strong>5. Data Security</strong><br><br>We implement reasonable security measures to protect your data.<br><strong>6. User Rights</strong><br><br>Users may request:<br><br><br>Disclosure of their stored information<br><br><br>Correction or deletion<br><br><br>Suspension of data use<br><br><br><strong>7. Policy Updates</strong><br><br>This Privacy Policy may be updated periodically.<br><strong>8. Contact</strong><br><br>For privacy-related matters, contact:<br><br><strong>Jasmine Thai Restaurant – Head Office, Tokyo</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p style="text-align: center;font-weight: bold;">Jasmine Thai Co., Ltd<br>Dah Chong No.2 Building 5F-Room B<br>5-18-2 Roppongi Minato-ku, Tokyo 1060032</p><a class="btn" role="button" href="tel: +813-6459-1797" target="_blank" style="border-radius: 0px;color: var(--cc-bg);background: var(--bs-black);"><i class="icon ion-ios-telephone" style="margin-right: 4px;font-size: 17px;"></i>TEL. 0<strong>3-6459-1797</strong></a><a class="btn btn-primary" role="button" href="https://maps.app.goo.gl/mHhqXq7DkNMrJpVU9?g_st=ipc" target="_blank" style="border-radius: 0px;"><i class="icon ion-android-pin" style="margin-right: 4px;font-size: 20px;"></i>Google map</a>
+                <div class="container" style="text-align: center;background: rgba(7,7,7,0);"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 19px;margin-bottom: 19px;"></button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="headQ">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content"><img class="position-absolute" src="assets/img/JasminLogo-1%20copy.png" width="40" height="43" style="margin-top: 5px;margin-left: 14px;">
+                <div class="modal-header" style="margin-top: -16px;margin-bottom: -11px;"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 10px;"></button></div>
+                <div class="modal-body"></div>
+                <p style="text-align: center;font-weight: bold;">Jasmine Thai Co., Ltd<br>Dah Chong No.2 Building 5F-Room B<br>5-18-2 Roppongi Minato-ku, Tokyo 1060032</p><a class="btn" role="button" href="tel: +813-6459-1797" target="_blank" style="border-radius: 0px;color: var(--cc-bg);background: var(--bs-black);"><i class="icon ion-ios-telephone" style="margin-right: 4px;font-size: 17px;"></i>TEL. 0<strong>3-6459-1797</strong></a><a class="btn btn-primary" role="button" href="https://maps.app.goo.gl/mHhqXq7DkNMrJpVU9?g_st=ipc" target="_blank" style="border-radius: 0px;"><i class="icon ion-android-pin" style="margin-right: 4px;font-size: 20px;"></i>Google map</a>
+                <div class="container" style="text-align: center;background: rgba(7,7,7,0);"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 19px;margin-bottom: 19px;"></button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="branch1x">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content"><img class="position-absolute" src="assets/img/JasminLogo-1%20copy.png" width="40" height="43" style="margin-top: 5px;margin-left: 14px;">
+                <div class="modal-header" style="margin-top: -16px;margin-bottom: -11px;"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 10px;"></button></div>
+                <div class="modal-body">
+                    <h1>ジャスミンタイテラス　赤坂店</h1>
+                    <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" id="carousel-2">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch/testsizeaaaa.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch/testsizeAA.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch/testsizeA.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch/testsizeaaa.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch/testsizeB.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch/testsizeC.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch/testsizeD.jpg" alt="Slide Image"></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-2" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-2" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                    </div>
+                    <p style="margin-top: 19px;font-weight: bold;">〒107-0052 東京都港区赤坂１-８-１　赤坂インターシティAIR　1階</p>
+                    <p style="font-weight: bold;">Lunch　 11：00～15：00&nbsp; （L.O.&nbsp; 14：30） <br>Dinner　17：00～22：30&nbsp; （L.O.&nbsp; 21：45）</p>
+                </div><a class="btn" role="button" href="tel: +813-6277-7516" target="_blank" style="border-radius: 0px;color: var(--cc-bg);background: var(--bs-black);"><i class="icon ion-ios-telephone" style="margin-right: 4px;font-size: 17px;"></i>TEL. 0<strong>3-6277-7516</strong></a><a class="btn btn-danger" role="button" href="https://tabelog.com/tokyo/A1308/A130802/13303474/" target="_blank" style="border-radius: 0px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-calendar-user" style="margin-right: 4px;font-size: 25px;">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 21h-6a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4.5"></path>
+                        <path d="M16 3v4"></path>
+                        <path d="M8 3v4"></path>
+                        <path d="M4 11h16"></path>
+                        <path d="M19 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                        <path d="M22 22a2 2 0 0 0 -2 -2h-2a2 2 0 0 0 -2 2"></path>
+                    </svg>ご予約はこちら</a><a class="btn btn-primary" role="button" href="https://maps.app.goo.gl/AaUo3RpfSbo9ngnP7" target="_blank" style="border-radius: 0px;"><i class="icon ion-android-pin" style="margin-right: 4px;font-size: 20px;"></i>Google map</a>
+                <div class="container" style="text-align: center;background: rgba(7,7,7,0);"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 19px;margin-bottom: 19px;"></button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="branch2">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content"><img class="position-absolute" src="assets/img/JasminLogo-1%20copy.png" width="40" height="43" style="margin-top: 5px;margin-left: 14px;">
+                <div class="modal-header" style="margin-top: -16px;margin-bottom: -11px;"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 10px;"></button></div>
+                <div class="modal-body">
+                    <h1>ジャスミンタイ<strong><span style="font-style: normal !important; color: var(--bs-heading-color);">　</span></strong>六本木本店</h1>
+                    <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" id="carousel-1">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch2/B2-1.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch2/B2-2.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch2/B2-3.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch2/B2-4.jpg" alt="Slide Image"></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                    </div>
+                    <p style="margin-top: 19px;font-weight: bold;">〒106-0032 東京都港区六本木5-18-21　六本木Five Plaza Bldg 2F</p>
+                    <p style="font-weight: bold;">Lunch　 11：00～15：00&nbsp; （L.O.&nbsp; 14：30） <br>Dinner　17：00～23：00&nbsp; （L.O.&nbsp; 22：00）</p>
+                </div><a class="btn" role="button" href="tel: +813-5114-5030" target="_blank" style="border-radius: 0px;color: var(--cc-bg);background: var(--bs-black);"><i class="icon ion-ios-telephone" style="margin-right: 4px;font-size: 17px;"></i>TEL. 03-5114-5030</a><a class="btn btn-danger" role="button" href="https://r.gnavi.co.jp/plan/a734600/plan-reserve/plan/plan_list/" target="_blank" style="border-radius: 0px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-calendar-user" style="margin-right: 4px;font-size: 25px;">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 21h-6a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4.5"></path>
+                        <path d="M16 3v4"></path>
+                        <path d="M8 3v4"></path>
+                        <path d="M4 11h16"></path>
+                        <path d="M19 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                        <path d="M22 22a2 2 0 0 0 -2 -2h-2a2 2 0 0 0 -2 2"></path>
+                    </svg>ご予約はこちら</a><a class="btn btn-primary" role="button" href="https://www.google.com/maps/place/Jasmine+Thai+Roppongi/@35.6600563,139.7337924,15.43z/data=!4m6!3m5!1s0x60188b9c06558103:0x6c8b0ef9867fee20!8m2!3d35.660944!4d139.736946!16s%2Fg%2F1t_kgj0_?hl=en-GB&amp;authuser=2&amp;entry=ttu&amp;g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" target="_blank" style="border-radius: 0px;"><i class="icon ion-android-pin" style="margin-right: 4px;font-size: 20px;"></i>Google map</a>
+                <div class="container" style="text-align: center;background: rgba(7,7,7,0);"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 19px;margin-bottom: 19px;"></button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="branch3">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content"><img class="position-absolute" src="assets/img/JasminLogo-1%20copy.png" width="40" height="43" style="margin-top: 5px;margin-left: 14px;">
+                <div class="modal-header" style="margin-top: -16px;margin-bottom: -11px;"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 10px;"></button></div>
+                <div class="modal-body">
+                    <h1>ジャスミンタイ　コレド室町店</h1>
+                    <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" id="carousel-5">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch3/B3-1.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch3/B3-2.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch3/B3-3.jpg" alt="Slide Image"></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-5" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-5" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                    </div>
+                    <p style="margin-top: 19px;font-weight: bold;">〒103-0022 東京都中央区日本橋室町2-2-1　コレド室町1 3F</p>
+                    <p style="font-weight: bold;">Lunch　 11：00～15：00&nbsp; （L.O.&nbsp; 14：30） <br>Dinner　17：00～23：00&nbsp; （L.O.&nbsp; 22：00）</p>
+                </div><a class="btn" role="button" href="tel: +813-6225-2442" target="_blank" style="border-radius: 0px;color: var(--cc-bg);background: var(--bs-black);"><i class="icon ion-ios-telephone" style="margin-right: 4px;font-size: 17px;"></i>TEL. 03-6225-2442</a><a class="btn btn-primary" role="button" href="https://maps.app.goo.gl/4mmXad1mbLLepWW1A" target="_blank" style="border-radius: 0px;"><i class="icon ion-android-pin" style="margin-right: 4px;font-size: 20px;"></i>Google map</a>
+                <div class="container" style="text-align: center;background: rgba(7,7,7,0);"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 19px;margin-bottom: 19px;"></button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="branch4">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content"><img class="position-absolute" src="assets/img/JasminLogo-1%20copy.png" width="40" height="43" style="margin-top: 5px;margin-left: 14px;">
+                <div class="modal-header" style="margin-top: -16px;margin-bottom: -11px;"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 10px;"></button></div>
+                <div class="modal-body">
+                    <h1>ジャスミンタイ　池袋店</h1>
+                    <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" id="carousel-6">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch4/B4-1.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch4/B4-2.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch4/B4-3.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch4/B4-4.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch4/B4-5.jpg" alt="Slide Image"></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-6" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-6" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                    </div>
+                    <p style="margin-top: 19px;font-weight: bold;">〒171-0022 東京都豊島区南池袋1-28-1 ヨドバシHD池袋ビル8F</p>
+                    <p style="font-weight: bold;">Lunch　 11：00～16：00&nbsp; （L.O.&nbsp; 16：00） <br>Dinner　16：00～22：00&nbsp; （L.O.&nbsp; 21：00）</p>
+                </div><a class="btn" role="button" href="tel: +813-5927-1225" target="_blank" style="border-radius: 0px;color: var(--cc-bg);background: var(--bs-black);"><i class="icon ion-ios-telephone" style="margin-right: 4px;font-size: 17px;"></i>TEL. 03-5927-1225</a><a class="btn btn-primary" role="button" href="https://maps.app.goo.gl/BmZ989aAw5wsGpAW6" target="_blank" style="border-radius: 0px;"><i class="icon ion-android-pin" style="margin-right: 4px;font-size: 20px;"></i>Google map</a>
+                <div class="container" style="text-align: center;background: rgba(7,7,7,0);"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 19px;margin-bottom: 19px;"></button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="branch5">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content"><img class="position-absolute" src="assets/img/JasminLogo-1%20copy.png" width="40" height="43" style="margin-top: 5px;margin-left: 14px;">
+                <div class="modal-header" style="margin-top: -16px;margin-bottom: -11px;"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 10px;"></button></div>
+                <div class="modal-body">
+                    <h1>ジャスミンタイ　四谷店</h1>
+                    <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" id="carousel-7">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch5/B5-1.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch5/B5-7.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch5/B5-6.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch5/B5-2.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch5/B5-3.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch5/B5-4.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch5/B5-5.jpg" alt="Slide Image"></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-7" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-7" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                    </div>
+                    <p style="margin-top: 19px;font-weight: bold;">〒160-0004 東京都新宿区四谷1-17　後藤ビル1F</p>
+                    <p style="font-weight: bold;">Lunch　 11：00～15：00&nbsp; （L.O.&nbsp; 16：30） <br>Dinner　17：00～23：00&nbsp; （L.O.&nbsp; 22：00）</p>
+                </div><a class="btn" role="button" href="tel: +813-5368-1091" target="_blank" style="border-radius: 0px;color: var(--cc-bg);background: var(--bs-black);"><i class="icon ion-ios-telephone" style="margin-right: 4px;font-size: 17px;"></i>TEL. 03-5368-1091</a><a class="btn btn-danger" role="button" href="https://r.gnavi.co.jp/a734601/" target="_blank" style="border-radius: 0px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-calendar-user" style="margin-right: 4px;font-size: 25px;">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 21h-6a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4.5"></path>
+                        <path d="M16 3v4"></path>
+                        <path d="M8 3v4"></path>
+                        <path d="M4 11h16"></path>
+                        <path d="M19 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                        <path d="M22 22a2 2 0 0 0 -2 -2h-2a2 2 0 0 0 -2 2"></path>
+                    </svg>ご予約はこちら</a><a class="btn btn-primary" role="button" href="https://maps.app.goo.gl/RDAjrKdsLn8Lgr6q6" target="_blank" style="border-radius: 0px;"><i class="icon ion-android-pin" style="margin-right: 4px;font-size: 20px;"></i>Google map</a>
+                <div class="container" style="text-align: center;background: rgba(7,7,7,0);"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 19px;margin-bottom: 19px;"></button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="branch6">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content"><img class="position-absolute" src="assets/img/JasminLogo-1%20copy.png" width="40" height="43" style="margin-top: 5px;margin-left: 14px;">
+                <div class="modal-header" style="margin-top: -16px;margin-bottom: -11px;"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 10px;"></button></div>
+                <div class="modal-body">
+                    <h1>ジャスミンタイ 池袋 サンシャインシティ店</h1>
+                    <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" id="carousel-8">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch6/B6-1.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch6/B6-2.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch6/B6-3.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch6/B6-4.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch6/B6-5.jpg" alt="Slide Image"></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-8" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-8" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                    </div>
+                    <p style="margin-top: 19px;font-weight: bold;">〒170-0013　東京都豊島区東池袋三丁目1-1 サンシャインシティ専門店街アルパ３階</p>
+                    <p style="font-weight: bold;">Lunch　 11：00～16：00&nbsp; （L.O.&nbsp; 16：00） <br>Dinner　16：00～22：00&nbsp; （L.O.&nbsp; 21：00）</p>
+                </div><a class="btn" role="button" href="tel: +813-6914-0163" target="_blank" style="border-radius: 0px;color: var(--cc-bg);background: var(--bs-black);"><i class="icon ion-ios-telephone" style="margin-right: 4px;font-size: 17px;"></i>TEL. 03-6914-0163</a><a class="btn btn-primary" role="button" href="https://maps.app.goo.gl/PGHk7q8WwxRGs7ZPA" target="_blank" style="border-radius: 0px;"><i class="icon ion-android-pin" style="margin-right: 4px;font-size: 20px;"></i>Google map</a>
+                <div class="container" style="text-align: center;background: rgba(7,7,7,0);"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 19px;margin-bottom: 19px;"></button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="branch7">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content"><img class="position-absolute" src="assets/img/JasminLogo-1%20copy.png" width="40" height="43" style="margin-top: 5px;margin-left: 14px;">
+                <div class="modal-header" style="margin-top: -16px;margin-bottom: -11px;"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 10px;"></button></div>
+                <div class="modal-body">
+                    <h1>ジャスミンタイ 　大手町店</h1>
+                    <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" id="carousel-9">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch7/B7-1.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch7/B7-2.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch7/B7-3.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch7/B7-4.jpg" alt="Slide Image"></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-9" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-9" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                    </div>
+                    <p style="margin-top: 19px;font-weight: bold;">〒100-0004 東京都千代田区大手町 1-5-5 大手町タワー OOTEMORI B2F</p>
+                    <p style="font-weight: bold;">Lunch　 11：00～15：00&nbsp; （L.O.&nbsp; 14：30） <br>Dinner　17：00～22：00&nbsp; （L.O.&nbsp; 21：00）</p>
+                </div><a class="btn" role="button" href="tel: +813-6273-4317" target="_blank" style="border-radius: 0px;color: var(--cc-bg);background: var(--bs-black);"><i class="icon ion-ios-telephone" style="margin-right: 4px;font-size: 17px;"></i>TEL. 03-6273-4317</a><a class="btn btn-primary" role="button" href="https://maps.app.goo.gl/HbBiJmXTKHayM86dA" target="_blank" style="border-radius: 0px;"><i class="icon ion-android-pin" style="margin-right: 4px;font-size: 20px;"></i>Google map</a>
+                <div class="container" style="text-align: center;background: rgba(7,7,7,0);"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 19px;margin-bottom: 19px;"></button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="branch8">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content"><img class="position-absolute" src="assets/img/JasminLogo-1%20copy.png" width="40" height="43" style="margin-top: 5px;margin-left: 14px;">
+                <div class="modal-header" style="margin-top: -16px;margin-bottom: -11px;"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 10px;"></button></div>
+                <div class="modal-body">
+                    <h1>ジャスミンタイエクスプレス　東京スカイツリータウン・ソラマチ店（フードコート内）</h1>
+                    <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" id="carousel-10">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch8/B8-1.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch8/B8-2.jpg" alt="Slide Image"></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-10" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-10" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                    </div>
+                    <p style="margin-top: 19px;font-weight: bold;">〒131-0045　東京都墨田区押上1-1-2 東京スカイツリータウン・ソラマチ　ウエストヤード3階</p>
+                    <p style="font-weight: bold;">10：00～21：00&nbsp; （L.O.&nbsp; 20：45） <br><br></p>
+                </div><a class="btn" role="button" href="tel: +813-6456-1642" target="_blank" style="border-radius: 0px;color: var(--cc-bg);background: var(--bs-black);"><i class="icon ion-ios-telephone" style="margin-right: 4px;font-size: 17px;"></i>TEL. 03-6456-1642</a><a class="btn btn-primary" role="button" href="https://maps.app.goo.gl/xtbpbejKiktDJX8h7" target="_blank" style="border-radius: 0px;"><i class="icon ion-android-pin" style="margin-right: 4px;font-size: 20px;"></i>Google map</a>
+                <div class="container" style="text-align: center;background: rgba(7,7,7,0);"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 19px;margin-bottom: 19px;"></button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="branch9">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content"><img class="position-absolute" src="assets/img/JasminLogo-1%20copy.png" width="40" height="43" style="margin-top: 5px;margin-left: 14px;">
+                <div class="modal-header" style="margin-top: -16px;margin-bottom: -11px;"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 10px;"></button></div>
+                <div class="modal-body">
+                    <h1>Thai Street by JASMINE THAI 日比谷フォートタワー店</h1>
+                    <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" id="carousel-11">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch9/B9-1.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch9/B9-2.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch9/B9-3.jpg" alt="Slide Image"></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-11" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-11" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                    </div>
+                    <p style="margin-top: 19px;font-weight: bold;">〒105-0003　東京都港区西新橋1-1-1 日比谷フォートタワー 1F</p>
+                    <p style="font-weight: bold;">Lunch　 11：00～15：00&nbsp; （L.O.&nbsp; 14：30） <br>Dinner　17：00～22：00&nbsp; （L.O.&nbsp; 21：30）</p>
+                </div><a class="btn" role="button" href="tel: +813-6206-1646" target="_blank" style="border-radius: 0px;color: var(--cc-bg);background: var(--bs-black);"><i class="icon ion-ios-telephone" style="margin-right: 4px;font-size: 17px;"></i>TEL. 03-6206-1646</a><a class="btn btn-primary" role="button" href="https://maps.app.goo.gl/b2v1RAx4cv2qwYXe6" target="_blank" style="border-radius: 0px;"><i class="icon ion-android-pin" style="margin-right: 4px;font-size: 20px;"></i>Google map</a>
+                <div class="container" style="text-align: center;background: rgba(7,7,7,0);"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 19px;margin-bottom: 19px;"></button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="branch10">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content"><img class="position-absolute" src="assets/img/JasminLogo-1%20copy.png" width="40" height="43" style="margin-top: 5px;margin-left: 14px;">
+                <div class="modal-header" style="margin-top: -16px;margin-bottom: -11px;"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 10px;"></button></div>
+                <div class="modal-body">
+                    <h1>ジャスミンタイ　八重洲店</h1>
+                    <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" id="carousel-12">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch10/B10-1.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch10/B10-2.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch10/B10-3.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch10/B10-4.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch10/B10-5.jpg" alt="Slide Image"></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-12" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-12" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                    </div>
+                    <p style="margin-top: 19px;font-weight: bold;">〒103-0028 東京都中央区八重洲　1－4－16　東京建物八重洲ビル八重仲ダイニングB1F</p>
+                    <p style="font-weight: bold;">Lunch　 11：00～15：00&nbsp; （L.O.&nbsp; 14：30） <br>Dinner　17：00～23：00&nbsp; （L.O.&nbsp; 22：00）</p>
+                </div><a class="btn" role="button" href="tel: +813-3527-9805" target="_blank" style="border-radius: 0px;color: var(--cc-bg);background: var(--bs-black);"><i class="icon ion-ios-telephone" style="margin-right: 4px;font-size: 17px;"></i>TEL. 03-3527-9805</a><a class="btn btn-danger" role="button" href="https://tabelog.com/tokyo/A1302/A130202/13134178/" target="_blank" style="border-radius: 0px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-calendar-user" style="margin-right: 4px;font-size: 25px;">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 21h-6a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4.5"></path>
+                        <path d="M16 3v4"></path>
+                        <path d="M8 3v4"></path>
+                        <path d="M4 11h16"></path>
+                        <path d="M19 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                        <path d="M22 22a2 2 0 0 0 -2 -2h-2a2 2 0 0 0 -2 2"></path>
+                    </svg>ご予約はこちら</a><a class="btn btn-primary" role="button" href="https://maps.app.goo.gl/oCus8ZW5fRgzkuG29" target="_blank" style="border-radius: 0px;"><i class="icon ion-android-pin" style="margin-right: 4px;font-size: 20px;"></i>Google map</a>
+                <div class="container" style="text-align: center;background: rgba(7,7,7,0);"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 19px;margin-bottom: 19px;"></button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="branch11">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content"><img class="position-absolute" src="assets/img/JasminLogo-1%20copy.png" width="40" height="43" style="margin-top: 5px;margin-left: 14px;">
+                <div class="modal-header" style="margin-top: -16px;margin-bottom: -11px;"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 10px;"></button></div>
+                <div class="modal-body">
+                    <h1>ジャスミンタイ　田町タワー店</h1>
+                    <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" id="carousel-13">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch11/B11-1.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch11/B11-2.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch11/B11-3.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch11/B11-4.jpg" alt="Slide Image"></div>
+                            <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1536" height="1536" src="assets/img/Branch11/B11-5.jpg" alt="Slide Image"></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-13" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-13" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                    </div>
+                    <p style="margin-top: 19px;font-weight: bold;">〒108-0014　東京都港区芝5丁目33番11号</p>
+                    <p style="font-weight: bold;">Lunch　 11：00～15：00&nbsp; （L.O.&nbsp; 14：30） <br>Dinner　17：00～22：00&nbsp; （L.O.&nbsp; 21：00）</p>
+                </div><a class="btn" role="button" href="tel: +813-6435-4132" target="_blank" style="border-radius: 0px;color: var(--cc-bg);background: var(--bs-black);"><i class="icon ion-ios-telephone" style="margin-right: 4px;font-size: 17px;"></i>TEL. 03-6435-4132</a><a class="btn btn-primary" role="button" href="https://maps.app.goo.gl/pg7ebAn85w1kikDc7" target="_blank" style="border-radius: 0px;"><i class="icon ion-android-pin" style="margin-right: 4px;font-size: 20px;"></i>Google map</a>
+                <div class="container" style="text-align: center;background: rgba(7,7,7,0);"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 19px;margin-bottom: 19px;"></button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="menu">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content"><img class="position-absolute" src="assets/img/JasminLogo-1%20copy.png" width="40" height="43" style="margin-top: 5px;margin-left: 14px;">
+                <div class="modal-header" style="margin-top: -16px;margin-bottom: -11px;"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="text-align: center;margin-top: 13px;"></button></div>
+                <div class="modal-body">
+                    <div class="d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+                        <div class="swiper" id="swiper-3" data-bss-swiper="{&quot;direction&quot;:&quot;horizontal&quot;,&quot;loop&quot;:true,&quot;keyboard&quot;:true,&quot;effect&quot;:&quot;cards&quot;,&quot;pagination&quot;:{&quot;el&quot;:&quot;.swiper-pagination&quot;,&quot;type&quot;:&quot;fraction&quot;},&quot;navigation&quot;:{&quot;nextEl&quot;:&quot;.swiper-button-next&quot;,&quot;prevEl&quot;:&quot;.swiper-button-prev&quot;},&quot;scrollbar&quot;:{&quot;el&quot;:&quot;.swiper-scrollbar&quot;}}">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="3508" height="2480" src="assets/img/Menu/Menu1_PC.jpg" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="3508" height="2480" src="assets/img/Menu/Menu2_PC.jpg" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="3508" height="2480" src="assets/img/Menu/Menu3_PC.jpg" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="3508" height="2480" src="assets/img/Menu/Menu4_PC.jpg" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="3508" height="2480" src="assets/img/Menu/Menu5_PC.jpg" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="3508" height="2480" src="assets/img/Menu/Menu6_PC.jpg" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="3508" height="2480" src="assets/img/Menu/Menu7_PC.jpg" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="3508" height="2480" src="assets/img/Menu/Menu8_PC.jpg" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="3508" height="2480" src="assets/img/Menu/Menu9_PC.jpg" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="3508" height="2480" src="assets/img/Menu/Menu10_PC.jpg" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="3508" height="2480" src="assets/img/Menu/Menu11_PC.jpg" alt="Slide Image"></div>
+                            </div>
+                            <div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                    <div class="d-print-none d-md-none d-lg-none d-xl-none d-xxl-none">
+                        <div class="swiper" id="swiper-4" data-bss-swiper="{&quot;direction&quot;:&quot;horizontal&quot;,&quot;loop&quot;:true,&quot;keyboard&quot;:true,&quot;effect&quot;:&quot;cards&quot;,&quot;pagination&quot;:{&quot;el&quot;:&quot;.swiper-pagination&quot;,&quot;type&quot;:&quot;fraction&quot;},&quot;scrollbar&quot;:{&quot;el&quot;:&quot;.swiper-scrollbar&quot;}}">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1240" height="1754" src="assets/img/Menu/M1.jpg" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="2552" height="3580" src="assets/img/Menu/M2.jpg" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1277" height="1790" src="assets/img/Menu/M3.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1276" height="1790" src="assets/img/Menu/M4.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1277" height="1790" src="assets/img/Menu/M5.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1276" height="1790" src="assets/img/Menu/M6.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1277" height="1790" src="assets/img/Menu/M7.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1277" height="1790" src="assets/img/Menu/M8.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1276" height="1790" src="assets/img/Menu/M9.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1277" height="1790" src="assets/img/Menu/M10.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1277" height="1790" src="assets/img/Menu/M11.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1277" height="1790" src="assets/img/Menu/M12.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1277" height="1790" src="assets/img/Menu/M13.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1276" height="1790" src="assets/img/Menu/M14.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1276" height="1790" src="assets/img/Menu/M15.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1276" height="1790" src="assets/img/Menu/M16.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1276" height="1790" src="assets/img/Menu/M17.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1277" height="1790" src="assets/img/Menu/M18.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1277" height="1790" src="assets/img/Menu/M19.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1276" height="1790" src="assets/img/Menu/M20.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1276" height="1790" src="assets/img/Menu/M21.png" alt="Slide Image"></div>
+                                <div class="swiper-slide"><img class="img-fluid w-100" width="1277" height="1790" src="assets/img/Menu/M22.png" alt="Slide Image"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                    <div style="text-align: center;"><button class="btn-close fs-1" type="button" aria-label="Close" data-bs-dismiss="modal" style="text-align: center;margin-top: 13px;"></button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-md sticky-top py-3 navbar-light">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#top"><img src="assets/img/Logo9zz.svg" style="margin-top: -313px;width: 254px;margin-bottom: -309px;margin-left: 1%;margin-right: -13px;overflow: clip;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse text-end" id="navcol-2">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="#news">NEWS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#branchj">contact</a></li>
+                </ul><a class="btn ms-md-2" role="button" data-bss-hover-animate="pulse" style="background: #000000;color: var(--cc-bg);" href="#menuu"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-book" style="font-size: 21px;">
+                        <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"></path>
+                    </svg></a>
+            </div>
+        </div>
+    </nav>
+    <section id="top" style="overflow: clip;margin-bottom: -62px;"><div><!-- 3DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD -->
+    
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="generator" content="Geany 1.37.1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link href="assets/css/stylex.css" rel="stylesheet">
+<!-- The following libraries and polyfills are recommended to maximize browser support -->
+<!-- NOTE: you must adjust the paths as appropriate for your project -->
+
+<!--  REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+ <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script> 
+
+<!--  OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+<!--     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script> -->
+
+<!--  OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+<!--     <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script> -->
+
+<!--  OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+<!--
+<script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+-->
+</div>
+        <div class="d-print-none d-md-none d-lg-none d-xl-none d-xxl-none" data-bss-scroll-zoom="true" data-bss-scroll-zoom-speed="0.3" style="overflow: clip;background: url(&quot;assets/img/heroxPCy.jpg&quot;) center / contain no-repeat;margin-bottom: 10%;background-image: url(&quot;assets/img/gpt2.jpg&quot;);background-position: center;background-size: cover;">
+            <div class="text-center d-flex flex-column justify-content-center align-items-center px-3 py-4 hero-content" style="overflow: clip;background: rgba(243,244,245,0);">
+                <h1 style="margin-top: -35%;z-index: 3;"><img class="img1" src="assets/img/Logo9z3.svg" style="width: 388px;margin-bottom: -339px;overflow: clip;padding-top: 60px;z-index: 1000;margin-top: -116px;"></h1>
+                <p class="fs-5" style="overflow: clip;z-index: 3;"></p>
+                <h1 class="display-1 fw-bold" style="overflow: clip;z-index: 3;"></h1><div><br><br><br><br><br><br><br></div><a class="btn btn-sm" role="button" data-bss-hover-animate="pulse" style="overflow: clip;border-radius: 10;color: var(--cc-bg);background: #000000;z-index: 3;margin-top: 30px;" href="#branchj">ご予約</a>
+            </div>
+        </div>
+        <div class="d-none d-md-block d-lg-block d-xl-block d-xxl-block" data-bss-scroll-zoom="true" data-bss-scroll-zoom-speed="0.3" style="overflow: clip;background: url(&quot;assets/img/heroxPCy.jpg&quot;) center / contain no-repeat;margin-bottom: 0;">
+            <div class="text-center d-flex flex-column justify-content-center align-items-center px-3 py-4 hero-content" style="overflow: clip;">
+                <h1 style="margin-top: -35%;z-index: 3;"><img class="img1" src="assets/img/Logo9z3.svg" style="width: 388px;margin-bottom: -300px;overflow: clip;padding-top: 60px;z-index: 1000;margin-top: 129px;"></h1>
+                <p class="fs-5" style="overflow: clip;z-index: 3;"></p>
+                <h1 class="display-1 fw-bold" style="overflow: clip;z-index: 3;"></h1><div><br><br><br><br><br><br><br></div><a class="btn btn-sm" role="button" data-bss-hover-animate="pulse" style="overflow: clip;border-radius: 10;color: var(--cc-bg);background: #000000;z-index: 3;" href="#branchj">ご予約</a>
+            </div>
+        </div>
+    </section>
+    <section data-bss-parallax-bg="true" style="background: #5c0202;background-image: url(&quot;assets/img/ChatGPT%20Image%20Nov%208,%202025,%2001_58_56%20PM.png&quot;);background-position: center;background-size: cover;"><div><br><br><br><br></div></section>
+    <section data-bss-parallax-bg="true" style="background: #5c0202;background-image: url(&quot;assets/img/ChatGPT%20Image%20Nov%208,%202025,%2001_58_56%20PM.png&quot;);background-position: center;background-size: cover;">
+        <div class="container" style="background: #7b0000;">
+            <div class="row" style="overflow: clip;background: url(&quot;assets/img/heroxPCz.jpg&quot;) center / cover no-repeat, #ffffff;">
+                <div class="col-md-12 text-center py-5" data-aos="fade-up" data-aos-duration="850" style="overflow: clip;margin-top: -50px;"><div><br><br><br></div>
+                    <h3 class="display-6 fw-bold z-3 mb-4" style="overflow: clip;">About us</h3><div><br></div>
+                    <p style="overflow: clip;font-weight: bold;">2004年、六本木に第一号店をオープンして以来、Jasmine Thai（ジャスミン・タイ） は、<br>“本物のタイの味と心” を日本に届けることを使命として歩んできました。<br><br>現在は東京各地に11店舗を展開し、タイの伝統とモダンな感性を融合させた、<br>ワンランク上のプレミアム・タイレストランとして、多くのお客様に愛されています。<br><br>香り高いハーブやスパイス、新鮮な食材を厳選し、シェフたちの熟練した技と情熱で、<br>一皿ごとに本場バンコクの味わいと華やかさを再現。<br>上質で落ち着いた空間の中で、まるで旅をしているような特別なひとときをお楽しみください。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section data-bss-parallax-bg="true" style="background: #5c0202;background-image: url(&quot;assets/img/ChatGPT%20Image%20Nov%208,%202025,%2001_58_56%20PM.png&quot;);background-position: center;background-size: cover;"><div><br><br><br><br></div></section>
+    <section data-bss-parallax-bg="true" style="background-image: url(&quot;assets/img/BG_test5.jpg&quot;);background-position: center;background-size: cover;">
+        <div>
+            <div class="container">
+                <div class="row" data-aos="fade" data-aos-duration="850" data-aos-delay="1000" style="overflow: clip;">
+                    <div class="col-md-12 text-center py-5" style="overflow: clip;margin-top: -50px;"><img class="img-fluid" width="1536" height="1024" src="assets/img/xpng.png"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div data-bss-parallax-bg="true" style="background-image: url(&quot;assets/img/BG_test2.jpg&quot;);background-position: center;background-size: cover;">
+            <div class="container">
+                <div class="row" data-aos="fade" data-aos-duration="850" data-aos-delay="1000" style="overflow: clip;">
+                    <div class="col-md-12 text-center py-5" data-aos="fade-up" data-aos-duration="850" style="overflow: clip;margin-top: -50px;"><img class="img-fluid" width="1536" height="1024" src="assets/img/certificateX.jpg" style="margin-top: 50px;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section data-bss-parallax-bg="true" id="menuu" style="margin-bottom: -24px;background-image: url(&quot;assets/img/ChatGPT%20Image%20Nov%208,%202025,%2001_58_56%20PM.png&quot;);background-position: center;background-size: cover;">
+        <div class="col-md-12 text-center py-5" style="overflow: clip;margin-top: 0px;">
+            <h3 class="display-6 fw-bold text-white mb-4" style="overflow: clip;background: rgba(29,46,56,0);">セットメニュー (set menu)</h3>
+        </div>
+        <div class="container" style="overflow: clip;">
+            <div class="row mb-4" style="overflow: clip;">
+                <div class="col-md-12" data-aos="fade-right" data-aos-duration="750" style="overflow: clip;text-align: center;">
+                    <div class="d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+                        <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="carousel-4">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active"><img class="img-fluid w-100 d-block" width="2656" height="1600" src="assets/img/DinnerSet/DDD1z.jpg" alt="Slide Image"></div>
+                                <div class="carousel-item"><img class="img-fluid w-100 d-block" width="2656" height="1600" src="assets/img/DinnerSet/DDD2z.jpg" alt="Slide Image"></div>
+                                <div class="carousel-item"><img class="img-fluid w-100 d-block" width="2656" height="1600" src="assets/img/DinnerSet/DDD3z.jpg" alt="Slide Image"></div>
+                            </div>
+                            <div><a class="carousel-control-prev" href="#carousel-4" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-4" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                            <div class="carousel-indicators"><button type="button" data-bs-target="#carousel-4" data-bs-slide-to="0" class="active"></button> <button type="button" data-bs-target="#carousel-4" data-bs-slide-to="1"></button> <button type="button" data-bs-target="#carousel-4" data-bs-slide-to="2"></button></div>
+                        </div><img class="img-fluid" width="2656" height="215" src="assets/img/DinnerSet/DDD4.jpg">
+                    </div>
+                    <div class="d-print-none d-md-none d-lg-none d-xl-none d-xxl-none">
+                        <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="carousel-14">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active"><img class="img-fluid w-100 d-block" width="1696" height="2528" src="assets/img/DinnerSet/DDD1zmo.jpg" alt="Slide Image"></div>
+                                <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1696" height="2528" src="assets/img/DinnerSet/DDD2zmo.jpg" alt="Slide Image"></div>
+                                <div class="carousel-item"><img class="img-fluid w-100 d-block" width="1696" height="2528" src="assets/img/DinnerSet/DDD3zmo.jpg" alt="Slide Image"></div>
+                            </div>
+                            <div><a class="carousel-control-prev" href="#carousel-14" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-14" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                            <div class="carousel-indicators"><button type="button" data-bs-target="#carousel-14" data-bs-slide-to="0" class="active"></button> <button type="button" data-bs-target="#carousel-14" data-bs-slide-to="1"></button> <button type="button" data-bs-target="#carousel-14" data-bs-slide-to="2"></button></div>
+                        </div><img class="img-fluid" width="2656" height="215" src="assets/img/DinnerSet/DDD4.jpg">
+                    </div>
+                </div>
+                <div class="col" style="text-align: center;"><button class="btn" data-bss-hover-animate="pulse" type="button" style="margin-bottom: 40px;background: #000000;color: var(--cc-bg);margin-top: 40px;" data-bs-target="#menu" data-bs-toggle="modal">Menu</button></div>
+            </div>
+        </div>
+    </section>
+    <section data-bss-parallax-bg="true" style="background-image: url(&quot;assets/img/BG_test6.jpg&quot;);background-position: center;background-size: cover;">
+        <div>
+            <div class="container">
+                <div class="row" data-aos="fade" data-aos-duration="850" data-aos-delay="1000" style="overflow: clip;">
+                    <div class="col-md-12 text-center py-5" style="overflow: clip;margin-top: -50px;"><img class="img-fluid" width="1536" height="1024" src="assets/img/xpng.png"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section data-bss-parallax-bg="true" style="background-image: url(assets/img/G1x.jpg);background-position: center;background-size: cover;">
+        <div>
+            <div class="container">
+                <div class="row" data-aos="fade" data-aos-duration="850" data-aos-delay="1000" style="overflow: clip;">
+                    <div class="col-md-12 text-center py-5" style="overflow: clip;margin-top: -50px;"><img class="img-fluid" width="1536" height="1024" src="assets/img/xpng.png"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section data-bss-scroll-zoom="true" data-bss-scroll-zoom-speed="0.3" id="branchj" style="background: url(&quot;assets/img/_Gold2y.jpg&quot;) center / contain, #a4873e;padding: 0px;border-radius: 0px;background-image: url(&quot;assets/img/_Gold2y.jpg&quot;);background-position: center;background-size: cover;">
+        <div class="container" style="overflow: clip;margin-bottom: -20px;">
+            <div class="row" style="overflow: clip;">
+                <div class="col-md-12 text-center py-5" style="overflow: clip;margin-top: 0px;">
+                    <p class="fw-bold text-muted" style="overflow: clip;">&nbsp;</p>
+                    <h3 class="display-6 fw-bold text-white mb-4" style="overflow: clip;">支店 (branch)</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="overflow: clip;margin-bottom: 20px;">
+            <div class="row gy-4" style="overflow: clip;">
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" style="overflow: clip;"><a href="#" data-bs-target="#branch1x" data-bs-toggle="modal">
+                        <div class="card" style="overflow: clip;"><img class="card-img w-100 d-block" style="overflow: clip;" src="assets/img/BranchButton/Branch1.jpg"></div>
+                    </a></div>
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" style="overflow: clip;"><a data-bs-target="#branch2" data-bs-toggle="modal">
+                        <div class="card" style="overflow: clip;"><img class="card-img w-100 d-block" style="overflow: clip;" src="assets/img/BranchButton/Branch2.jpg"></div>
+                    </a></div>
+            </div>
+        </div>
+        <div class="container" style="overflow: clip;margin-bottom: 20px;">
+            <div class="row gy-4" style="overflow: clip;">
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" style="overflow: clip;"><a data-bs-target="#branch3" data-bs-toggle="modal">
+                        <div class="card" style="overflow: clip;"><img class="card-img w-100 d-block" style="overflow: clip;" src="assets/img/BranchButton/Branch3.jpg"></div>
+                    </a></div>
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" style="overflow: clip;"><a data-bs-target="#branch4" data-bs-toggle="modal">
+                        <div class="card" style="overflow: clip;"><img class="card-img w-100 d-block" style="overflow: clip;" src="assets/img/BranchButton/Branch4.jpg"></div>
+                    </a></div>
+            </div>
+        </div>
+        <div class="container" style="overflow: clip;margin-bottom: 20px;">
+            <div class="row gy-4" style="overflow: clip;">
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" style="overflow: clip;"><a data-bs-target="#branch5" data-bs-toggle="modal">
+                        <div class="card" style="overflow: clip;"><img class="card-img w-100 d-block" style="overflow: clip;" src="assets/img/BranchButton/Branch5.jpg"></div>
+                    </a></div>
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" style="overflow: clip;"><a data-bs-target="#branch6" data-bs-toggle="modal">
+                        <div class="card" style="overflow: clip;"><img class="card-img w-100 d-block" style="overflow: clip;" src="assets/img/BranchButton/Branch10.jpg"></div>
+                    </a></div>
+            </div>
+        </div>
+        <div class="container" style="overflow: clip;margin-bottom: 20px;">
+            <div class="row gy-4" style="overflow: clip;">
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" style="overflow: clip;"><a data-bs-target="#branch7" data-bs-toggle="modal">
+                        <div class="card" style="overflow: clip;"><img class="card-img w-100 d-block" style="overflow: clip;" src="assets/img/BranchButton/Branch7.jpg"></div>
+                    </a></div>
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" style="overflow: clip;"><a data-bs-target="#branch8" data-bs-toggle="modal">
+                        <div class="card" style="overflow: clip;"><img class="card-img w-100 d-block" style="overflow: clip;" src="assets/img/BranchButton/Branch8.jpg"></div>
+                    </a></div>
+            </div>
+        </div>
+        <div class="container" style="overflow: clip;margin-bottom: 20px;">
+            <div class="row gy-4" style="overflow: clip;">
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" style="overflow: clip;"><a data-bs-target="#branch9" data-bs-toggle="modal">
+                        <div class="card" style="overflow: clip;"><img class="card-img w-100 d-block" style="overflow: clip;" src="assets/img/BranchButton/Branch9.jpg"></div>
+                    </a></div>
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" style="overflow: clip;"><a data-bs-target="#branch10" data-bs-toggle="modal">
+                        <div class="card" style="overflow: clip;"><img class="card-img w-100 d-block" style="overflow: clip;" src="assets/img/BranchButton/Branch6.jpg"></div>
+                    </a></div>
+            </div>
+        </div>
+        <div class="container" style="overflow: clip;margin-bottom: 20px;">
+            <div class="row gy-4" style="overflow: clip;">
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" style="overflow: clip;"><a data-bs-target="#branch11" data-bs-toggle="modal">
+                        <div class="card" style="overflow: clip;"><img class="card-img w-100 d-block" style="overflow: clip;" src="assets/img/BranchButton/Branch11.jpg"></div>
+                    </a></div>
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" style="overflow: clip;"><a>
+                        <div class="card" style="overflow: clip;"><img class="card-img w-100 d-block" style="overflow: clip;" src="assets/img/BranchButton/Branch12.jpg"></div>
+                    </a></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col" style="text-align: center;color: var(--cc-bg);padding-top: 45px;"><button class="btn btn-dark" data-bss-hover-animate="pulse" type="button" style="background: #000000;" data-bs-target="#headQ" data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-building-estate" style="font-size: 32px;margin-right: 5px;padding-bottom: 3px;margin-bottom: 2px;">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M3 21h18"></path>
+                        <path d="M19 21v-4"></path>
+                        <path d="M19 17a2 2 0 0 0 2 -2v-2a2 2 0 1 0 -4 0v2a2 2 0 0 0 2 2z"></path>
+                        <path d="M14 21v-14a3 3 0 0 0 -3 -3h-4a3 3 0 0 0 -3 3v14"></path>
+                        <path d="M9 17v4"></path>
+                        <path d="M8 13h2"></path>
+                        <path d="M8 9h2"></path>
+                    </svg>本部へのお問い合わせ</button></div>
+        </div><div><br><br><br><br></div>
+    </section>
+    <section data-bss-parallax-bg="true" style="background: #5c0202;background-image: url(&quot;assets/img/ChatGPT%20Image%20Nov%208,%202025,%2001_58_56%20PM.png&quot;);background-position: center;background-size: cover;">
+        <div class="container" style="overflow: clip;margin-bottom: -20px;">
+            <div class="row" style="overflow: clip;">
+                <div class="col-md-12 text-center py-5" style="overflow: clip;margin-top: -50px;"><div><br><br><br></div>
+                    <h3 class="display-6 fw-bold mb-4" style="overflow: clip;color: rgb(164,135,62);padding-top: 22px;">プロモーション (Promotion)</h3><div></div>
+                    <div class="d-none d-md-block d-lg-block d-xl-block d-xxl-block" data-aos="fade-right" data-aos-duration="750"><img class="img-fluid" width="2752" height="1536" src="assets/img/Promo/PromoDec2025PC.jpg" style="border-radius: 20px;"></div>
+                    <div class="d-print-none d-md-none d-lg-none d-xl-none d-xxl-none" data-aos="fade-right" data-aos-duration="750"><img class="img-fluid" width="1000" height="1415" src="assets/img/Promo/PromoDec2025Mo.jpg" style="border-radius: 20px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="overflow: clip;margin-bottom: -20px;">
+            <div class="row" style="overflow: clip;">
+                <div class="col-md-12 text-center py-5" style="overflow: clip;margin-top: -50px;">
+                    <p class="fw-bold text-muted" style="overflow: clip;">&nbsp;</p>
+                    <h3 class="display-6 fw-bold text-white mb-4" id="news" style="overflow: clip;">ニュース (NEWS)</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="overflow: clip;">
+            <div class="row mb-4" style="overflow: clip;">
+                <div class="col-md-12" data-aos="fade-right" data-aos-duration="750" style="overflow: clip;">
+                    <div class="dropdown" style="margin-bottom: 5px;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button">2025-12-11&nbsp; 年末年始営業時間のお知らせ</button>
+                        <div class="dropdown-menu">
+                            <div class="col">
+                                <p class="text-center" style="font-weight: bold;font-size: 20px;">平素より「JASMINE THAI」各店をご利用いただき、誠にありがとうございます。<br>「JASMINE THAI」各店における年末年始の営業時間をお知らせいたします。<br>※営業時間は急遽変更となる可能性がございます。詳細は各店舗へお問い合わせください。<br>お客様には、大変ご不便をおかけいたしますが、何卒ご理解のほど、宜しくお願い申し上げます。</p>
+                            </div>
+                        </div>
+                    </div><img class="img-fluid" width="2480" height="1610" src="assets/img/News/News2025-12.jpg" style="border-radius: 20px;">
+                </div>
+                <div class="col" style="text-align: center;"><a class="btn" role="button" data-bss-hover-animate="pulse" style="background: #000000;color: var(--cc-bg);margin-top: 40px;" href="news.html">お知らせ一覧</a></div><div><br><br><br></div>
+            </div>
+        </div>
+    </section>
+    <section style="background: url(&quot;assets/img/BGG2.png&quot;);">
+        <div class="container" style="overflow: clip;margin-bottom: 20px;">
+            <div class="row gy-4" style="overflow: clip;">
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" style="overflow: clip;"><img class="img-fluid" width="1080" height="1276" src="assets/img/MAMA6.png"></div>
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" style="overflow: clip;">
+                    <h4 class="text-dark" style="margin-top: 20%;">オーナーからのメッセージ</h4>
+                    <p class="text-dark" style="font-weight: bold;">Message from the Owner</p>
+                    <p class="text-dark" style="margin-top: 2%;font-weight: bold;">「私たちは、タイ料理をさらに高めたいと考えています。厳選された食材、一皿一皿への心配り、そして真心のこもったサービスで、すべての食事を幸せな体験に。」<br><br>“We aim to elevate Thai cuisine to the next level — with quality ingredients, care in every dish, and heartfelt service to make every meal a truly joyful experience.”</p>
+                    <h5 class="text-dark" style="font-weight: bold;">高木 ドウアンルタイ&nbsp;</h5>
+                    <h5 class="text-dark" style="font-weight: bold;margin-bottom: 41px;">(DAUNGRUTHAI TAKAGI)</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section style="background: #5c0202;margin-top: -37px;"></section>
+    <footer class="text-white" data-bss-parallax-bg="true" style="overflow: clip;background: #5c0202;background-image: url(&quot;assets/img/ChatGPT%20Image%20Nov%208,%202025,%2001_58_56%20PM.png&quot;);background-position: center;background-size: cover;"><div><br><br><br><br></div>
+        <div class="container"><a class="btn d-flex d-sm-flex justify-content-center justify-content-sm-center" role="button" data-bss-hover-animate="pulse" style="text-align: center;margin-left: 0;" href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-chevrons-up text-white" style="font-size: 23px;">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M7 11l5 -5l5 5"></path>
+                    <path d="M7 17l5 -5l5 5"></path>
+                </svg></a>
+            <div class="row">
+                <div class="col-1 col-md-4"></div>
+                <div class="col-10 col-md-4">
+                    <div class="btn-group" role="group" style="width: 100%;"><a class="btn d-flex d-sm-flex justify-content-center justify-content-sm-center" role="button" data-bss-hover-animate="pulse" style="text-align: center;margin-left: 0;" target="_blank" href="https://www.facebook.com/roppongi.jasminethai"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor" class="text-white text-dark text-decoration-none" style="color: var(--bs-black);font-size: 26px;margin-top: -6px;padding-top: 3px;margin-right: 3px;">
+                                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                                <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
+                            </svg></a><a class="btn d-flex d-sm-flex justify-content-center justify-content-sm-center" role="button" data-bss-hover-animate="pulse" style="text-align: center;margin-left: 0;" target="_blank" href="https://www.instagram.com/jasmine_thai_official/"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram text-white text-dark text-decoration-none" style="color: var(--bs-black);font-size: 19px;margin-top: -1px;">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                            </svg></a><a class="btn d-flex d-sm-flex justify-content-center justify-content-sm-center" role="button" data-bss-hover-animate="pulse" style="text-align: center;margin-left: 0;" target="_blank" href="https://www.tiktok.com/@jasmine_thai_official"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-tiktok text-white text-dark text-decoration-none" style="color: var(--bs-black);font-size: 24px;margin-top: -6px;padding-top: 3px;">
+                                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"></path>
+                            </svg></a></div>
+                </div>
+                <div class="col-1 col-md-4"></div>
+            </div>
+        </div>
+        <div class="container py-4 py-lg-5">
+            <div class="row my-5">
+                <div class="col text-center"><a style="border-color: #ffffff;" data-bs-target="#Term" data-bs-toggle="modal">Terms &amp; Privacy</a></div>
+            </div>
+        </div>
+        <div class="col text-center" style="color: var(--cc-bg);background: rgba(92,2,2,0);"><a class="text-decoration-none" style="border-color: #ffffff;color: var(--cc-bg);text-align: center;background: rgba(92,2,2,0);" href="#top">@ Jasmine Thai 2025</a><div><br></div></div>
+    </footer>
+    <div></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/aos.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/CookieConsentComponent-cookieconsent.js"></script>
+</body>
+
+</html>
