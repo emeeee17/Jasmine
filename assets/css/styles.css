@@ -132,3 +132,7 @@ img {
   }
 }
 
+:root {
+  --swiper-theme-color: #777777;
+}
+
