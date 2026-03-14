@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Jasmine</title>
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/FavIcon/jasmine180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/FavIcon/Jasmin16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/FavIcon/Jasmin16x16.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/FavIcon/jasmine32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/FavIcon/jasmine32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/FavIcon/jasmine180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/FavIcon/jasmine192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/FavIcon/jasmine512.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/bss-overrides.css">
+    <link rel="stylesheet" href="assets/css/aos.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/stylex.css">
+    <link rel="stylesheet" href="assets/css/Cookie-Banner-CookieBanner.css">
+    <link rel="stylesheet" href="assets/css/Cookie-Banner.css">
+    <link rel="stylesheet" href="assets/css/CookieConsentComponent.css">
+    <link rel="stylesheet" href="assets/css/Footer-with-Pricing.css">
+    <link rel="stylesheet" href="assets/css/Modern-Contact-Form.css">
+    <link rel="stylesheet" href="assets/css/multiple-item-carousel-slider-1.css">
+    <link rel="stylesheet" href="assets/css/multiple-item-carousel-slider-2.css">
+    <link rel="stylesheet" href="assets/css/multiple-item-carousel-slider.css">
+    <link rel="stylesheet" href="assets/css/Navbar-With-Button-icons.css">
+    <link rel="stylesheet" href="assets/css/Popup-Modal-with-Cookie.css">
+    <link rel="stylesheet" href="assets/css/Responsive-News-Card-Slider-styles.min.css">
+    <link rel="stylesheet" href="assets/css/Responsive-News-Card-Slider.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Swiper-Slider-Card-For-Blog-Or-Product-swiper.min.css">
+    <link rel="stylesheet" href="assets/css/Swiper-Slider-Card-For-Blog-Or-Product-untitled.css">
+    <link rel="stylesheet" href="assets/css/Timeline.css">
+</head>
+
+<body>
+    <div class="modal fade" role="dialog" tabindex="-1" id="Term">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content"><img class="position-absolute" src="assets/img/JasminLogo-1%20copy.png" width="40" height="43" style="margin-top: 5px;margin-left: 14px;">
+                <div class="modal-header" style="margin-top: -16px;margin-bottom: -11px;"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 10px;"></button></div>
+                <div class="modal-body">
+                    <div class="dropdown" style="margin-bottom: 14px;text-align: center;"><button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" type="button">🇯🇵 利用規約・プライバシー<strong>（Japanese）</strong>&nbsp;</button>
+                        <div class="dropdown-menu">
+                            <p style="margin-top: 19px;font-weight: bold;text-align: center;">🇯🇵 <strong>利用規約（Japanese）</strong><br><strong>最終更新日：2025年</strong><br>本ウェブサイト（以下「当サイト」）は、Jasmine Thai Restaurant（以下「当社」）が運営しています。当サイトをご利用いただく前に、以下の利用規約をよくお読みください。当サイトを利用することで、本規約に同意したものとみなします。<br>1. 当サイトの目的<br>当サイトは、メニュー、サービス内容、東京都内12店舗の情報、およびお問い合わせ窓口など、当社に関する一般情報を提供することを目的としています。<br>2. 知的財産権<br>当サイトに掲載されている文章、画像、ロゴ、デザイン等の著作権は当社に帰属します。無断転載・複製・配布を禁じます。<br>3. 禁止事項<br>ユーザーは以下の行為を行ってはなりません：<br><br><br>不正・違法目的での利用<br><br><br>当サイトの運営を妨害する行為<br><br><br>当社コンテンツの無断使用<br><br><br>4. 外部リンクについて<br>当サイトには第三者のウェブサイトへのリンクが含まれる場合があります。当社はこれらのサイトの内容について責任を負いません。<br>5. 免責事項<br>当社は情報の正確性に努めますが、完全性や最新性を保証するものではありません。掲載内容（価格、営業時間など）は予告なく変更される場合があります。<br>6. 責任制限<br>当サイト利用によって発生した損害について、当社は一切責任を負いません。<br>7. 規約の変更<br>当社は本規約を必要に応じて変更することがあります。変更後の規約は当サイトに掲載した時点で効力を有します。<br>8. お問い合わせ<br>本規約に関するお問い合わせは以下までご連絡ください：<br><br><strong>Jasmine Thai Restaurant 本部（東京都）</strong><br><br>🇯🇵 <strong>プライバシーポリシー（Japanese）</strong><br>1. 基本方針<br>Jasmine Thai Restaurant（以下「当社」）は、お客様の個人情報を適切に保護することを重要な責務と認識しています。<br>2. 取得する情報<br>当社は以下の情報を取得する場合があります：<br><br><br>氏名、メールアドレス、電話番号（お問い合わせ時）<br><br><br>予約に関する情報<br><br><br>フォームに入力された内容<br><br>※当サイトで決済情報を取得することはありません。<br><br><br>3. 利用目的<br>取得した情報は以下の目的で利用します：<br><br><br>お問い合わせへの回答<br><br><br>予約確認等の連絡<br><br><br>サイト運営・サービス改善<br><br><br>本部および東京12店舗での業務管理<br><br><br>4. 個人情報の提供<br>法律で要求される場合を除き、第三者への提供は行いません。<br><br>ただし、お問い合わせ内容に応じて、必要な範囲で当社各店舗に共有する場合があります。<br>5. セキュリティ対策<br>当社は適切な安全管理措置を講じ、個人情報の漏えいや不正アクセスを防止します。<br>6. お客様の権利<br>お客様は以下の請求が可能です：<br><br><br>保有個人情報の開示<br><br><br>訂正・削除<br><br><br>利用停止の請求<br><br><br>7. ポリシーの変更<br>本ポリシーは必要に応じて改定される場合があります。<br>8. お問い合わせ<br>個人情報の取扱いに関するお問い合わせは以下まで：<br><br><strong>Jasmine Thai Restaurant 本部（東京都）</strong></p>
+                        </div>
+                    </div>
+                    <div class="dropdown" style="text-align: center;"><button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" type="button">🌐 Terms &amp; Privacy<strong>（English）</strong>&nbsp;</button>
+                        <div class="dropdown-menu">
+                            <p style="margin-top: 19px;font-weight: bold;text-align: center;">🌐 <strong>Terms of Use（English）</strong><br><strong>Last Updated:</strong> 2025<br>Welcome to the official website of <strong>Jasmine Thai Restaurant</strong> (“we”, “our”, “the Company”). By accessing or using this website, you agree to comply with the following Terms of Use. Please read them carefully.<br>1. Purpose of Website<br>This website provides general information about Jasmine Thai Restaurant, including our menu, services, branch locations in Tokyo, and contact details.<br>2. Intellectual Property<br>All content on this website—including text, images, logos, and design—is the property of Jasmine Thai Restaurant. Unauthorized copying, reproduction, or distribution is prohibited.<br>3. Prohibited Actions<br>Users must not:<br><br><br>Use the website for fraudulent or unlawful purposes<br><br><br>Interfere with website operation<br><br><br>Copy or misuse our content without permission<br><br><br>4. Links to Third-Party Sites<br>This website may include links to external websites. We are not responsible for the content or policies of such third-party sites.<br>5. Disclaimer<br>We strive to ensure all information is accurate, but we do not guarantee completeness or correctness. Information (including prices, menus, and operating hours) may change without notice.<br>6. Limitation of Liability<br>We are not liable for any damages resulting from website use, system errors, or data loss.<br>7. Changes to Terms<br>We may revise these Terms at any time. Continued use of the website means you accept the updated Terms.<br>8. Contact<br>For inquiries regarding these Terms, please contact our head office:<br><br><strong>Jasmine Thai Restaurant – Head Office, Tokyo</strong><br><br>🔒 <strong>Privacy Policy（English）</strong><br><strong>1. Introduction</strong><br><br>Jasmine Thai Restaurant (“we”, “our”) is committed to protecting your personal information.<br><strong>2. Information We Collect</strong><br><br>We may collect:<br><br><br>Name, email, phone number (when you contact us)<br><br><br>Reservation details<br><br><br>Inquiries submitted through forms<br><br><br>We do <strong>not</strong> collect payment information through the website.<br><strong>3. Purpose of Use</strong><br><br>Personal information is used for:<br><br><br>Responding to inquiries<br><br><br>Reservation-related communication<br><br><br>Improving website functionality<br><br><br>Internal administrative purposes<br><br><br><strong>4. Data Sharing</strong><br><br>We do not share personal information with third parties except:<br><br><br>When required by law<br><br><br>When necessary to respond to an inquiry (e.g., directing your message to one of our 12 Tokyo branches)<br><br><br><strong>5. Data Security</strong><br><br>We implement reasonable security measures to protect your data.<br><strong>6. User Rights</strong><br><br>Users may request:<br><br><br>Disclosure of their stored information<br><br><br>Correction or deletion<br><br><br>Suspension of data use<br><br><br><strong>7. Policy Updates</strong><br><br>This Privacy Policy may be updated periodically.<br><strong>8. Contact</strong><br><br>For privacy-related matters, contact:<br><br><strong>Jasmine Thai Restaurant – Head Office, Tokyo</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p style="text-align: center;font-weight: bold;">Jasmine Thai Co., Ltd<br>Dah Chong No.2 Building 5F-Room B<br>5-18-2 Roppongi Minato-ku, Tokyo 1060032</p><a class="btn" role="button" href="tel: +813-6459-1797" target="_blank" style="border-radius: 0px;color: var(--cc-bg);background: var(--bs-black);"><i class="icon ion-ios-telephone" style="margin-right: 4px;font-size: 17px;"></i>TEL. 0<strong>3-6459-1797</strong></a><a class="btn btn-primary" role="button" href="https://maps.app.goo.gl/mHhqXq7DkNMrJpVU9?g_st=ipc" target="_blank" style="border-radius: 0px;"><i class="icon ion-android-pin" style="margin-right: 4px;font-size: 20px;"></i>Google map</a>
+                <div class="container" style="text-align: center;background: rgba(7,7,7,0);"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal" style="margin-top: 19px;margin-bottom: 19px;"></button></div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-md sticky-top py-3 navbar-light">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><img src="assets/img/Logo9zz.svg" style="margin-top: -313px;width: 254px;margin-bottom: -309px;margin-left: 1%;margin-right: -13px;overflow: clip;"></a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse text-end" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="#newsss">NEWS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">contact</a></li>
+                </ul><a class="btn ms-md-2" role="button" data-bss-hover-animate="pulse" style="background: #000000;color: var(--cc-bg);" href="index.html"><svg class="bi bi-book" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="font-size: 21px;">
+                        <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"></path>
+                    </svg></a>
+            </div>
+        </div>
+    </nav>
+    <section data-bss-parallax-bg="true" style="background: url(&quot;assets/img/ChatGPT%20Image%20Nov%208,%202025,%2001_58_56%20PM.png&quot;) center / cover, #5c0202;background-image: url(&quot;assets/img/ChatGPT%20Image%20Nov%208,%202025,%2001_58_56%20PM.png&quot;);background-position: center;background-size: cover;">
+        <div class="container" style="overflow: clip;margin-bottom: -20px;">
+            <div class="row" style="overflow: clip;">
+                <div class="col-md-12 text-center py-5" style="overflow: clip;margin-top: -50px;">
+                    <p class="fw-bold text-muted" style="overflow: clip;">&nbsp;</p>
+                </div>
+            </div>
+        </div>
+        <h3 class="display-6 fw-bold text-white mb-4" id="newsss" style="overflow: clip;text-align: center;">メニュー (MENU)</h3>
+        <h3 class="display-6 fw-bold text-white mb-4" id="go2025" style="overflow: clip;text-align: center;">2026</h3><button class="btn btn-lg" data-aos="fade-up" data-aos-duration="850" type="button" style="background: #fe007a;color: rgb(255,255,255);font-size: 38px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;RICE&nbsp; &nbsp; &nbsp;</button>
+        <section>
+            <div data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_KhaoMunGaiFri_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>揚げチキンライス</strong></h5>
+                                <p class="card-text">Fried Chicken Rice /&nbsp;パリパリと揚げた鶏肉を使ったカオマンガイ。チリソースを付けてお召し上がりください。<br><br></p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,650&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper" style="background: #ffffff00;"><img src="assets/img/Menu_Page/001_Gapao_yx.jpg" alt="..."></div>
+                            <div class="card-body" style="background: #ffffff00;">
+                                <h5 class="card-title" style="font-weight: bold;">ガパオライス</h5>
+                                <p class="card-text">Thai Spicy Basil with chicken and Jasmine Rice /&nbsp;爽やかなバジルの香り、ぷりっと炒めた鶏肉、シャキシャキとした野菜、そしてスパイシーな風味がクセになる定番タイ料理。黄身を崩すとコクが出てマイルドに仕上がります。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;"><span style="font-weight: normal !important; font-style: normal !important;">¥&nbsp;</span>1,650&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_FriRice_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>シーフードチャーハン</strong></h5>
+                                <p class="card-text">Fried Rice with Seafood /&nbsp;チャーハン「カオパット」はタイでよく見かける定番の料理です。ナンプラーをかけても美味しいです。<br><br></p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,650&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_TomyomRice_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>トムヤムパクチーソースチャーハン</strong></h5>
+                                <p class="card-text">Fried Rice Tom Yum Sauce with Coriander /&nbsp;酸味があり、爽やかで味わい深いトムヤム風味のチャーハンです。パクチーもたっぷり味わえます。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,650&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_Khaomungai_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>タイチキンライス</strong></h5>
+                                <p class="card-text">Chicken Rice /&nbsp;ぷりぷりの鶏肉と、鶏肉を茹でた時に生まれる濃厚なスープで炊く生姜ご飯。ジャスミンタイこだわりの甘辛いソースが、完璧なハーモニーを奏でます。<br><br></p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;<span style="font-weight: normal !important; font-style: normal !important; background-color: transparent;">1,580&nbsp;</span><sub><span style="font-weight: normal !important; font-style: normal !important; background-color: transparent;">(税込)</span></sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_GreenRice_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>グリーンカレーチャーハン</strong></h5>
+                                <p class="card-text">Fried Rice with Green Curry Flavor /&nbsp;グリーンカレー風味のシーフードチャーハン。風味豊かで食欲をそそります。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">1,750&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_GapaoSeafood_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>シーフードのバジル炒めライス</strong></h5>
+                                <p class="card-text">Stir-Fried Seafood with Holy Basil /&nbsp;シーフードで作ったガパオライスです。バジルの爽やかな香りは海鮮との相性もよくご飯が進みます。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,870&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_PineappleRice_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>パイナップルチャーハン</strong></h5>
+                                <p class="card-text"><strong>パイナップルチャーハン</strong> / Fried Rice with Pineapple</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥ 2,200&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                </div><button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button><button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+            </div>
+        </section><button class="btn btn-lg" data-aos="fade-up" data-aos-duration="850" type="button" style="background: #fe007a;color: rgb(255,255,255);font-size: 38px;margin-top: 29px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;noodle&nbsp; &nbsp; &nbsp;</button>
+        <section>
+            <div data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" id="carouselExampleControls-2" class="carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_KhaoSio_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>カオソーイ (鶏肉)</strong></h5>
+                                <p class="card-text">Northern Style Curry Noodle with Chicken /&nbsp;パリパリの揚げ麺がトッピングされた特徴的なカレーラーメン。麺は中華麺で、コクがありまろやかな味です。最近、日本でも知られるようになってきました。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,650 <sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper" style="background: #ffffff00;"><img src="assets/img/Menu_Page/001_Padthai_y.jpg" alt="..."></div>
+                            <div class="card-body" style="background: #ffffff00;">
+                                <h5 class="card-title" style="font-weight: bold;">パッタイ</h5>
+                                <p class="card-text">Phad Thai /&nbsp;もちもちとした米麺を甘酸っぱいタマリンドソースで炒めた焼きそば。モヤシや厚揚げ、卵に海老など具沢山。レモンをかけてさっぱりと楽しめます。<br><br></p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,650 <sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_seeiew_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>太麺焼き</strong></h5>
+                                <p class="card-text">Fried Rice Noodle with Soy Sauce /&nbsp;もっちりした米の太麺焼きそば。醤油ベースで優しくまろやか、香ばしく野菜も多く入っています。タイらしいもちもちの太麺に魅了される方は多いです。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,540&nbsp;<sub>(税込)</sub><img src="assets/img/Menu_Page/chicken.png" width="26" height="20"></button><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: 10px;">¥&nbsp;1,650 <sub>(税込)</sub><svg class="icon icon-tabler icon-tabler-pig" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="font-size: 27px;">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M15 11v.01"></path>
+                                        <path d="M16 3l0 3.803a6.019 6.019 0 0 1 2.658 3.197h1.341a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-1.342a6.008 6.008 0 0 1 -1.658 2.473v2.027a1.5 1.5 0 0 1 -3 0v-.583a6.04 6.04 0 0 1 -1 .083h-4a6.04 6.04 0 0 1 -1 -.083v.583a1.5 1.5 0 0 1 -3 0v-2l0 -.027a6 6 0 0 1 4 -10.473h2.5l4.5 -3z"></path>
+                                    </svg></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_Suki_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>タイスキラーメン</strong></h5>
+                                <p class="card-text">Glass Noodle with Thai-Suki Sauce /&nbsp;甘辛いタイスキのソースで作った春雨のラーメンです。野菜も多くさっぱりとした味付けです。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,680 <sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_KhuaGai_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>鶏肉と卵の太麺焼き</strong></h5>
+                                <p class="card-text">Fried Rice Noodle with Chicken &amp; Egg /&nbsp;鶏肉の太麺焼き。卵とよく炒めた、優しい味付け。お好みでかける辛いソースが付きます。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;<span style="font-weight: normal !important; font-style: normal !important; background-color: transparent;">1,650 </span><sub><span style="font-weight: normal !important; font-style: normal !important; background-color: transparent;">(税込)</span></sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_tomyumnoodle_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>トムヤムクンラーメン</strong></h5>
+                                <p class="card-text"><em>Tom Yum Kung Rice Noodle /&nbsp;</em>もちっとした米麺のタイラーメンです。風味豊かなスープは、少しだけスパイシーで酸味が効いています。タイには色々な太さの米麺があります。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,680 <sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_kheemao_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>パットキーマオ</strong></h5>
+                                <p class="card-text">Fried Rice Noodle with Basil &amp; Chili /&nbsp;スパイシーで風味豊かな太麺焼き。辛味とモチモチ麺の組み合わせは非常に魅力的です。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,690 <sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_Rdanha_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>豚肉あんかけ太麺</strong></h5>
+                                <p class="card-text">Rice Noodles with Pork in Thick Sauce /&nbsp;シャキシャキの野菜に、豚肉の旨味が美味しいあんかけ麺。少しニンニクが効いた優しい味付けです。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,540 <sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                </div><button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-2" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button><button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-2" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+            </div>
+        </section><button class="btn btn-lg" data-aos="fade-up" data-aos-duration="850" type="button" style="background: #fe007a;color: rgb(255,255,255);font-size: 38px;margin-top: 29px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;salad&nbsp; &nbsp; &nbsp;</button>
+        <section>
+            <div data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" id="carouselExampleControls-3" class="carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_saladroll_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>生春巻き</strong></h5>
+                                <p class="card-text">Fresh spring roll /&nbsp;人気の前菜。ジャスミンタイの生春巻きは野菜ぎっしり、皮はモチモチです。<br><br></p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,350&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_Somtum_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>青パパイヤのサラダ / ソムタムタイ</strong></h5>
+                                <p class="card-text">Som Tam Thai&nbsp;/&nbsp;青パパイヤを千切りにして、人参やインゲンなどと和えたシャキシャキと食感が良いタイの代表的なサラダです。酸っぱく辛い、タイらしい味付けです。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,650 <sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_YUMwoonsen_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title">ヤムウンセン</h5>
+                                <p class="card-text">Yum Wun Sen /&nbsp;タイの海鮮春雨サラダです。酸味と辛味にさわやかなセロリの香りが食欲をそそります。お酒のおつまみにもピッタリです。<br><br></p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,680 <sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_Larb_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>挽肉のサラダ (ラーブ)</strong></h5>
+                                <p class="card-text">Minched Chicken or Pork Spicy Salad /&nbsp;ハーブの香りが爽やかで辛く香ばしい、タイ料理の定番です。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;<span style="font-weight: normal !important; font-style: normal !important; background-color: transparent;">1,650 </span><sub><span style="font-weight: normal !important; font-style: normal !important; background-color: transparent;">(税込)</span></sub><img src="assets/img/Menu_Page/chicken.png" width="26" height="20"></button><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: 10px;">¥&nbsp;<span style="font-weight: normal !important; font-style: normal !important; background-color: transparent;">1,750 </span><sub><span style="font-weight: normal !important; font-style: normal !important; background-color: transparent;">(税込)</span></sub><svg class="icon icon-tabler icon-tabler-pig" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="font-size: 27px;">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M15 11v.01"></path>
+                                        <path d="M16 3l0 3.803a6.019 6.019 0 0 1 2.658 3.197h1.341a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-1.342a6.008 6.008 0 0 1 -1.658 2.473v2.027a1.5 1.5 0 0 1 -3 0v-.583a6.04 6.04 0 0 1 -1 .083h-4a6.04 6.04 0 0 1 -1 -.083v.583a1.5 1.5 0 0 1 -3 0v-2l0 -.027a6 6 0 0 1 4 -10.473h2.5l4.5 -3z"></path>
+                                    </svg></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_SETyum_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>前菜盛り合わせ</strong></h5>
+                                <p class="card-text">Assorted Appetizers /&nbsp;人気のおつまみ三種。生春巻き・海老のすり身揚げ・ガイサテ（鶏肉の串焼き）が楽しめるお得なセットです。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;2,800&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_LabFish_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>揚げ魚のハーブサラダ</strong></h5>
+                                <p class="card-text">Fried Fish with Lemon Grass /&nbsp;衣を付けてホクホクに揚げた白身魚に、レモングラス・生姜・パクチーなどのハーブを合えて作る爽やかで食べ応えのあるサラダ。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,870 <sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_YumPakShe_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>海老とパクチーのサラダ</strong></h5>
+                                <p class="card-text">Coriander Shrimp Salad /&nbsp;たっぷりのパクチーをごま油などで合えた香味たっぷりで少し辛くまろやかな味付け。<br><br></p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,540 <sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper" style="background: #ffffff00;"><img src="assets/img/Menu_Page/001_yumMakhua_y.jpg" alt="..."></div>
+                            <div class="card-body" style="background: #ffffff00;">
+                                <h5 class="card-title" style="font-weight: bold;">茄子のサラダ</h5>
+                                <p class="card-text">Yum Ma Krua&nbsp;/&nbsp;ジューシーな揚げナスを酸味があるソースで合えたサラダです。豚挽肉や海老など具沢山で旨味あり。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,540 <sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                </div><button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-3" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button><button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-3" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+            </div>
+        </section><button class="btn btn-lg" data-aos="fade-up" data-aos-duration="850" type="button" style="background: #fe007a;color: rgb(255,255,255);font-size: 38px;margin-top: 29px;">&nbsp; &nbsp; &nbsp; &nbsp; SOUP &amp; CURRY&nbsp;</button>
+        <section>
+            <div data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" id="carouselExampleControls-4" class="carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_Panang_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>鶏肉のレッドココナッツカレー / パネーンガイ</strong></h5>
+                                <p class="card-text">Chicken Red Curry with Coconut Milk /&nbsp;パネーンというレッドカレーに甘味やコクを加えたような風味のカレーです。鶏肉の旨味とカレーのコクが良く合い、散りばめたコブミカンの葉が爽やかにまとめます。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,680 <sub>(税込)&nbsp; &nbsp; &nbsp; &nbsp;</sub>単品</button><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-top: 5px;margin-left: -10px;">¥&nbsp;1,850 <sub>(税込)&nbsp; &nbsp; &nbsp;</sub>ライスセット</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_GreenCurry_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>グリーンカレー</strong></h5>
+                                <p class="card-text">Green Curry with Chicken or Beef /&nbsp;ハーブの爽やかな香りとココナッツミルクのコクが特徴のタイを代表する料理のひとつ。揚げた茄子やタケノコ、お肉などゴロゴロとした具がにぎやか。ランチメニューでも大人気です。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,680 <sub>(税込)</sub><img src="assets/img/Menu_Page/chicken.png" width="26" height="20"></button><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: 10px;">¥&nbsp;1,980 <sub>(税込)</sub><img src="assets/img/Menu_Page/cow.png" width="26" height="20"></button><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;margin-top: 5px;">¥ 1,850&nbsp;<sub>(税込)&nbsp; &nbsp;</sub>ライスセット</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_TOMYUMkung_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>トムヤムクン</strong></h5>
+                                <p class="card-text">Prawn Soup with Lemon Grass &amp; Chili /&nbsp;タイの魅力が凝縮した一品。さっぱりとした酸味と辛さ、海老の旨味やコク、ハーブの香りが調和した贅沢なスープです。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥ 2,500&nbsp;<sub>(税込)&nbsp; &nbsp;</sub><strong>M</strong></button><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: 10px;">¥ 3,500 <sub>(税込)&nbsp; &nbsp;</sub><strong>L</strong></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_Matsaman_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>鶏肉のマッサマンカレー / ゲーンマッサマン</strong></h5>
+                                <p class="card-text">Chicken Massaman Curry /&nbsp;CNN TRAVEL 「世界美食50選」で1位を獲得したことがある、ジャガイモや鶏肉、人参、落花生のカレー。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,680 <sub>(税込)&nbsp; &nbsp; &nbsp; &nbsp;</sub>単品</button><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-top: 5px;margin-left: -10px;">¥&nbsp;1,850 <sub>(税込)&nbsp; &nbsp; &nbsp;</sub>ライスセット</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper" style="background: #ffffff00;"><img src="assets/img/Menu_Page/001_kangMakhua_y.jpg" alt="..."></div>
+                            <div class="card-body" style="background: #ffffff00;">
+                                <h5 class="card-title" style="font-weight: bold;">鶏肉のレッドカレー / ゲーンペッガイ</h5>
+                                <p class="card-text">Chicken Red Curry /&nbsp;ココナッツミルクのコクと、まろやかな風味が特徴です。辛そうな赤ですが、グリーンカレーよりマイルド。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,680 <sub>(税込)&nbsp; &nbsp; &nbsp; &nbsp;</sub>単品</button><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-top: 5px;margin-left: -10px;">¥&nbsp;1,850 <sub>(税込)&nbsp; &nbsp; &nbsp;</sub>ライスセット</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_porksoup_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>豆腐と豚挽肉のクリアスープ</strong></h5>
+                                <p class="card-text">Clear Soup with Bean Curd(Tofu) &amp; Minched Pork /&nbsp;豆腐と豚挽肉のスープ (ゲーンジュートゥーフー ムーサップ)</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥ 1,980&nbsp;<sub>(税込)&nbsp; &nbsp;</sub><strong>M</strong></button><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: 10px;">¥ 2,640 <sub>(税込)&nbsp; &nbsp;</sub><strong>L</strong></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_TomKhagai_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>トムカーガイ</strong></h5>
+                                <p class="card-text">Chicken Soup with Coconut Milk /&nbsp;クリーミーなココナッツミルクと鶏肉のスープ。優しい酸味とコクは色々な料理に合います。女性に人気のスープです。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥ 1,980&nbsp;<sub>(税込)&nbsp; &nbsp;</sub><strong>M</strong></button><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: 10px;">¥ 2,640 <sub>(税込)&nbsp; &nbsp;</sub><strong>L</strong></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_TomyumGai_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>トムヤムガイ</strong></h5>
+                                <p class="card-text">Spicy Chicken Soup /&nbsp;海老の代わりに鶏肉を使ったクリアなトムヤムスープ。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥ 1,980&nbsp;<sub>(税込)&nbsp; &nbsp;</sub><strong>M</strong></button><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: 10px;">¥ 2,640 <sub>(税込)&nbsp; &nbsp;</sub><strong>L</strong></button>
+                            </div>
+                        </div>
+                    </div>
+                </div><button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-4" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button><button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-4" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+            </div>
+        </section>
+        <div class="container" style="overflow: clip;margin-bottom: 20px;">
+            <div class="row gy-4" style="overflow: clip;">
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" style="overflow: clip;"><a href="#" data-bs-target="#branch1x" data-bs-toggle="modal">
+                        <div class="card" style="overflow: clip;"><img class="card-img w-100 d-block" style="overflow: clip;" src="assets/img/Menu_Page/001_RICE%20copy.jpg"></div>
+                    </a></div>
+                <div class="col-6 col-md-6" data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" style="overflow: clip;"><a data-bs-target="#branch2" data-bs-toggle="modal">
+                        <div class="card" style="overflow: clip;"><img class="card-img w-100 d-block" style="overflow: clip;" src="assets/img/Menu_Page/001_RICE2%20copy.jpg"></div>
+                    </a></div>
+            </div>
+        </div><button class="btn btn-lg" data-aos="fade-up" data-aos-duration="850" type="button" style="background: #fe007a;color: rgb(255,255,255);font-size: 38px;margin-top: 29px;"><span style="font-weight: normal !important; font-style: normal !important;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>Meat&nbsp; &nbsp; &nbsp;</button>
+        <section>
+            <div data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" id="carouselExampleControls-5" class="carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_Mhooping_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>豚の串焼き / ムーピン</strong></h5>
+                                <p class="card-text"><span style="font-style: normal !important;">Grilled Pork /&nbsp;</span>ニンニクやナンプラーで下味をつけた豚の串焼き。香ばしくジューシーで風味豊かに仕上がり、辛さと酸味が絶妙に合わさったソースをつけて食べる定番のタイ料理です。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,650 <sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_MhooSate_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>鶏の串焼き / ガイサテ</strong></h5>
+                                <p class="card-text"><span style="font-style: normal !important;">Chicken Satay /&nbsp;</span>カレー風味をつけて焼く、タイの定番おつまみ。濃厚な風味をプラスするピーナッツソースにつけて食べます。タイでは屋台など色々な場所で見られる人気料理です。<br><br></p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,540 <sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_GaiThod_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>タイ風手羽先揚げ / ピーガイトート</strong></h5>
+                                <p class="card-text">Thai Style Fried Chicken / ナンプラーなどで下味をつけたジューシーな手羽先。おつまみにピッタリ。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥ 1,430&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_Mhooyang_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>豚トロの炭火焼き風 / コームーヤーン</strong></h5>
+                                <p class="card-text">Grilled Pork Neck / 豚トロを使ったジューシーで美味しい焼き料理。香ばしいお肉に、ニンニクが効いたピリ辛のつけダレがたまりません。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥ 1,750&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_GrillBeef_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>ヌアヤーン</strong></h5>
+                                <p class="card-text">Grilled Beef /&nbsp;特製ダレで下味をつけて焼く牛肉の料理。ピリ辛のつけダレでお楽しみください。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥ 1,870&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_grillChicken_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>ガイヤーン</strong></h5>
+                                <p class="card-text">Grilled Chicken /&nbsp;特製ダレで下味をつけた鶏モモ肉をこんがりと焼き上げた人気料理。ピリ辛のつけダレでお楽しみください。<br><br></p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥ 1,580&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper" style="background: #ffffff00;"><img src="assets/img/Menu_Page/001_SaikokEsan_y.jpg" alt="..."></div>
+                            <div class="card-body" style="background: #ffffff00;">
+                                <h5 class="card-title" style="font-weight: bold;">サイクローク イサーン</h5>
+                                <p class="card-text">Isan Sausage /&nbsp;タイ東北部イサーン地方の料理。そえ物の一口サイズの生姜、唐辛子、ピーナッツ等はお好みでご一緒にどうぞ。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,540 <sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_SaiOua_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>サイウア</strong></h5>
+                                <p class="card-text">Northern Sausage /&nbsp;タイの北部に良く売っている、ハーブがよく効いた爽やかで辛いソーセージ。元はぐるぐると巻いています。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,540 <sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                </div><button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-5" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button><button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-5" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+            </div>
+        </section><button class="btn btn-lg" data-aos="fade-up" data-aos-duration="850" type="button" style="background: #fe007a;color: rgb(255,255,255);font-size: 38px;margin-top: 29px;"><span style="font-weight: normal !important; font-style: normal !important;">&nbsp; &nbsp; &nbsp; &nbsp;</span>STIR-FRIED&nbsp;&nbsp;</button>
+        <section>
+            <div data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" id="carouselExampleControls-7" class="carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_MhooBlackPepper_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>揚げ魚の黒胡椒炒め / プラートートプリックタイダム</strong></h5>
+                                <p class="card-text">Fried Fish with Black Pepper /&nbsp;衣を付けてふっくらと揚げた魚とシャキシャキの野菜、ピリッと辛い黒胡椒ソース。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥ 1,980&nbsp;<sub>(税込)</sub></button><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: 10px;">¥&nbsp;1,980 <sub>(税込)</sub><img src="assets/img/Menu_Page/cow.png" width="26" height="20"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_PadPakBoong_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>空心菜炒め / パットパックブンファイデーン</strong></h5>
+                                <p class="card-text">Stir-Fried Morning Glory /&nbsp;シャキシャキとした空心菜を唐辛子やニンニクと炒めたスパイシーな料理。人気のタイ料理です。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,620 <sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_GalicPork_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>豚肉のガーリック炒め / ムートートガティアム</strong></h5>
+                                <p class="card-text">Stir-Fried Pork with Garlic /&nbsp;思わずビールが進んでしまう、豚肉とたっぷりの揚げニンニクを使った炒め物。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,750 <sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper" style="background: #ffffff00;"><img src="assets/img/Menu_Page/001_GapaoMhookob_y.jpg" alt="..."></div>
+                            <div class="card-body" style="background: #ffffff00;">
+                                <h5 class="card-title" style="font-weight: bold;">揚げ豚肉のバジル炒め / ガパオムークロップ</h5>
+                                <p class="card-text">Deep-Fried Pork with Holy Basil / カリッと揚げた豚肉「ムークロップ」で作ったガパオです。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,850 <sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_GapaoSeafoodBIG_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>シーフードのバジル炒め / タレーパットガパオ</strong></h5>
+                                <p class="card-text">Stir-Fried Seafood with Holy Basil /&nbsp;バジルの爽やかな香り、辛さ、海鮮の風味が調和する料理です。お肉に飽きたらぜひこちらもお試しください。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥ 1,870&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_GapaoBIG_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>ガパオ（ライス無し） / バジル炒め</strong></h5>
+                                <p class="card-text">Stir-Fried Chicken or Pork or Beef with Holy Basil /&nbsp;ガパオ、タイが誇る人気料理。辛さ、香り、そして絶妙な風味が調和する魅力的な一皿。単品なのでシェアして色々なおかずを楽しみたい人向け。別頁に1人用ライス付もあります。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,630 <sub>(税込)</sub><img src="assets/img/Menu_Page/chicken.png" width="26" height="20"></button><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: 10px;">¥&nbsp;1,760 <sub>(税込)</sub><svg class="icon icon-tabler icon-tabler-pig" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="font-size: 31px;">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M15 11v.01"></path>
+                                        <path d="M16 3l0 3.803a6.019 6.019 0 0 1 2.658 3.197h1.341a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-1.342a6.008 6.008 0 0 1 -1.658 2.473v2.027a1.5 1.5 0 0 1 -3 0v-.583a6.04 6.04 0 0 1 -1 .083h-4a6.04 6.04 0 0 1 -1 -.083v.583a1.5 1.5 0 0 1 -3 0v-2l0 -.027a6 6 0 0 1 4 -10.473h2.5l4.5 -3z"></path>
+                                    </svg></button><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -10px;margin-top: 5px;">¥&nbsp;1,980 <sub>(税込)</sub><img src="assets/img/Menu_Page/cow.png" width="26" height="20"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_GaiMedmamuang_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>鶏肉のカシューナッツ炒め / ガイパットメットマムアン</strong></h5>
+                                <p class="card-text">Stir-Fried Chicken with Cashew Nuts /&nbsp;カシューナッツと鶏肉を炒めた、ちょっぴりスパイシーで香ばしい風味が人気の料理です。彩りもよく風味豊かなタイ料理の魅力がつまった一品。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥ 1,650&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_KanhaMhookrob_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>揚げ豚肉とタイ野菜カナー炒め / パットパックカナームークロップ</strong></h5>
+                                <p class="card-text">Stir-Fried Thai Kale with Crispy Pork /&nbsp;かために揚げた豚肉とほろ苦いカナー、コクのあるソースの相性が抜群です。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,780 <sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                </div><button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-7" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button><button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-7" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+            </div>
+        </section><button class="btn btn-lg" data-aos="fade-up" data-aos-duration="850" type="button" style="background: #fe007a;color: rgb(255,255,255);font-size: 38px;margin-top: 29px;"><span style="font-weight: normal !important; font-style: normal !important;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span>SEAFOOD&nbsp; &nbsp;</button>
+        <section>
+            <div data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" id="carouselExampleControls-sea" class="carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_PlaNungPlik_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>蒸し鯛のレモンソース / プラーヌンマナオ</strong></h5>
+                                <p class="card-text">Steamed Fish with Garlic Chili Lemon Sauce /&nbsp;蒸した鯛を丸々お皿にのせ、ニンニクと唐辛子をたっぷり使ったレモンソースで飾る豪快な料理です。3-4人でシェアするのに向いています。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥ 3,500&nbsp;<sub>(税込)</sub></button><button class="btn" data-bss-hover-animate="pulse" style="margin-left: 10px;background: #da1818;color: rgb(255,255,255);">30分程お時間がかかります</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_SushiiGoong_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>海老のココナッツカレー風味 / チューチークン</strong></h5>
+                                <p class="card-text">Deep Fried Prawns with Coconut Curry Sauce /&nbsp;香ばしく揚げ海老にレッドカレーソースをかけた、ココナッツの香りがいい料理です。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,980&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_GoongWoonsen_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>海老と春雨の土鍋蒸し / クンオップウンセン</strong></h5>
+                                <p class="card-text">Pot-Roasted Prawns with Glass Noodles /&nbsp;土鍋で蒸す事により、海老の旨味を春雨にたっぷりと吸わせた料理です。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;2,500&nbsp;<sub>(税込)</sub></button><button class="btn" data-bss-hover-animate="pulse" style="margin-left: 10px;background: #da1818;color: rgb(255,255,255);">20分程お時間がかかります</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_GoongGalicchilli_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>海老のピリカラ揚げ / クンパットプリックグルア</strong></h5>
+                                <p class="card-text">Fried Prawns with Chili /&nbsp;素揚げした海老をニンニクや唐辛子などと和えた料理。しっかりとした塩味とニンニクの香りが美味しい料理です。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥ 1,870&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper" style="background: #ffffff00;"><img src="assets/img/Menu_Page/001_Pupadkalii_y.jpg" alt="..."></div>
+                            <div class="card-body" style="background: #ffffff00;">
+                                <h5 class="card-title" style="font-weight: bold;">蟹のカレー炒め / プーニムパッポンカレー</h5>
+                                <p class="card-text">Soft-Shell Crab with Yellow Curry /&nbsp;ジューシーに揚げたソフトシェルクラブとふわふわの卵、シャキシャキとした野菜をイエローカレーソースのまろやかさでまとめ上げた不動の人気料理。ライスとの相性も抜群。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;2,200&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_Squ_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>蒸しイカのレモンソース / プラームックヌンマナオ</strong></h5>
+                                <p class="card-text">Steamed Squid with Lemon Sauce /&nbsp;蒸しイカにたっぷりのニンニク・唐辛子・レモンのソースをかけた刺激たっぷりの料理。ビールにピッタリの華やかな料理です。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,880 <sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_SoftCrabChilli_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>揚げ魚の黒胡椒炒め / プラートートプリックタイダム</strong></h5>
+                                <p class="card-text">Fried Soft-Shell Crab with Garlic /&nbsp;ジューシーに揚げたソフトシェルクラブとたっぷりの揚げニンニク。ビールとご一緒にどうぞ。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥ 2,200&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_PlathodNampla_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>プラートートナンプラー</strong></h5>
+                                <p class="card-text">Fried Fish with Nampla /&nbsp;丸ごと揚げた魚の料理ナンプラーをかけると旨味たっぷりで、ジャスミンライスとの相性も抜群です。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;2,860&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                </div><button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-sea" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button><button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-sea" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+            </div>
+        </section><button class="btn btn-lg" data-aos="fade-up" data-aos-duration="850" type="button" style="background: #fe007a;color: rgb(255,255,255);font-size: 38px;margin-top: 29px;"><span style="font-weight: normal !important; font-style: normal !important;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>Fried&nbsp; &nbsp; &nbsp;</button>
+        <section>
+            <div data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" id="carouselExampleControls-6" class="carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper" style="background: #ffffff00;"><img src="assets/img/Menu_Page/001_JorPu_y.jpg" alt="..."></div>
+                            <div class="card-body" style="background: #ffffff00;">
+                                <h5 class="card-title" style="font-weight: bold;">海老すり身の湯葉巻き / ホイジョー</h5>
+                                <p class="card-text">Fried Shrimp Cake wrapped in Yuba /&nbsp;さっくり揚がった湯葉、シャキシャキのクワイ、シイタケの旨味が楽しめる海老のすり身揚げ。梅のソースで。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,650 <sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_ThodMunKung_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>海老のすり身揚げ / トートマンクン</strong></h5>
+                                <p class="card-text">Shrimp Cakes /&nbsp;タイの北部に良く売っている、ハーブがよく効いた爽やかで辛いソーセージ。元はぐるぐると巻いています。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,580 <sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_ShrimpBread_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>海老のすり身トースト揚げ / カノムパンナータン</strong></h5>
+                                <p class="card-text">Fried Minced Shrimp on Toast /&nbsp;海老のすり身を、丁寧にパンに塗り、サクサクと香ばしく揚げました。このシンプルな料理は、ジューシーで香り高く、口の中で広がる海老とゴマの風味が絶品です。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥ 1,480&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_ThodMunPla_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>タイさつま揚げ / トートマンプラー</strong></h5>
+                                <p class="card-text">Deep Fried Fish Cake /&nbsp;唐辛子やハーブを練りこんだ魚のすり身揚げ。ハーブの爽やかな香りとスパイシーさが後を引く一品です。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥ 1,430&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_Omlet_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>豚挽肉入りと卵焼き / カイジョウムーサップ</strong></h5>
+                                <p class="card-text">Minced Pork Omlet /&nbsp;豚挽肉が入った卵焼きです。多めの油で焼くので、外はジューシー、中はふわっと。家庭的なタイ料理です。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥ 1,400&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_KoongYao_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>海老スティック / タクリアプトーン</strong></h5>
+                                <p class="card-text">Deep Fried Shrimp Sticks /&nbsp;タイフェスティバル等のイベントでも出している定番おつまみ。さくさくと食べやすくビールのお供に最適です。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,430 <sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_PorPea_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>春巻 / ポーピアトート</strong></h5>
+                                <p class="card-text">Spring Roll<br>/&nbsp;タイでもよく食べられる春巻き。アジア圏の料理文化は交差します。スイートチリソースで食べるのがタイ式。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥ 1,480&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_koongThod_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>海老の春巻 / ポーピアクントート</strong></h5>
+                                <p class="card-text">Fried Shrimp Spring Roll /&nbsp;殻を剥いた海老を1匹ずつ包んで揚げる贅沢な揚げ物。パリパリとした皮とアツアツの海老が香ばしく美味しいです。スイートチリソースにつけて食べます。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,650 <sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                </div><button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-6" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button><button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-6" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+            </div>
+        </section><button class="btn btn-lg" data-aos="fade-up" data-aos-duration="850" type="button" style="background: #fe007a;color: rgb(255,255,255);font-size: 38px;margin-top: 29px;"><span style="font-weight: normal !important; font-style: normal !important;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>DEsSert&nbsp; &nbsp; &nbsp;</button>
+        <section>
+            <div data-aos="fade-up" data-aos-duration="850" data-aos-delay="100" id="carouselExampleControls-des" class="carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_BananaCrep_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>バナナのクレープ包み / ロティ</strong></h5>
+                                <p class="card-text">Banana Crape /&nbsp;もっちりした小麦粉の生地でバナナを巻いたクレープのようなデザートです。たっぷりの練乳とチョコレートでお召し上がりください。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,050&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper" style="background: #ffffff00;"><img src="assets/img/Menu_Page/001_Mango_y.jpg" alt="..."></div>
+                            <div class="card-body" style="background: #ffffff00;">
+                                <h5 class="card-title" style="font-weight: bold;">フレッシュマンゴーのもち米添え / カオニャオマムアン</h5>
+                                <p class="card-text">Fresh Mango and Coconut Sticky Rice /&nbsp;フレッシュマンゴーと餅米の組み合わせが意外なように思えますが、甘いココナッツミルクのソースを餅米にかけてマンゴーと食べるとたまらない美味しさです。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;1,650 <sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_KanomChun_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>ハーブのココナッツプリン / カノムチャン</strong></h5>
+                                <p class="card-text">Harb and Coconut Pudding /&nbsp;バイトーイという甘い香りのする葉っぱを使ったタイの伝統的なお菓子。もちもちとした食感です。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;750&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_MohKaeng_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>タロ芋の焼きプリン / カノムモーケン</strong></h5>
+                                <p class="card-text">Baked Taro Pudding /&nbsp;少しドロリとした食感の香り豊かなタロ芋の焼きプリンです。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥&nbsp;680&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_iceCream_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>ココナッツアイス / アイスクリームカティ</strong></h5>
+                                <p class="card-text">Coconut Ice Cream /&nbsp;ココナッツミルクの風味とコクがなんともタイらしいアイスクリーム。タイではピーナッツトッピングが欠かせません。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥ 800&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_BuaLoy_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>タイ風おしるこ (温) / ブアローイ</strong></h5>
+                                <p class="card-text">Thai Style Rice Cake in Sweet Coconut Milk /&nbsp;ブアは蓮、ローイは浮かぶ、池に浮かぶ蓮を連想させるデザート。結構甘く、もちもちとした具が特徴です。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥ 880&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_KanomTowi_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>ココナッツプリン / カノムトゥアイ</strong></h5>
+                                <p class="card-text">Coconut Pudding /&nbsp;米粉とココナッツミルクを蒸したお菓子です。甘く塩気があり、ココナッツの風味がタイらしいデザートです。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥ 650&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" data-bss-hover-animate="pulse" style="background: rgba(255,255,255,0.81);">
+                            <div class="img-wrapper"><img src="assets/img/Menu_Page/001_Kathi_y.jpg" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>タピオカミルク / サークー</strong></h5>
+                                <p class="card-text">Tapioca with Sweet Coconut Milk /&nbsp;甘味をつけたココナッツミルクに、ぷりぷりの小さいタピオカと氷を浮かべたデザート。ほんのりとした塩気が甘味を引き立てます。</p><button class="btn btn-primary" data-bss-hover-animate="pulse" style="margin-left: -12px;">¥ 650&nbsp;<sub>(税込)</sub></button>
+                            </div>
+                        </div>
+                    </div>
+                </div><button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-des" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button><button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-des" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+            </div>
+        </section>
+    </section>
+    <hr>
+    <section style="background: #5c0202;margin-top: -37px;"></section>
+    <footer class="text-white" data-bss-parallax-bg="true" style="overflow: clip;background: #5c0202;background-image: url(&quot;assets/img/ChatGPT%20Image%20Nov%208,%202025,%2001_58_56%20PM.png&quot;);background-position: center;background-size: cover;"><div><br><br><br><br></div>
+        <div class="container"><a class="btn d-flex d-sm-flex justify-content-center justify-content-sm-center" role="button" data-bss-hover-animate="pulse" style="text-align: center;margin-left: 0;" href="#top"><svg class="icon icon-tabler icon-tabler-chevrons-up text-white" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="font-size: 23px;">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M7 11l5 -5l5 5"></path>
+                    <path d="M7 17l5 -5l5 5"></path>
+                </svg></a>
+            <div class="row">
+                <div class="col-1 col-md-4"></div>
+                <div class="col-10 col-md-4">
+                    <div class="btn-group" role="group" style="width: 100%;"><a class="btn d-flex d-sm-flex justify-content-center justify-content-sm-center" role="button" data-bss-hover-animate="pulse" style="text-align: center;margin-left: 0;" target="_blank" href="https://www.facebook.com/roppongi.jasminethai"><svg class="text-white text-dark text-decoration-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor" style="color: var(--bs-black);font-size: 26px;margin-top: -6px;padding-top: 3px;margin-right: 3px;"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                                <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
+                            </svg></a><a class="btn d-flex d-sm-flex justify-content-center justify-content-sm-center" role="button" data-bss-hover-animate="pulse" style="text-align: center;margin-left: 0;" target="_blank" href="https://www.instagram.com/jasmine_thai_official/"><svg class="bi bi-instagram text-white text-dark text-decoration-none" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="color: var(--bs-black);font-size: 19px;margin-top: -1px;">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                            </svg></a><a class="btn d-flex d-sm-flex justify-content-center justify-content-sm-center" role="button" data-bss-hover-animate="pulse" style="text-align: center;margin-left: 0;" target="_blank" href="https://www.tiktok.com/@jasmine_thai_official"><svg class="bi bi-tiktok text-white text-dark text-decoration-none" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="color: var(--bs-black);font-size: 24px;margin-top: -6px;padding-top: 3px;">
+                                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"></path>
+                            </svg></a></div>
+                </div>
+                <div class="col-1 col-md-4"></div>
+            </div>
+        </div>
+        <div class="container py-4 py-lg-5">
+            <div class="row my-5">
+                <div class="col text-center"><a style="border-color: #ffffff;" data-bs-target="#Term" data-bs-toggle="modal">Terms &amp; Privacy</a></div>
+            </div>
+        </div>
+        <div class="col text-center" style="color: var(--cc-bg);background: rgba(92,2,2,0);"><a class="text-decoration-none" style="border-color: #ffffff;color: var(--cc-bg);text-align: center;background: rgba(92,2,2,0);" href="index.html">@ Jasmine Thai 2026</a><div><br></div></div>
+    </footer>
+    <div></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/aos.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/multiple-item-carousel-slider-multiple-item-carousel-slider-slider.js"></script>
+    <script src="assets/js/CookieConsentComponent-cookieconsent.js"></script>
+</body>
+
+</html>
